@@ -159,7 +159,7 @@
   typePlaceholder(nextPlaceholder(n));
   form.querySelector('.devello-form-bottom p').textContent=config.helper;
   form.querySelector('.devello-brief-submit').firstChild.textContent=config.cta+' ';
-  topics.replaceChildren(...config.topics.map((topic,i)=>{
+  topics.dataset.mode=String(n);topics.replaceChildren(...config.topics.map((topic,i)=>{
    const button=document.createElement('button');button.type='button';button.dataset.briefTopic=String(i);button.textContent=topic[0];button.setAttribute('aria-pressed',String(topic.slice(1).includes(field.value)));
    button.addEventListener('click',()=>{field.value=briefTopicDraft(topic);generatedExample={mode:n,index:i,value:field.value};updateTopicSelection();field.focus();field.setSelectionRange(field.value.length,field.value.length);});return button;
   }));

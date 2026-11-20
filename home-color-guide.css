@@ -92,3 +92,15 @@
 #ai-build .ai-build__status-pill:first-child {background:#f5f5f5!important}
 #ai-build .ai-build__status-pill>span {border-color:var(--mr-blue)!important;border-top-color:var(--mr-ink)!important}
 #ai-build .ai-build__status-pill svg {stroke:var(--mr-ink)}
+
+/* 상단 주제 버튼: 개발·운영·확장 모드별 연한 배경, 선택 시에도 연한 톤 유지 */
+.devello-brief-topics button{transition:background .2s ease,border-color .2s ease,color .2s ease}
+.devello-brief-topics[data-mode="0"] button{background:#f1f9fe;border-color:#d6eefb;color:#2d5f7a}
+.devello-brief-topics[data-mode="0"] button:hover{background:#e3f4fd;color:#0b5f8a}
+.devello-brief-topics[data-mode="0"] button[aria-pressed="true"]{background:#d3edfb;border-color:#10a0e8;color:#0b5f8a}
+.devello-brief-topics[data-mode="1"] button{background:#f0fbf4;border-color:#cdeedb;color:#2f6644}
+.devello-brief-topics[data-mode="1"] button:hover{background:#e0f6e8;color:#0a6b30}
+.devello-brief-topics[data-mode="1"] button[aria-pressed="true"]{background:#cdf0da;border-color:#04b84c;color:#0a6b30}
+.devello-brief-topics[data-mode="2"] button{background:#f8f4ff;border-color:#e6dafd;color:#5a4a7a}
+.devello-brief-topics[data-mode="2"] button:hover{background:#f0e8fe;color:#5b3fb5}
+.devello-brief-topics[data-mode="2"] button[aria-pressed="true"]{background:#e9dcfe;border-color:#b48cf2;color:#5b3fb5}
