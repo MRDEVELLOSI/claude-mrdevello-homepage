@@ -1,0 +1,18 @@
+/* ===== 메인 반응형 정리: 모바일 타이틀 크기 통일 · 줄바꿈 ===== */
+@media (max-width:700px){
+  .devello-headline{font-size:clamp(28px,8.4vw,34px)!important}
+  #ai-build h2,#why h2,#five-questions-standard #fq-title,#five-questions-standard .std h2,#development-standard h2{font-size:26px!important;line-height:1.32!important}
+  #five-questions-standard .sub h2{font-size:22px!important}
+  #five-questions-standard .std__no{font-size:36px!important}
+  #five-questions-standard .close__b{font-size:22px!important}
+  #proof-sections .pf-intro__h{font-size:26px}
+  #proof-sections .pf-h2{font-size:22px}
+  #proof-sections .pf-lead br{display:inline}
+  #last-cta .ls-h{font-size:26px}
+  #last-cta .ls-h2{font-size:24px}
+  #last-cta .ls-cta h2{font-size:26px}
+}
+@media (max-width:380px){
+  #ai-build h2,#why h2,#five-questions-standard #fq-title,#five-questions-standard .std h2{font-size:24px!important}
+  #proof-sections .pf-intro__h,#last-cta .ls-h,#last-cta .ls-cta h2{font-size:24px}
+}
