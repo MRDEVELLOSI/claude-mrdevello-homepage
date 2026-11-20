@@ -129,7 +129,17 @@
   typeTimer=setTimeout(step,120);
  }
  let mode=-1,autoTimer=0,heroVisible=true,briefFocused=false,generatedExample=null;
- function scheduleAuto(){clearTimeout(autoTimer);if(!document.hidden&&heroVisible&&!briefFocused&&!reduced.matches)autoTimer=setTimeout(()=>selectMode((mode+1)%3),Math.max(3000,typingEnds-performance.now()+2200));}
+ function scheduleAuto(){clearTimeout(autoTimer);if(!document.hidden&&heroVisible&&!briefFocused&&!reduced.matches&&!form.dataset.pinned)autoTimer=setTimeout(()=>selectMode((mode+1)%3),Math.max(3000,typingEnds-performance.now()+2200));}
+ // 주제 버튼 클릭 시 입력창에 좌라라락 타이핑
+ let valueTimer=0;
+ function typeValue(text,done){
+  clearTimeout(valueTimer);
+  if(reduced.matches){field.value=text;field.setSelectionRange(text.length,text.length);if(done)done();return;}
+  const chars=[...text];let i=0;field.value='';
+  const step=()=>{i=Math.min(chars.length,i+2);field.value=chars.slice(0,i).join('');field.setSelectionRange(field.value.length,field.value.length);field.scrollTop=field.scrollHeight;if(i<chars.length)valueTimer=setTimeout(step,chars[i-1]==='\n'?90:16);else if(done)done();};
+  step();
+ }
+ field.addEventListener('input',e=>{if(e.isTrusted)clearTimeout(valueTimer);});
  let firstArtwork=true;
  function changeArtwork(n){
   if(firstArtwork){
@@ -169,7 +179,7 @@
   form.querySelector('.devello-brief-submit').firstChild.textContent=config.cta+' ';
   topics.dataset.mode=String(n);topics.replaceChildren(...config.topics.map((topic,i)=>{
    const button=document.createElement('button');button.type='button';button.dataset.briefTopic=String(i);button.textContent=topic[0];button.setAttribute('aria-pressed',String(topic.slice(1).includes(field.value)));
-   button.addEventListener('click',()=>{field.value=briefTopicDraft(topic);generatedExample={mode:n,index:i,value:field.value};updateTopicSelection();field.focus();field.setSelectionRange(field.value.length,field.value.length);});return button;
+   button.addEventListener('click',()=>{topics.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));field.focus();clearTimeout(typeTimer);typeValue(briefTopicDraft(topic),()=>{generatedExample={mode:n,index:i,value:field.value};field.placeholder=field.value;form.dataset.pinned='1';updateTopicSelection();});});return button;
   }));
   fitBriefField();
  }
@@ -193,7 +203,7 @@
  function briefTopicDraft(topic){return compactBrief.matches?topic[2]:topic[1];}
  function updateTopicSelection(){topics.querySelectorAll('button').forEach((button,i)=>button.setAttribute('aria-pressed',String(modes[mode].topics[i].slice(1).includes(field.value))));}
  labels.forEach((button,i)=>{
-  button.addEventListener('click',()=>selectMode(i));
+  button.addEventListener('click',()=>{delete form.dataset.pinned;selectMode(i);});
   button.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();const next=(i+(event.key==='ArrowRight'?1:2))%3;selectMode(next);labels[next].focus();}});
  });
  field.addEventListener('focus',()=>{briefFocused=true;scheduleAuto();});
