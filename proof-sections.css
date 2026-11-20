@@ -266,3 +266,9 @@
 }
 #proof-sections .pf2-copy{position:relative;z-index:1}
 #proof-sections .pf2-panel img{z-index:1}
+/* 07 펼친 띠: 글 블록을 사진과 세로 가운데 정렬 */
+@media (min-width:701px){
+#proof-sections .pf2-it.is-open{display:flex;flex-direction:column;justify-content:center}
+}
+#proof-sections .pf2-desc{margin:-4px 0 6px;font-size:16px;line-height:1.7;color:#333!important;max-width:520px;word-break:keep-all}
+@media (max-width:700px){#proof-sections .pf2-desc{font-size:14px}}
