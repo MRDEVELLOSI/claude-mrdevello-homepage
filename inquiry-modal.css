@@ -39,3 +39,10 @@
 #five-questions-standard .std__link--btn:hover{color:#10a0e8}
 #five-questions-standard .std__ic--blog{color:#03C75A!important}
 .inq{position:fixed;inset:0;margin:auto;height:fit-content}
+
+/* 덜컹임 방지: 이미지 영역 높이 고정 + 겹쳐서 크로스페이드 */
+.inq__view{position:relative;flex:1;height:min(56vh,520px);min-height:0;max-height:none;overflow:hidden}
+.inq__slide{position:absolute;inset:0;display:flex!important;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .22s ease,visibility 0s linear .22s}
+.inq__slide.is-on{opacity:1;visibility:visible;transition:opacity .22s ease,visibility 0s}
+.inq__slide img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+@media (max-width:700px){.inq__view{height:min(42vh,340px)}}
