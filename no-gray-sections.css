@@ -7,3 +7,6 @@
 #booster_examples,#booster_faq,
 #philosophy_difference,#philosophy_practice{background:#fbfbfb!important;background-image:none!important}
 
+
+/* 메인: 회색 섹션을 좌우 끝까지 꽉 채움 (흰/회색 번갈아) */
+#ai-build,#five-questions-standard #five-questions{margin:0!important;width:auto!important;max-width:none!important;border-radius:0!important}
