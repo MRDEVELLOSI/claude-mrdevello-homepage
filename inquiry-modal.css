@@ -1,0 +1,41 @@
+/* CONTENT 링크 — 왼쪽 아이콘 */
+#five-questions-standard .std__link--btn{width:100%;background:none;border:0;border-bottom:1px solid #E7EBEE;padding:0;font:inherit;font-size:inherit;font-weight:600;color:#222;cursor:pointer;text-align:left}
+#five-questions-standard .std__lt{display:inline-flex;align-items:center;gap:12px;font-weight:inherit}
+#five-questions-standard .std__ic{display:inline-flex;align-items:center;justify-content:center;width:34px;height:24px;flex:none;font-style:normal}
+#five-questions-standard .std__ic--blog{font-size:14px;font-weight:800;letter-spacing:-.02em;color:#03C75A;font-family:inherit}
+
+/* 문의 메일 팝업 */
+.inq{width:min(1080px,calc(100vw - 32px));max-height:calc(100vh - 48px);padding:0;border:0;border-radius:28px;background:#fff;color:#111;box-shadow:0 40px 100px rgba(0,0,0,.25);overflow:hidden}
+.inq::backdrop{background:rgba(17,17,17,.55);backdrop-filter:blur(4px)}
+.inq[open]{animation:inq-in .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes inq-in{from{opacity:0;transform:translateY(16px) scale(.98)}}
+.inq__shell{display:flex;flex-direction:column;max-height:calc(100vh - 48px)}
+.inq__head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:28px 32px 20px}
+.inq__eyebrow{margin:0 0 6px;font-size:12px;font-weight:800;letter-spacing:.12em;color:#10a0e8}
+.inq__head h2{margin:0;font-size:26px;font-weight:800;letter-spacing:-.03em}
+.inq__desc{margin:8px 0 0;font-size:14px;color:#6d7073}
+.inq__x{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid #e5e7ea;background:#fff;font-size:24px;line-height:1;color:#333;cursor:pointer}
+.inq__x:hover{background:#f4f5f7}
+.inq__stage{position:relative;display:flex;align-items:center;gap:12px;margin:0 20px;padding:20px;border-radius:20px;background:#f3f5f8;min-height:0;flex:1}
+.inq__view{flex:1;display:flex;justify-content:center;align-items:center;min-height:360px;max-height:calc(100vh - 300px);overflow:auto}
+.inq__slide{margin:0}
+.inq__slide img{display:block;max-width:100%;max-height:calc(100vh - 340px);width:auto;height:auto;border-radius:10px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.inq__nav{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid #e1e5ea;background:#fff;font-size:18px;color:#222;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.06)}
+.inq__nav:hover{border-color:#10a0e8;color:#10a0e8}
+.inq__foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 32px 26px}
+.inq__cap{margin:0;font-size:15px;font-weight:700}
+.inq__dots{display:flex;gap:6px}
+.inq__dots button{width:32px;height:32px;border-radius:10px;border:1px solid #e1e5ea;background:#fff;font-size:13px;font-weight:700;color:#55595d;cursor:pointer}
+.inq__dots button[aria-pressed="true"]{background:#111;border-color:#111;color:#fff}
+@media (max-width:700px){
+.inq{border-radius:20px}
+.inq__head{padding:20px 18px 14px}.inq__head h2{font-size:20px}.inq__desc{font-size:13px}
+.inq__stage{margin:0 10px;padding:12px 8px;gap:6px}
+.inq__nav{width:34px;height:34px;font-size:15px}
+.inq__view{min-height:220px}
+.inq__foot{padding:14px 18px 20px}.inq__dots button{width:28px;height:28px}
+}
+#five-questions-standard .std__link--btn{font-size:14px;letter-spacing:-.6px}
+#five-questions-standard .std__link--btn:hover{color:#10a0e8}
+#five-questions-standard .std__ic--blog{color:#03C75A!important}
+.inq{position:fixed;inset:0;margin:auto;height:fit-content}
