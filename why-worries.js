@@ -31,7 +31,7 @@
     if (focus) tabs[i].focus();
     moveInd();
     panel.classList.add('swap-out');
-    setTimeout(function(){ panel.classList.remove('swap-out', 'play'); render(i); }, 330);
+    setTimeout(function(){ panel.classList.remove('swap-out', 'play'); render(i); }, 160);
   }
   tabs.forEach(function(t, k){
     t.addEventListener('click', function(){ select(k); });

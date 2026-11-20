@@ -187,3 +187,38 @@
 #five-questions-standard .q:nth-child(3),#five-questions-standard #fq-panel[data-question="2"]{--accent:#fc6c28;--tint:color-mix(in srgb,#fc6c28 12%,white)}
 #five-questions-standard .q:nth-child(4),#five-questions-standard #fq-panel[data-question="3"]{--accent:#04b84c;--tint:color-mix(in srgb,#04b84c 12%,white)}
 #five-questions-standard .q:nth-child(5),#five-questions-standard #fq-panel[data-question="4"]{--accent:#ceb0fb;--tint:color-mix(in srgb,#ceb0fb 22%,white)}
+
+/* WHY 말풍선 — PC에서 질문 한 줄로 통일 */
+@media (min-width:1001px){
+#why .bubble{width:auto!important;max-width:none}
+#why .bubble__q,#why .bubble__tag{white-space:nowrap}
+#why .bubble__q{font-size:clamp(13px,1.1vw,16px)}
+}
+
+/* WHY 탭 전환 — 말풍선·요소가 빠르게 튀어나오게 */
+#why .swap-out{animation-duration:.16s!important}
+#why .play .person{animation-duration:.5s;animation-delay:0s}
+#why .play .lines .draw{animation-duration:.4s}
+#why .play .lines path:nth-of-type(2){animation-delay:.05s}
+#why .play .lines path:nth-of-type(3){animation-delay:.08s}
+#why .play .lines path:nth-of-type(4){animation-delay:.11s}
+#why .play .lines path:nth-of-type(5){animation-delay:.14s}
+#why .play .lines .flow:nth-of-type(6){animation-delay:.3s,.3s}
+#why .play .lines .flow:nth-of-type(7){animation-delay:.33s,.33s}
+#why .play .lines .flow:nth-of-type(8){animation-delay:.36s,.36s}
+#why .play .lines .flow:nth-of-type(9){animation-delay:.39s,.39s}
+#why .play .bubble{animation-duration:.42s}
+#why .play .b0{animation-delay:.08s}
+#why .play .b1{animation-delay:.14s}
+#why .play .b2{animation-delay:.2s}
+#why .play .b3{animation-delay:.26s}
+#why .play .prop{animation-duration:.45s}
+#why .play .pr0{animation-delay:.05s}
+#why .play .pr1{animation-delay:.1s}
+#why .play .pr2{animation-delay:.15s}
+#why .play .pr3{animation-delay:.2s}
+#why .play .det{animation-duration:.4s}
+#why .play .det:nth-child(1){animation-delay:.3s}
+#why .play .det:nth-child(2){animation-delay:.36s}
+#why .play .det:nth-child(3){animation-delay:.42s}
+#why .play .det:nth-child(4){animation-delay:.48s}
