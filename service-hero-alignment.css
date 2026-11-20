@@ -1,0 +1,49 @@
+/* Shared SERVICE hero slots. Values are implementation choices, not reference measurements. */
+body.starter-body{--service-hero-accent:#7560c9;--service-hero-badge:#6b55ba;--service-hero-line:#ded5f1;--service-hero-tint:#f1edf9}
+body.pro-body{--service-hero-accent:#1687df;--service-hero-badge:#0b78cf;--service-hero-line:#c8e3ff;--service-hero-tint:#e4f2ff}
+body.team-body{--service-hero-accent:#ac4b35;--service-hero-badge:#ac4b35;--service-hero-line:#ecd8cf;--service-hero-tint:#fff1ed}
+body.check-body{--service-hero-accent:#34634c;--service-hero-badge:#34634c;--service-hero-line:#cbded1;--service-hero-tint:#eef8f2}
+body.ax-body{--service-hero-accent:#966522;--service-hero-badge:#85551c;--service-hero-line:#ead9b3;--service-hero-tint:#fff8e8}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero){padding-top:72px;padding-bottom:80px}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{align-items:start}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy{align-self:start;min-width:0;font-size:16px;line-height:1.6}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-label{align-items:center;flex-wrap:nowrap;gap:12px;min-height:31px;line-height:23px}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy .service-hero-name{position:relative;isolation:isolate;display:inline-flex;justify-content:center;align-items:center;box-sizing:border-box;flex:0 0 116px;width:116px;padding:4px 12px;border-radius:9px;background:var(--service-hero-badge);font-size:14px;line-height:23px;color:#fff;font-weight:700;white-space:nowrap}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy .service-hero-name::before{content:none;display:none}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy .service-hero-category{min-width:0;font-size:14px;line-height:23px;font-weight:600;color:#53575d}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-title{font-size:var(--hero-title-size);line-height:1.16;min-height:2.32em}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-description{font-size:16px;font-weight:400;line-height:1.65;letter-spacing:0;color:#4e535c;min-height:3.3em}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-description strong{font-size:inherit;font-weight:700;line-height:inherit;letter-spacing:inherit;color:#292d33}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents{width:100%;max-width:none;margin:40px 0 0;text-align:left}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents>p{display:block;margin:0 0 14px;font-size:14px;font-weight:600;line-height:1.5;color:var(--service-hero-accent)}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents>p::before{content:none}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dl{display:grid;gap:10px;margin:0;border:0}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dl>div{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:16px;row-gap:0;align-content:center;box-sizing:border-box;min-height:105px;padding:16px 20px;border:1px solid var(--service-hero-line);border-radius:16px;background:#fff;box-shadow:none}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dt{grid-column:2;font-size:var(--service-card-title,17px);font-weight:700;line-height:1.35;color:#242424;word-break:keep-all}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dd{grid-column:2;margin:0;font-size:var(--service-card-copy,15px);font-weight:400;line-height:1.5;color:#62676c;word-break:keep-all}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy .service-principle-icon{position:absolute;left:20px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--service-hero-tint);color:var(--service-hero-accent)}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-blank{min-width:0;pointer-events:none}
+@media(min-width:1024px){
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{grid-template-columns:1fr 1fr;gap:64px;min-height:max(720px,calc(clamp(560px,calc(100vh - 300px),680px) + 101.5px))}
+}
+@media(min-width:1600px){body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero){padding-top:88px}}
+@media(min-width:1024px) and (max-width:1199px){
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-description{min-height:4.95em}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dl>div{min-height:105px}
+}
+@media(max-width:1023px){body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-blank{display:none}}
+@media(max-width:767px){
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero){padding-top:44px}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-title{font-size:clamp(32px,9vw,36px);min-height:2.32em}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-description{min-height:6.6em}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy .service-hero-name{flex-basis:100px;width:100px;padding-inline:6px}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents{margin-top:28px}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dl>div{min-height:105px;grid-template-columns:40px minmax(0,1fr);column-gap:12px;padding:16px}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dt{font-size:var(--service-card-title,16px)}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy .service-principle-icon{left:16px;width:40px;height:40px;border-radius:12px}
+}
+@media(max-width:374px){
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-title{min-height:3.48em}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-description{min-height:8.25em}
+body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-contents dl>div{min-height:129px}
+}

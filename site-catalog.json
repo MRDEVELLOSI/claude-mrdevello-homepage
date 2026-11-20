@@ -1,0 +1,899 @@
+{
+  "schemaVersion": 1,
+  "siteUrl": "https://devello-overview-study.mrdevello2027.chatgpt.site",
+  "analyticsRuntimeConnected": false,
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "미스터디벨로 - 비즈니스를 이해하는 앱·웹 개발사",
+      "sections": [
+        {
+          "id": "home-hero",
+          "label": "개발, 운영, 확장을 모두 한곳에서"
+        },
+        {
+          "id": "ai-build",
+          "label": "AI가 구현해주는 시대"
+        },
+        {
+          "id": "why",
+          "label": "그런데, 왜 지금 개발사를 찾고 계신가요?"
+        },
+        {
+          "id": "five-questions",
+          "label": "다섯 가지 질문"
+        },
+        {
+          "id": "development-standard",
+          "label": "좋은 개발사의 기준"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "hero_company_pdf",
+          "href": "https://mrdevello.com/files/mrdevello-introduction.pdf"
+        },
+        {
+          "id": "hero_portfolio_pdf",
+          "href": "https://mrdevello.com/files/mrdevello-portfolio.pdf"
+        }
+      ]
+    },
+    {
+      "id": "service_mr_starter",
+      "path": "/mr-starter/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "MR.STARTER · 서비스 기획·프로토타입 | 미스터디벨로",
+      "sections": [
+        {
+          "id": "starter_hero",
+          "label": "starter-title"
+        },
+        {
+          "id": "why",
+          "label": "why"
+        },
+        {
+          "id": "compare",
+          "label": "compare"
+        },
+        {
+          "id": "how",
+          "label": "how"
+        },
+        {
+          "id": "sample",
+          "label": "sample"
+        },
+        {
+          "id": "who",
+          "label": "who"
+        },
+        {
+          "id": "starter_media",
+          "label": "기획 결과물"
+        },
+        {
+          "id": "deliver",
+          "label": "deliver"
+        },
+        {
+          "id": "next",
+          "label": "next"
+        },
+        {
+          "id": "early",
+          "label": "early"
+        },
+        {
+          "id": "faq",
+          "label": "faq"
+        },
+        {
+          "id": "apply",
+          "label": "apply"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        }
+      ]
+    },
+    {
+      "id": "service_mr_team",
+      "path": "/mr-team/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "MR.TEAM · 운영·개선 개발팀 구독제 | 미스터디벨로",
+      "sections": [
+        {
+          "id": "team_hero",
+          "label": "운영과 개선을 함께하는 개발팀"
+        },
+        {
+          "id": "team_photos",
+          "label": "미스터디벨로 팀 사진"
+        },
+        {
+          "id": "team_plans",
+          "label": "서비스 상태에 맞춘 두 가지 구독 유형"
+        },
+        {
+          "id": "team_plan_operations",
+          "label": "운영형"
+        },
+        {
+          "id": "team_plan_improvement",
+          "label": "운영·개선형"
+        },
+        {
+          "id": "team_scope",
+          "label": "두 구독 유형의 지원 범위 비교"
+        },
+        {
+          "id": "team_security",
+          "label": "일상적인 점검부터 문제 해결을 위한 관리"
+        },
+        {
+          "id": "team_work",
+          "label": "확인할 과제와 결과물을 같은 자료로 공유합니다."
+        },
+        {
+          "id": "team_response",
+          "label": "작업량과 대응 시간을 구체적으로 합의합니다."
+        },
+        {
+          "id": "team_process",
+          "label": "운영 준비부터 지속적인 개선으로 연결합니다."
+        },
+        {
+          "id": "team_fit",
+          "label": "진단·개선 프로젝트와 지속적인 운영의 구분"
+        },
+        {
+          "id": "team_fit_check",
+          "label": "MR.CHECK 연계"
+        },
+        {
+          "id": "team_fit_pro",
+          "label": "MR.PRO 연계"
+        },
+        {
+          "id": "team_faq",
+          "label": "구독 범위와 협업 조건의 확인"
+        },
+        {
+          "id": "team_inquiry",
+          "label": "서비스 운영과 지속적인 기능 개선 상담"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "team_header_mobile_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "team_header_desktop_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "team_operations_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "team_improvement_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "team_to_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "team_to_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "team_bottom_inquiry",
+          "href": "/inquiry/"
+        }
+      ]
+    },
+    {
+      "id": "service_mr_pro",
+      "path": "/mr-pro/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "MR.PRO · IT 턴키 개발 프로젝트 | 미스터디벨로",
+      "sections": [
+        {
+          "id": "pro_hero",
+          "label": "pro-title"
+        },
+        {
+          "id": "pro_hero_showcase",
+          "label": "실제 프로젝트 목업 슬라이드"
+        },
+        {
+          "id": "pro_projects",
+          "label": "pro-projects-title"
+        },
+        {
+          "id": "pro-case-monday",
+          "label": "디어먼데이 개발 사례"
+        },
+        {
+          "id": "pro-case-paradise",
+          "label": "파라다이스 호텔 부산 개발 사례"
+        },
+        {
+          "id": "pro_scope",
+          "label": "pro-scope-title"
+        },
+        {
+          "id": "pro_scope_app",
+          "label": "pro_scope_app"
+        },
+        {
+          "id": "pro_scope_admin",
+          "label": "pro_scope_admin"
+        },
+        {
+          "id": "pro_scope_system",
+          "label": "pro_scope_system"
+        },
+        {
+          "id": "pro_scope_launch",
+          "label": "pro_scope_launch"
+        },
+        {
+          "id": "pro_process",
+          "label": "pro-process-title"
+        },
+        {
+          "id": "pro_faq",
+          "label": "pro-faq-title"
+        },
+        {
+          "id": "pro_contact",
+          "label": "pro-contact-title"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "pro_nav_portfolio",
+          "href": "https://mrdevello.com/portfolio"
+        },
+        {
+          "id": "pro_mobile_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "pro_header_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "pro_hero_phone_hyundai",
+          "href": null
+        },
+        {
+          "id": "pro_hero_phone_paradise-busan",
+          "href": null
+        },
+        {
+          "id": "pro_hero_phone_powderroom",
+          "href": null
+        },
+        {
+          "id": "pro_hero_phone_writing-museum",
+          "href": null
+        },
+        {
+          "id": "pro_hero_phone_linkschool",
+          "href": null
+        },
+        {
+          "id": "pro_hero_phone_careerscan",
+          "href": null
+        },
+        {
+          "id": "pro_hero_previous",
+          "href": null
+        },
+        {
+          "id": "pro_hero_select_hyundai",
+          "href": null
+        },
+        {
+          "id": "pro_hero_select_paradise-busan",
+          "href": null
+        },
+        {
+          "id": "pro_hero_select_powderroom",
+          "href": null
+        },
+        {
+          "id": "pro_hero_select_writing-museum",
+          "href": null
+        },
+        {
+          "id": "pro_hero_select_linkschool",
+          "href": null
+        },
+        {
+          "id": "pro_hero_select_careerscan",
+          "href": null
+        },
+        {
+          "id": "pro_hero_next",
+          "href": null
+        },
+        {
+          "id": "pro_case_monday_detail",
+          "href": "https://mrdevello.com/portfolio/dear-monday"
+        },
+        {
+          "id": "pro_case_paradise_detail",
+          "href": "https://mrdevello.com/portfolio/paradise-busan"
+        },
+        {
+          "id": "pro_faq_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "pro_bottom_inquiry",
+          "href": "https://mrdevello.com/inquiry"
+        },
+        {
+          "id": "pro_footer_home",
+          "href": "/"
+        },
+        {
+          "id": "pro_footer_starter",
+          "href": "/mr-starter/"
+        }
+      ]
+    },
+    {
+      "id": "service_mr_booster",
+      "path": "/mr-booster/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "MR.BOOSTER · AX 전환 프로젝트 | 미스터디벨로",
+      "sections": [
+        {
+          "id": "booster_hero",
+          "label": "booster-title"
+        },
+        {
+          "id": "booster_demo",
+          "label": "booster_demo"
+        },
+        {
+          "id": "booster_approach",
+          "label": "approach-title"
+        },
+        {
+          "id": "booster_examples",
+          "label": "examples-title"
+        },
+        {
+          "id": "booster_scope",
+          "label": "scope-title"
+        },
+        {
+          "id": "booster_media",
+          "label": "검증 자료와 다음 단계"
+        },
+        {
+          "id": "booster_validation",
+          "label": "validation-title"
+        },
+        {
+          "id": "booster_process",
+          "label": "process-title"
+        },
+        {
+          "id": "booster_faq",
+          "label": "faq-title"
+        },
+        {
+          "id": "booster_inquiry",
+          "label": "inquiry-title"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "booster_header_mobile_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "booster_header_desktop_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "booster_example_knowledge",
+          "href": null
+        },
+        {
+          "id": "booster_example_support",
+          "href": null
+        },
+        {
+          "id": "booster_example_report",
+          "href": null
+        },
+        {
+          "id": "booster_examples_scope",
+          "href": "#booster_scope"
+        },
+        {
+          "id": "booster_faq_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "booster_bottom_inquiry",
+          "href": "https://mrdevello.com/inquiry"
+        },
+        {
+          "id": "booster_footer_home",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "id": "intro_philosophy",
+      "path": "/intro/philosophy/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "철학 · 의뢰한 대로가 아닌, 의도한 대로 | 미스터디벨로",
+      "sections": [
+        {
+          "id": "philosophy_hero",
+          "label": "ph-hero-title"
+        },
+        {
+          "id": "philosophy_ai",
+          "label": "ph-ai-title"
+        },
+        {
+          "id": "philosophy_difference",
+          "label": "ph-difference-title"
+        },
+        {
+          "id": "philosophy_communication",
+          "label": "ph-communication-title"
+        },
+        {
+          "id": "philosophy_practice",
+          "label": "ph-practice-title"
+        },
+        {
+          "id": "philosophy_value",
+          "label": "ph-value-title"
+        },
+        {
+          "id": "philosophy_inquiry",
+          "label": "ph-inquiry-title"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "philosophy_header_mobile_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "philosophy_header_desktop_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "philosophy_project_inquiry",
+          "href": "https://mrdevello.com/inquiry"
+        },
+        {
+          "id": "philosophy_footer_home",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "id": "inquiry",
+      "path": "/inquiry/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "문의하기 | 미스터디벨로",
+      "sections": [
+        {
+          "id": "inquiry-hero",
+          "label": "프로젝트 문의"
+        },
+        {
+          "id": "inquiry-contact",
+          "label": "프로젝트 문의 작성"
+        },
+        {
+          "id": "inquiry-team",
+          "label": "문의 안내"
+        },
+        {
+          "id": "inquiry-basic",
+          "label": "기본 정보"
+        },
+        {
+          "id": "inquiry-project",
+          "label": "프로젝트 정보"
+        },
+        {
+          "id": "inquiry-consent",
+          "label": "동의 및 제출"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "pro_nav_portfolio",
+          "href": "https://mrdevello.com/portfolio"
+        },
+        {
+          "id": "pro_mobile_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "pro_header_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "inquiry_service_planning",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "inquiry_service_design",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "inquiry_service_development",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "inquiry_service_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "inquiry_service_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "inquiry_service_automation",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "inquiry_service_expansion",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "inquiry_email",
+          "href": "mailto:contact@mrdevello.com"
+        },
+        {
+          "id": "inquiry_phone",
+          "href": "tel:07088600092"
+        },
+        {
+          "id": "inquiry_portfolio_pdf",
+          "href": "https://mrdevello.com/files/mrdevello-portfolio.pdf"
+        },
+        {
+          "id": "inquiry_company_pdf",
+          "href": "https://mrdevello.com/files/mrdevello-introduction.pdf"
+        },
+        {
+          "id": "inquiry_submit",
+          "href": null
+        },
+        {
+          "id": "inquiry_production",
+          "href": "https://mrdevello.com/inquiry"
+        },
+        {
+          "id": "inquiry_footer_home",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "id": "service_mr_check",
+      "path": "/mr-check/",
+      "kind": "page",
+      "lastModified": "2026-11-20",
+      "title": "MR.CHECK · 보안·운영비·SEO·GEO 진단 및 개선 | 미스터디벨로",
+      "sections": [
+        {
+          "id": "check_hero",
+          "label": "보안·비용·검색 종합 진단과 개선"
+        },
+        {
+          "id": "check_report",
+          "label": "월간 유지보수 보고서 슬라이드"
+        },
+        {
+          "id": "check_audience",
+          "label": "서비스의 위험·비용·검색 노출을 함께 확인하는 프로젝트"
+        },
+        {
+          "id": "check_audience_security",
+          "label": "보안 상태 확인"
+        },
+        {
+          "id": "check_audience_cost",
+          "label": "운영 비용 분석"
+        },
+        {
+          "id": "check_audience_legacy",
+          "label": "기존 시스템 정리"
+        },
+        {
+          "id": "check_scope",
+          "label": "문제의 확인부터 우선순위에 따른 개선"
+        },
+        {
+          "id": "check_security",
+          "label": "보안 진단 및 개선"
+        },
+        {
+          "id": "check_cost",
+          "label": "운영비 진단 및 개선"
+        },
+        {
+          "id": "check_seo",
+          "label": "SEO 진단 및 개선"
+        },
+        {
+          "id": "check_geo",
+          "label": "GEO 진단 및 개선"
+        },
+        {
+          "id": "check_search_measurement",
+          "label": "기술 점검과 콘텐츠 개선을 실제 확인 결과로 연결합니다."
+        },
+        {
+          "id": "check_deliverables",
+          "label": "진단 결과와 개선 내용을 확인 가능한 자료로 전달합니다."
+        },
+        {
+          "id": "check_process",
+          "label": "현황 확인부터 개선 결과의 검증"
+        },
+        {
+          "id": "check_contract",
+          "label": "진단과 개선 범위를 먼저 정리합니다."
+        },
+        {
+          "id": "check_faq",
+          "label": "진단 범위와 개선 조건의 확인"
+        },
+        {
+          "id": "check_inquiry",
+          "label": "보안·운영비·검색 노출의 진단·개선 상담"
+        }
+      ],
+      "ctas": [
+        {
+          "id": "navigation_philosophy",
+          "href": "/intro/philosophy/"
+        },
+        {
+          "id": "nav_mr_starter",
+          "href": "/mr-starter/"
+        },
+        {
+          "id": "nav_mr_pro",
+          "href": "/mr-pro/"
+        },
+        {
+          "id": "nav_mr_team",
+          "href": "/mr-team/"
+        },
+        {
+          "id": "nav_mr_check",
+          "href": "/mr-check/"
+        },
+        {
+          "id": "navigation_mr_booster",
+          "href": "/mr-booster/"
+        },
+        {
+          "id": "team_header_mobile_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "team_header_desktop_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "check_report_previous",
+          "href": null
+        },
+        {
+          "id": "check_report_next",
+          "href": null
+        },
+        {
+          "id": "check_bottom_inquiry",
+          "href": "/inquiry/"
+        },
+        {
+          "id": "check_to_team",
+          "href": "/mr-team/"
+        }
+      ]
+    }
+  ]
+}

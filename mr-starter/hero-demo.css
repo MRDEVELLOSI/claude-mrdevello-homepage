@@ -1,0 +1,58 @@
+/* User-annotated STARTER exception to the shared service hero template. */
+body.starter-body #starter_hero .starter-live-demo{display:flex;flex-direction:column;align-items:center;justify-self:center;min-width:0;width:100%;max-width:420px;color:#0d0d0d;font-family:var(--font-sans)}
+body.starter-body #starter_hero .phonebox{position:relative;flex:0 0 auto;width:min(100%,334px);max-width:100%;overflow:hidden;border:1px solid #e5e5e5;border-radius:28px;background:#fff;box-shadow:0 16px 44px #00000008}
+body.starter-body #starter_hero .phoneview{position:relative;width:100%;aspect-ratio:390/800;overflow:clip;background:#fff}
+body.starter-body #starter_hero .phoneview #appframe{display:block;width:390px;height:800px;max-width:none;border:0;background:#fff;transform-origin:top left}
+body.starter-body #starter_hero .stagedone{display:block;max-width:360px;width:100%;margin:16px 0 0;text-align:center}
+body.starter-body #starter_hero .stagedone b{display:block;font-size:14px;font-weight:500;line-height:1.6;color:#4e535c;word-break:keep-all}
+body.starter-body #starter_hero .stagedone span{display:block;margin-top:4px;font-size:13px;font-weight:400;line-height:1.5;color:#727780;word-break:keep-all}
+@media(min-width:1024px){body.starter-body #starter_hero{padding-bottom:64px}}
+@media(max-width:767px){body.starter-body #starter_hero .starter-live-demo{max-width:350px}body.starter-body #starter_hero .phonebox{border-radius:24px}body.starter-body #starter_hero .stagedone{margin-top:14px}}
+
+/* Apply the user's supplied PRO reference with STARTER's established purple. */
+body.starter-body #starter_hero .service-hero-name{display:inline-flex;align-items:center;padding:6px 12px;min-height:31px;border-radius:9px;background:#7560c9;color:#fff;font-size:14px;font-weight:700;line-height:1.3}
+body.starter-body #starter_hero .service-hero-category{font-weight:600;color:#55525d}
+body.starter-body #starter_hero .service-hero-title{font-size:clamp(40px,3.8vw,56px);line-height:1.16;letter-spacing:-.045em}
+body.starter-body #starter_hero .starter-title-accent{display:inline;color:#7560c9}
+body.starter-body #starter_hero .starter-hero-contents{margin-top:36px;max-width:none;width:100%;text-align:left}
+body.starter-body #starter_hero .starter-hero-contents>p{display:flex;align-items:center;gap:8px;margin:0 0 14px;font-size:14px;font-weight:600;line-height:1.5;color:#7560c9}
+body.starter-body #starter_hero .starter-hero-contents>p::before{content:"";width:3px;height:12px;border-radius:2px;background:currentColor}
+body.starter-body #starter_hero .starter-hero-contents dl{display:flex;flex-direction:column;gap:10px;margin:0;border:0}
+body.starter-body #starter_hero .starter-hero-contents dl>div{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:16px;row-gap:3px;align-content:center;padding:14px 18px;min-height:85px;border:1px solid #e1d5f4;border-radius:16px;background:#ffffffed;box-shadow:0 2px 8px #55347e02}
+body.starter-body #starter_hero .starter-hero-contents dt{grid-column:2;font-size:18px;font-weight:650;line-height:1.35;letter-spacing:-.025em;color:#24212a;word-break:keep-all}
+body.starter-body #starter_hero .starter-hero-contents dd{grid-column:2;margin:0;font-size:16px;line-height:1.5;color:#66636d;word-break:keep-all}
+body.starter-body #starter_hero .starter-card-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:#f0e9fc;color:#8060c5}
+body.starter-body #starter_hero .starter-card-icon svg{display:block;width:23px;height:23px;max-width:none}
+@media(min-width:1024px){body.starter-body #starter_hero .service-hero-grid{grid-template-columns:1fr 1fr;gap:64px;align-items:center}}
+@media(max-width:767px){body.starter-body #starter_hero .service-hero-grid .service-hero-copy>.service-hero-description{min-height:0}body.starter-body #starter_hero .starter-hero-contents{margin-top:28px}}
+
+/* Proposed STARTER interaction cue; follows real clicks rather than advancing on a timer. */
+body.starter-body #starter_hero .demo-steps{display:flex;justify-content:center;gap:16px;margin:0 0 12px;padding:0;list-style:none;font-size:13px;line-height:1.5;color:#727780}
+body.starter-body #starter_hero .demo-steps li{position:relative;padding-bottom:7px;border-bottom:2px solid #e5e5e5;transition:color .18s,border-color .18s}
+body.starter-body #starter_hero .demo-steps li[aria-current]{color:#57458e;border-color:#7560c9;font-weight:600}
+body.starter-body #starter_hero .demo-steps li.is-done{color:#17834e;border-color:#17834e}
+body.starter-body #starter_hero .demo-instruction{min-height:45px;margin:0;color:#4e535c;font-size:14px;line-height:1.6;word-break:keep-all}
+@media(prefers-reduced-motion:reduce){body.starter-body #starter_hero .demo-steps li{transition:none}}
+
+/* Custom slim silver frame: 6 logical px, replacing the 14 px black chassis. */
+body.starter-body #starter_hero .phonebox{aspect-ratio:402/856;overflow:visible;border:0;border-radius:17.4% / 8.2%;background:transparent;box-shadow:none;isolation:isolate}
+body.starter-body #starter_hero .phonebox::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:17.4% / 8.2%;background:linear-gradient(112deg,#a6a8b1 0%,#f8f8fc 13%,#d6d4df 27%,#fefeff 43%,#c1c3cd 67%,#f5f6fb 85%,#969aa5 100%);box-shadow:inset 0 0 0 1px #fff9,inset 0 0 0 2px #4c4f642b,0 2px 5px #22203012,0 22px 48px -18px #35304730}
+body.starter-body #starter_hero .phonebox::after{content:"";position:absolute;inset:calc(4.5px * var(--phone-scale,1));z-index:0;border:calc(1.5px * var(--phone-scale,1)) solid #21212b;border-radius:16.5% / 7.7%;pointer-events:none;background:#fff}
+body.starter-body #starter_hero .phoneview{position:absolute;z-index:1;aspect-ratio:390/844;isolation:isolate;background:#fff;overflow:clip}
+body.starter-body #starter_hero .phoneview #appframe{height:844px}
+body.starter-body #starter_hero #appframe .device{height:844px}
+body.starter-body #starter_hero #appframe .device .statusbar .notch{top:14px;width:108px;height:30px;background:#050506;box-shadow:inset 0 0 1px #39393e}
+body.starter-body #starter_hero #appframe .device .statusbar .notch::after{content:"";position:absolute;width:10px;height:10px;right:9px;top:50%;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle at 38% 30%,#34415f 0 9%,#141729 24%,#090b16 53%,#020305 72%);box-shadow:0 0 0 2px #09090b;pointer-events:none}
+
+
+
+/* Local chat demo controls remain ordinary top-level annotation targets. */
+body.starter-body #starter_hero #appframe .a-compose button{width:46px;height:46px;min-width:46px;flex:0 0 auto;border:0;border-radius:50%;background:var(--ap-primary);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+body.starter-body #starter_hero #appframe .a-compose button:disabled{opacity:.4;cursor:default}
+body.starter-body #starter_hero #appframe .a-compose button svg{width:20px;height:20px}
+body.starter-body #starter_hero .demo-steps{gap:12px}
+
+/* A transformed live app must be clipped without creating a scroll container. */
+body.starter-body #starter_hero .phoneview{overflow:clip}
+
+@media(max-width:767px){body.starter-body #starter_hero .service-hero-title{font-size:40px}body.starter-body #starter_hero .starter-hero-contents dl>div{grid-template-columns:40px minmax(0,1fr);column-gap:12px;padding:14px}body.starter-body #starter_hero .starter-card-icon{left:14px;width:40px;height:40px;border-radius:11px}body.starter-body #starter_hero .starter-hero-contents dt{font-size:17px}}

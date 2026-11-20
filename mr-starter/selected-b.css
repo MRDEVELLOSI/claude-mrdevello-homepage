@@ -1,0 +1,37 @@
+/* Selected B design: white background, yellow marker, three colored cards. */
+body.starter-body.starter-selected-b{--font-sans:"Pretendard",sans-serif;background:#fff;font-family:var(--font-sans)!important}
+body.starter-body.starter-selected-b #starter_hero#starter_hero{background:#fff!important;isolation:isolate}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .service-hero-grid{position:relative;isolation:isolate}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .service-hero-name{background:#151515;color:#fff}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .service-hero-category{color:#68686d}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents>p{color:#555961}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents>p::before{display:none}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl>div{--card-color:#1776dc;--card-tint:#eaf4ff;background:#fff;border-color:#e6e7ea;box-shadow:none}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(2){--card-color:#d95c46;--card-tint:#fff0e8}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(3){--card-color:#15896e;--card-tint:#e6f7ee}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-card-icon{color:var(--card-color);background:var(--card-tint)}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dd{color:#66686e}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .service-hero-title .starter-mark{display:inline;white-space:nowrap}
+
+/* B — graphic marker: yellow heading highlight, blue label and crisp color rails. */
+body.starter-body.starter-selected-b #starter_hero#starter_hero .service-hero-name{background:#1967d2}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-mark{position:relative;color:#171717;z-index:0;padding:0 5px}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-mark::after{content:"";position:absolute;z-index:-1;left:0;right:0;bottom:1px;height:42%;background:#ffe273;transform:rotate(-1.5deg);border-radius:3px}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl>div{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;min-height:210px;padding:66px 16px 20px;border-radius:14px;border-top:3px solid var(--card-color)}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-card-icon{top:18px;left:16px;transform:none;width:34px;height:34px;border-radius:9px}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-card-icon svg{width:21px;height:21px}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dt{line-height:1.45}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dd{line-height:1.65}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(2){--card-color:#ef805b;--card-tint:#fff0e9}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(3){--card-color:#3a9c80;--card-tint:#e7f7f0}
+
+@media(max-width:767px){
+ body.starter-body.starter-selected-b #starter_hero#starter_hero{overflow:clip}
+ body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl{grid-template-columns:1fr}
+ body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dl>div{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:12px;row-gap:3px;min-height:105px;padding:14px;border-top-width:1px;border-left:3px solid var(--card-color)}
+ body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dt,body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dd{grid-column:2}
+ body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-card-icon{top:50%;left:14px;transform:translateY(-50%);width:40px;height:40px}
+}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dt{min-height:1.45em}
+body.starter-body.starter-selected-b #starter_hero#starter_hero .starter-hero-contents dd{text-wrap:pretty}

@@ -1,0 +1,8 @@
+#team_hero .team-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;min-width:0;align-self:start}
+.team-photo{position:relative;min-width:0;overflow:hidden;border-radius:14px;background:#f2f2f2;aspect-ratio:1.3}
+.team-photo--group{grid-column:1 / -1;aspect-ratio:1.65}
+.team-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 58%}
+.team-photo--group img{object-position:center 68%}
+.team-photo--discussion img{object-position:60% center}
+@media(max-width:1023px){#team_hero .team-photo-grid{margin-top:36px}}
+@media(max-width:767px){#team_hero .team-photo-grid{gap:8px;margin-top:32px}.team-photo{border-radius:10px}}
