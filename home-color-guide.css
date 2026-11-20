@@ -115,3 +115,11 @@
 .std__row:nth-child(2) .std__img-wrap{animation-delay:-2s!important}
 .std__row:nth-child(3) .std__img-wrap{animation-delay:-4s!important}
 @media (prefers-reduced-motion:reduce){.devello-ambient [data-overview-layer] img,.std__img-wrap{animation:none!important}}
+
+/* 장식 아이콘 등장: 하나씩 뿅뿅 튀어나오는 모션 (첫 로드·모드 전환 공통) */
+@keyframes mr-pop{0%{opacity:0;transform:scale(.2)}55%{opacity:1;transform:scale(1.14)}75%{transform:scale(.94)}100%{opacity:1;transform:scale(1)}}
+.study-scene-enter [data-overview-layer]>div>div{animation:mr-pop .55s cubic-bezier(.34,1.56,.64,1) both!important;animation-delay:calc(var(--study-order,0)*90ms + 80ms)!important}
+@keyframes mr-show{to{opacity:1}}
+@media (prefers-reduced-motion:no-preference){
+ .devello-ambient:not([data-mr-ready]) [data-overview-layer]>div>div{opacity:0;animation:mr-show 0s 2.5s forwards}
+}

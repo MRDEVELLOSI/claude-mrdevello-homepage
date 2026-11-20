@@ -130,8 +130,16 @@
  }
  let mode=-1,autoTimer=0,heroVisible=true,briefFocused=false,generatedExample=null;
  function scheduleAuto(){clearTimeout(autoTimer);if(!document.hidden&&heroVisible&&!briefFocused&&!reduced.matches)autoTimer=setTimeout(()=>selectMode((mode+1)%3),Math.max(3000,typingEnds-performance.now()+2200));}
+ let firstArtwork=true;
  function changeArtwork(n){
+  if(firstArtwork){
+   firstArtwork=false;
+   // 첫 로드: 이미 그려진 장식을 갈아끼우지 않고, 아이콘을 하나씩 뿅뿅 등장시킴
+   const reuse=decorations.every(c=>c.dataset.overviewMode===(artwork[n]?.mode||'chat')&&c.querySelector('.study-artwork-scene'));
+   if(reuse){decorations.forEach(c=>{const sc=c.querySelector('.study-artwork-scene');if(!reduced.matches)sc.classList.add('study-scene-enter');c.dataset.mrReady='1';});return;}
+  }
   decorations.forEach(container=>{
+   container.dataset.mrReady='1';
    const scenes=[...container.querySelectorAll('.study-artwork-scene')];
    const previous=scenes.pop();
    scenes.forEach(scene=>scene.remove());
