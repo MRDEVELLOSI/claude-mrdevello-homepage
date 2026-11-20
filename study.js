@@ -118,16 +118,22 @@
  const phCount=[0,0,0];
  let typeTimer=0,typingEnds=0;
  function nextPlaceholder(n){const c=modes[n];if(compactBrief.matches)return c.mobilePlaceholder;const list=c.placeholders||[c.placeholder];const text=list[phCount[n]%list.length];phCount[n]++;return text;}
+ // 예시 문구: 실제 입력값으로 타이핑 → 지우면 같은 문구가 회색 placeholder로 남음
+ let autoValue='';
  function typePlaceholder(text){
-  clearTimeout(typeTimer);
-  if(reduced.matches||field.value){field.placeholder=text;typingEnds=0;return;}
+  clearTimeout(typeTimer);clearTimeout(valueTimer);
+  field.placeholder=text;
+  if(field.value&&field.value!==autoValue){typingEnds=0;return;}
+  autoValue=text;
+  if(reduced.matches){field.value=text;typingEnds=0;fitField();return;}
   const chars=[...text];let i=0;
   const delayFor=ch=>ch==='\n'?140:ch===' '?12:20;
   typingEnds=performance.now()+120+chars.reduce((a,ch)=>a+delayFor(ch)+4,0);
-  field.placeholder='';
-  const step=()=>{i++;field.placeholder=chars.slice(0,i).join('');if(i<chars.length)typeTimer=setTimeout(step,delayFor(chars[i-1])+Math.random()*8);};
+  field.value='';fitField();
+  const step=()=>{i++;field.value=chars.slice(0,i).join('');autoValue=text;fitField();if(i<chars.length)typeTimer=setTimeout(step,delayFor(chars[i-1])+Math.random()*8);};
   typeTimer=setTimeout(step,120);
  }
+ function fitField(){try{if(typeof fitBriefField==='function')fitBriefField();}catch(e){}}
  let mode=-1,autoTimer=0,heroVisible=true,briefFocused=false,generatedExample=null;
  function scheduleAuto(){clearTimeout(autoTimer);if(!document.hidden&&heroVisible&&!briefFocused&&!reduced.matches&&!form.dataset.pinned)autoTimer=setTimeout(()=>selectMode((mode+1)%3),Math.max(3000,typingEnds-performance.now()+2200));}
  // 주제 버튼 클릭 시 입력창에 좌라라락 타이핑
@@ -139,7 +145,10 @@
   const step=()=>{i=Math.min(chars.length,i+2);field.value=chars.slice(0,i).join('');field.setSelectionRange(field.value.length,field.value.length);field.scrollTop=field.scrollHeight;if(i<chars.length)valueTimer=setTimeout(step,chars[i-1]==='\n'?90:16);else if(done)done();};
   step();
  }
- field.addEventListener('input',e=>{if(e.isTrusted)clearTimeout(valueTimer);});
+ field.addEventListener('input',e=>{if(e.isTrusted){clearTimeout(valueTimer);clearTimeout(typeTimer);autoValue='';form.dataset.pinned='1';}});
+ const isExample=()=>field.value&&(field.value===autoValue||(generatedExample&&field.value===generatedExample.value)||field.value===field.placeholder);
+ field.addEventListener('pointerdown',()=>{if(isExample()&&document.activeElement!==field){clearTimeout(typeTimer);field.value=field.placeholder;requestAnimationFrame(()=>field.select());}});
+ field.addEventListener('focus',()=>{if(isExample()){clearTimeout(typeTimer);field.value=field.placeholder;requestAnimationFrame(()=>field.select());}});
  let firstArtwork=true;
  function changeArtwork(n){
   if(firstArtwork){
