@@ -1,0 +1,8 @@
+/* 구분용 회색 섹션 배경 제거 (전 페이지 공통) — 연한 컬러·어두운 섹션은 유지 */
+#ai-build,#five-questions-standard #five-questions,
+#compare,#sample,#deliver,#early,
+#pro_process,
+#team_security,#team_faq,
+#check_search_measurement,#check_deliverables,#check_faq,
+#booster_examples,#booster_faq,
+#philosophy_difference,#philosophy_practice{background:#fff!important;background-image:none!important}
