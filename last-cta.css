@@ -160,3 +160,34 @@
 #last-cta .ls-cta h2{font-size:28px}#last-cta .ls-cta__l p{font-size:15px}#last-cta .ls-cta__l .ls-cta__strong{font-size:16px}
 #last-cta .ls-cta__card{padding:24px}#last-cta .ls-cta__ct{font-size:22px}
 }
+
+/* 가운데 정렬 · 상단 문구 강조 · 서비스 제목 확대 · BOOSTER 노랑 */
+#last-cta .ls-intro{align-items:center;text-align:center}
+#last-cta .ls-quote{font-size:21px;gap:12px}
+#last-cta .ls-bubble{height:48px;padding:0 22px;font-size:21px;background:#10a0e8}
+#last-cta .ls-quote span:not(.ls-bubble){color:#111!important;font-weight:700}
+#last-cta .ls-quote b{color:#10a0e8!important;font-weight:800;box-shadow:inset 0 -.35em #e2f4fc;padding:0 .08em}
+#last-cta .ls-sub{align-items:center;text-align:center}
+#last-cta .ls-h2{font-size:40px}
+#last-cta .ls-svc[data-i="4"].is-on .ls-svc__sit{color:#111!important}
+#last-cta .ls-svc[data-i="4"].is-on .ls-svc__no,#last-cta .ls-svc[data-i="4"].is-on .ls-svc__name{color:rgba(17,17,17,.7)!important}
+#last-cta .ls-svc[data-i="4"]:not(.is-on) .ls-svc__no,#last-cta .ls-svc[data-i="4"]:not(.is-on) .ls-svc__name{color:#b07f00!important}
+#last-cta .ls-det[data-i="4"] .ls-det__h b{color:#d99f00!important}
+@media (max-width:700px){
+#last-cta .ls-quote{font-size:16px;flex-wrap:wrap;justify-content:center}
+#last-cta .ls-bubble{height:40px;font-size:16px;padding:0 16px}
+#last-cta .ls-h2{font-size:28px}
+}
+
+/* 마무리 파란 박스 — 본문 폭 안에서만 (좌우 침범 없음) */
+#last-cta{padding-bottom:120px}
+#last-cta .ls-cta{padding:0}
+#last-cta .ls-cta__in{width:min(1200px,calc(100% - 48px));max-width:none;border-radius:36px;padding:72px 64px}
+#last-cta .ls-cta__grid{width:100%;grid-template-columns:minmax(0,1fr) 400px;gap:48px}
+#last-cta .ls-fl{display:none}
+#last-cta .ls-cta__in::before,#last-cta .ls-cta__in::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+#last-cta .ls-cta__in::before{width:420px;height:420px;right:-120px;top:-160px;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 70%)}
+#last-cta .ls-cta__in::after{width:300px;height:300px;left:-90px;bottom:-140px;background:radial-gradient(circle,rgba(252,212,72,.22),transparent 70%)}
+@media (max-width:1100px){#last-cta .ls-cta__grid{grid-template-columns:1fr}#last-cta .ls-cta__in{padding:56px 44px}}
+@media (max-width:700px){#last-cta{padding-bottom:64px}#last-cta .ls-cta__in{width:calc(100% - 40px);padding:40px 22px;border-radius:24px}}
+@media (max-width:700px){#last-cta .ls-cta__l p br{display:inline}}
