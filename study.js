@@ -113,8 +113,23 @@
   }
 ];
  const palettes=[['#10a0e8','#fcd448'],['#04b84c','#10a0e8'],['#ceb0fb','#10a0e8']];
+ // 확장 모드 예시 문구: 번갈아 가며 타이핑
+ modes[2].placeholders=["회사에서도 AI를 활용하고 싶은데 어디부터 시작할지 모르겠어요.\n영업 자료 정리와 고객 응대에 직원들이 시간을 많이 쓰고 있습니다.\n우리 업무를 살펴보고 효과가 있을 만한 과제를 찾아주실 수 있나요?\n작은 범위로 먼저 검증하고 괜찮으면 확대해 보고 싶어요.",modes[2].placeholder];
+ const phCount=[0,0,0];
+ let typeTimer=0,typingEnds=0;
+ function nextPlaceholder(n){const c=modes[n];if(compactBrief.matches)return c.mobilePlaceholder;const list=c.placeholders||[c.placeholder];const text=list[phCount[n]%list.length];phCount[n]++;return text;}
+ function typePlaceholder(text){
+  clearTimeout(typeTimer);
+  if(reduced.matches||field.value){field.placeholder=text;typingEnds=0;return;}
+  const chars=[...text];let i=0;
+  const delayFor=ch=>ch==='\n'?140:ch===' '?12:20;
+  typingEnds=performance.now()+120+chars.reduce((a,ch)=>a+delayFor(ch)+4,0);
+  field.placeholder='';
+  const step=()=>{i++;field.placeholder=chars.slice(0,i).join('');if(i<chars.length)typeTimer=setTimeout(step,delayFor(chars[i-1])+Math.random()*8);};
+  typeTimer=setTimeout(step,120);
+ }
  let mode=-1,autoTimer=0,heroVisible=true,briefFocused=false,generatedExample=null;
- function scheduleAuto(){clearTimeout(autoTimer);if(!document.hidden&&heroVisible&&!briefFocused&&!reduced.matches)autoTimer=setTimeout(()=>selectMode((mode+1)%3),3000);}
+ function scheduleAuto(){clearTimeout(autoTimer);if(!document.hidden&&heroVisible&&!briefFocused&&!reduced.matches)autoTimer=setTimeout(()=>selectMode((mode+1)%3),Math.max(3000,typingEnds-performance.now()+2200));}
  function changeArtwork(n){
   decorations.forEach(container=>{
    const scenes=[...container.querySelectorAll('.study-artwork-scene')];
@@ -141,7 +156,7 @@
  function renderBrief(n){
   const config=modes[n];
   form.querySelector('label').textContent=config.label;
-  field.placeholder=compactBrief.matches?config.mobilePlaceholder:config.placeholder;
+  typePlaceholder(nextPlaceholder(n));
   form.querySelector('.devello-form-bottom p').textContent=config.helper;
   form.querySelector('.devello-brief-submit').firstChild.textContent=config.cta+' ';
   topics.replaceChildren(...config.topics.map((topic,i)=>{
