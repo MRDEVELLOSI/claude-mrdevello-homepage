@@ -180,3 +180,10 @@
 #five-questions-standard .close__b{font-size:24px}
 #five-questions-standard .close__b .kw{box-shadow:inset 0 -8px 0 #fcd448}
 }
+
+/* 다섯 질문 컬러 = 마무리 ‘네’ 말풍선 컬러 순서 (파랑·노랑·주황·초록·연보라) */
+#five-questions-standard .q:nth-child(1),#five-questions-standard #fq-panel[data-question="0"]{--accent:#10a0e8;--tint:color-mix(in srgb,#10a0e8 12%,white)}
+#five-questions-standard .q:nth-child(2),#five-questions-standard #fq-panel[data-question="1"]{--accent:#fcd448;--tint:color-mix(in srgb,#fcd448 18%,white)}
+#five-questions-standard .q:nth-child(3),#five-questions-standard #fq-panel[data-question="2"]{--accent:#fc6c28;--tint:color-mix(in srgb,#fc6c28 12%,white)}
+#five-questions-standard .q:nth-child(4),#five-questions-standard #fq-panel[data-question="3"]{--accent:#04b84c;--tint:color-mix(in srgb,#04b84c 12%,white)}
+#five-questions-standard .q:nth-child(5),#five-questions-standard #fq-panel[data-question="4"]{--accent:#ceb0fb;--tint:color-mix(in srgb,#ceb0fb 22%,white)}
