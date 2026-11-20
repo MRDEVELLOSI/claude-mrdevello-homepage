@@ -1,13 +1,9 @@
-/* 구분용 회색 섹션 배경 제거 (전 페이지 공통) — 연한 컬러·어두운 섹션은 유지 */
+/* 구분용 회색 섹션 배경 — 기존(#f5~f7)보다 아주 연하게 (전 페이지 공통) */
 #ai-build,#five-questions-standard #five-questions,
 #compare,#sample,#deliver,#early,
 #pro_process,
 #team_security,#team_faq,
 #check_search_measurement,#check_deliverables,#check_faq,
 #booster_examples,#booster_faq,
-#philosophy_difference,#philosophy_practice{background:#fff!important;background-image:none!important}
+#philosophy_difference,#philosophy_practice{background:#fbfbfb!important;background-image:none!important}
 
-/* 섹션 구분선 — 좌우 여백을 둔 얇은 선 (메인) */
-#ai-build,#why,#five-questions,#development-standard{position:relative}
-#ai-build::before,#why::before,#five-questions::before,#development-standard::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(1120px,calc(100% - 80px));height:1px;background:#e6e8ea;z-index:1;pointer-events:none}
-@media (max-width:700px){#ai-build::before,#why::before,#five-questions::before,#development-standard::before{width:calc(100% - 40px)}}
