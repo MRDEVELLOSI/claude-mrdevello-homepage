@@ -64,3 +64,7 @@
 @keyframes ai-build-model-pick{0%,31%{background:#fff;border-color:var(--dot);color:#111;box-shadow:0 4px 12px rgba(0,0,0,.08);transform:translateY(-1px)}34%,97%{background:#f3f5f7;border-color:#e7ebee;color:#3d4043;box-shadow:none;transform:none}100%{background:#fff;border-color:var(--dot);color:#111}}
 @media (max-width:600px){.ai-build__model{font-size:11px;height:26px}.ai-build__model-dot{width:18px;height:18px;font-size:10px}}
 @media (prefers-reduced-motion:reduce){.ai-build__model{animation:none}}
+
+.ai-build__model-dot{background:#fff;border:1px solid #e3e7ea}
+.ai-build__model-dot img{width:14px;height:14px;display:block}
+@media (max-width:600px){.ai-build__model-dot img{width:12px;height:12px}}
