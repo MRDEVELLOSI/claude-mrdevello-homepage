@@ -1,0 +1,4 @@
+# Netlify 배포 설정 — 빌드 없이 폴더 그대로 배포
+[build]
+  publish = "."
+  command = ""
