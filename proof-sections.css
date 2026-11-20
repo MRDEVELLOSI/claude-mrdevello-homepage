@@ -168,3 +168,101 @@
 #proof-sections .pf3-basis summary{color:#888!important}
 #proof-sections .pf-btn--dark .pf-btn__ic,#proof-sections .pf2-links a *{color:inherit!important}
 #proof-sections .pf3-count{white-space:nowrap}
+
+/* ===== 위 섹션들과 글자 크기 통일 (h2 40 / 소제목 32 / 본문 16) + 06 이미지 비율 ===== */
+#proof-sections .pf{padding:120px 0}
+#proof-sections .pf-intro{margin-bottom:96px}
+#proof-sections .pf-intro__h{font-size:40px;font-weight:650;line-height:1.28;margin-bottom:16px}
+#proof-sections .pf-intro__p{font-size:16px;margin-bottom:32px}
+#proof-sections .pf-pill{height:46px;font-size:15px;padding:0 20px}
+#proof-sections .pf-pill:hover,#proof-sections .pf-pill.is-on{padding:0 19px}
+#proof-sections .pf-pill span{font-size:12px}
+#proof-sections .pf-eyebrow{height:30px;font-size:13px;padding:0 12px}
+#proof-sections .pf-head{margin-bottom:44px}
+#proof-sections .pf-head__l{gap:14px}
+#proof-sections .pf-h2{font-size:32px;font-weight:650;line-height:1.35}
+#proof-sections .pf-lead{font-size:16px}
+#proof-sections .pf1-row{grid-template-columns:96px minmax(0,1fr) 300px;padding:24px 0}
+#proof-sections .pf1-no{font-size:36px}
+#proof-sections .pf1-t{font-size:22px;font-weight:600}
+#proof-sections .pf1-d{font-size:15px}
+#proof-sections .pf1-c{font-size:13px}
+#proof-sections .pf1-row img{height:169px;object-fit:contain;background:#fff}
+#proof-sections .pf2-lab{font-size:32px;font-weight:700}
+#proof-sections .pf2-no{font-size:18px}
+#proof-sections .pf2-btn{padding:16px 0}
+#proof-sections .pf2-it.is-open .pf2-btn{padding:28px 0 18px}
+#proof-sections .pf2-ti{font-size:16px}
+#proof-sections .pf2-hd{font-size:23px;font-weight:600}
+#proof-sections .pf2-links a{height:40px;font-size:14px;padding:0 16px}
+#proof-sections .pf2-panel__in{grid-template-columns:minmax(0,1fr) 340px}
+#proof-sections .pf2-panel img{width:340px;height:220px;transform:rotate(-3deg) translateY(-72px)}
+#proof-sections .pf3-name b{font-size:16px}
+#proof-sections .pf3-name small{font-size:13px}
+#proof-sections .pf3-count{height:44px;font-size:18px;padding:0 16px}
+#proof-sections .pf3-bar{height:44px}
+#proof-sections .pf3-fill{height:14px}
+#proof-sections .pf3-stats b{font-size:17px}
+#proof-sections .pf3-stats em{font-size:13px}
+#proof-sections .pf3-note{font-size:17px}
+#proof-sections .pf3-basis,#proof-sections .pf-btn{font-size:14px}
+#proof-sections .pf4-body h3{font-size:17px}
+#proof-sections .pf4-body p{font-size:14px}
+#proof-sections .pf4-tag{font-size:12px;height:26px}
+@media (max-width:1100px){
+#proof-sections .pf1-row{grid-template-columns:72px minmax(0,1fr) 220px}
+#proof-sections .pf1-row img{width:220px;height:124px}
+#proof-sections .pf2-panel__in{grid-template-columns:minmax(0,1fr) 280px}
+#proof-sections .pf2-panel img{width:280px;height:182px;transform:rotate(-3deg) translateY(-50px)}
+#proof-sections .pf2-lab{font-size:28px}
+}
+@media (max-width:700px){
+#proof-sections .pf{padding:64px 0}
+#proof-sections .pf-intro{margin-bottom:56px}
+#proof-sections .pf-intro__h{font-size:28px}
+#proof-sections .pf-intro__p{font-size:15px;margin-bottom:22px}
+#proof-sections .pf-pill{height:38px;font-size:13px;padding:0 13px}
+#proof-sections .pf-pill:hover,#proof-sections .pf-pill.is-on{padding:0 12px}
+#proof-sections .pf-eyebrow{height:28px;font-size:12px}
+#proof-sections .pf-h2{font-size:24px}
+#proof-sections .pf-lead{font-size:15px}
+#proof-sections .pf-head{margin-bottom:28px}
+#proof-sections .pf1-row{grid-template-columns:44px minmax(0,1fr)}
+#proof-sections .pf1-row img{width:100%;height:auto;aspect-ratio:16/9}
+#proof-sections .pf1-no{font-size:24px}
+#proof-sections .pf1-t{font-size:18px}
+#proof-sections .pf1-d{font-size:14px}
+#proof-sections .pf2-lab{font-size:21px}
+#proof-sections .pf2-no{font-size:15px}
+#proof-sections .pf2-panel__in{grid-template-columns:1fr}
+#proof-sections .pf2-panel img{width:100%;height:auto;transform:rotate(-2deg)}
+#proof-sections .pf2-hd{font-size:20px}
+#proof-sections .pf2-ti{font-size:14px}
+#proof-sections .pf3-count{font-size:15px;height:38px;padding:0 12px}
+#proof-sections .pf3-bar{height:38px}
+#proof-sections .pf3-stats b{font-size:15px}
+#proof-sections .pf3-stats em{font-size:12px}
+#proof-sections .pf3-note{font-size:15px}
+#proof-sections .pf4-body h3{font-size:14px}
+#proof-sections .pf4-body p{font-size:12px}
+#proof-sections .pf4-tag{font-size:11px;height:22px}
+}
+
+/* 07 공신력 — 사진 크게, 펼친 띠 위아래 패딩 동일 */
+#proof-sections .pf3-foot{justify-content:flex-end}
+@media (min-width:701px){
+#proof-sections .pf2-it.is-open{padding:44px 0;min-height:428px}
+#proof-sections .pf2-it.is-open .pf2-btn{padding:0 0 18px}
+#proof-sections .pf2-panel{position:static!important}
+#proof-sections .pf2-panel__in{grid-template-columns:1fr;padding-right:560px}
+#proof-sections .pf2-it.is-open .pf2-panel__in{padding-bottom:0}
+#proof-sections .pf2-panel img{position:absolute;right:0;top:50%;width:500px;height:340px;transform:translateY(-50%) rotate(-3deg);visibility:hidden}
+#proof-sections .pf2-it.is-open .pf2-panel img{visibility:visible}
+}
+@media (min-width:701px) and (max-width:1100px){
+#proof-sections .pf2-it.is-open{min-height:356px;padding:40px 0}
+#proof-sections .pf2-panel__in{padding-right:400px}
+#proof-sections .pf2-panel img{width:370px;height:260px;transform:translateY(-50%) rotate(-3deg)}
+}
+#proof-sections .pf2-copy{position:relative;z-index:1}
+#proof-sections .pf2-panel img{z-index:1}
