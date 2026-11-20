@@ -123,3 +123,15 @@
 @media (prefers-reduced-motion:no-preference){
  .devello-ambient:not([data-mr-ready]) [data-overview-layer]>div>div{opacity:0;animation:mr-show 0s 2.5s forwards}
 }
+
+/* 상단 입력창: 모드별 컬러 라벨·아이콘·안내 문구 */
+.devello-project-form,.devello-project-form[data-mode="0"]{--mm:#10a0e8;--mm-soft:#e3f4fd;--mm-ink:#0b5f8a;--mm-line:#cfeafa;--mm-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310a0e8' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 7l-5 5 5 5M16 7l5 5-5 5'/%3E%3C/svg%3E")}
+.devello-project-form[data-mode="1"]{--mm:#04b84c;--mm-soft:#e2f7ea;--mm-ink:#0a6b30;--mm-line:#c9eed7;--mm-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2304b84c' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z'/%3E%3Cpath d='M9 12l2 2 4-4'/%3E%3C/svg%3E")}
+.devello-project-form[data-mode="2"]{--mm:#9b6ef3;--mm-soft:#f0e8fe;--mm-ink:#5b3fb5;--mm-line:#e2d4fc;--mm-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239b6ef3' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v4M12 17v4M3 12h4M17 12h4'/%3E%3Cpath d='M7 7l2.5 2.5M14.5 14.5L17 17M17 7l-2.5 2.5M9.5 14.5L7 17'/%3E%3C/svg%3E")}
+.devello-project-form{border-color:var(--mm-line);transition:border-color .3s ease,box-shadow .3s ease}
+.devello-project-form label{display:flex;align-items:center;gap:8px;color:var(--mm-ink);font-weight:700;transition:color .3s ease}
+.devello-project-form label::before{content:"";flex:none;width:24px;height:24px;border-radius:8px;background:var(--mm-soft) var(--mm-icon) center/15px no-repeat;transition:background-color .3s ease}
+.devello-form-bottom p{display:flex;align-items:center;gap:7px;color:var(--mm-ink);font-weight:600;transition:color .3s ease}
+.devello-form-bottom p::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--mm);box-shadow:0 0 0 4px var(--mm-soft)}
+.devello-project-form label{display:inline-flex;width:auto;padding:5px 14px 5px 5px;border-radius:999px;background:var(--mm-soft);font-size:13px;transition:background-color .3s ease,color .3s ease}
+.devello-project-form label::before{background-color:#fff}

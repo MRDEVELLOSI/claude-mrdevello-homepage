@@ -163,7 +163,7 @@
  }
  function renderBrief(n){
   const config=modes[n];
-  form.querySelector('label').textContent=config.label;
+  form.dataset.mode=String(n);form.querySelector('label').textContent=config.label;
   typePlaceholder(nextPlaceholder(n));
   form.querySelector('.devello-form-bottom p').textContent=config.helper;
   form.querySelector('.devello-brief-submit').firstChild.textContent=config.cta+' ';
