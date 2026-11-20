@@ -104,3 +104,14 @@
 .devello-brief-topics[data-mode="2"] button{background:#f8f4ff;border-color:#e6dafd;color:#5a4a7a}
 .devello-brief-topics[data-mode="2"] button:hover{background:#f0e8fe;color:#5b3fb5}
 .devello-brief-topics[data-mode="2"] button[aria-pressed="true"]{background:#e9dcfe;border-color:#b48cf2;color:#5b3fb5}
+
+/* 3D 아이콘: 둥둥 떠다니는 느낌 (상단 장식 아이콘 + '기술은 달라졌지만' 01·02·03 아이콘) */
+@keyframes mr-float{0%{transform:translate(0,0) rotate(0deg)}25%{transform:translate(4px,-12px) rotate(2.5deg)}50%{transform:translate(0,-20px) rotate(0deg)}75%{transform:translate(-4px,-10px) rotate(-2.5deg)}100%{transform:translate(0,0) rotate(0deg)}}
+.devello-ambient [data-overview-layer] img{animation:mr-float 6.5s ease-in-out infinite;will-change:transform}
+.devello-ambient [data-overview-layer]:nth-child(2n) img{animation-duration:7.5s;animation-delay:-2s}
+.devello-ambient [data-overview-layer]:nth-child(3n) img{animation-duration:8.5s;animation-delay:-4s}
+.devello-ambient [data-overview-layer*="-mark-"] img{animation:none}
+.std__img-wrap{animation:mr-float 6s ease-in-out infinite!important}
+.std__row:nth-child(2) .std__img-wrap{animation-delay:-2s!important}
+.std__row:nth-child(3) .std__img-wrap{animation-delay:-4s!important}
+@media (prefers-reduced-motion:reduce){.devello-ambient [data-overview-layer] img,.std__img-wrap{animation:none!important}}
