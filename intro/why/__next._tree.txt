@@ -1,5 +1,6 @@
 :HL["/study.css?v=d9481bc169","style"]
-:HL["/intro/why/why.css?v=1","style"]
+:HL["/intro/why/why.css?v=2","style"]
+:HL["/intro/why/quality.css?v=1","style"]
 :HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/page-experience.0be3a66ff9a5.css","style"]
 :HL["/no-gray-sections.css","style"]
@@ -9,4 +10,4 @@
 3:[["children",{"s":"why","h":96,"c":"$Q4"}]]
 2:[["children",{"s":"intro","h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(why)","h":48,"c":"$Q2"}]]
-0:{"b":"pHmJi6tdOIkafPoGiX043","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"VUdAMDCHlvzvcb-7qIuW_","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

@@ -11,7 +11,15 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/intro/why/why.css?v=1"
+   "href": "/intro/why/why.css?v=2"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/intro/why/quality.css?v=1"
   },
   "inner": null
  },
@@ -19,7 +27,7 @@
   "tag": "script",
   "attrs": {
    "defer": "",
-   "src": "/intro/why/why.js?v=1"
+   "src": "/intro/why/why.js?v=2"
   },
   "inner": null
  },
