@@ -429,3 +429,6 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-prob-ic{width:112px;height:112px}
 @media (max-width:1439px){.st-ch-deco{width:96px;height:96px}}
 @media (max-width:767px){.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{width:84px;height:84px}.st-prob-ic{width:88px;height:88px}}
+/* 문제 카드 — 메인 인물 일러스트 장면 (3D 아이콘 대체) */
+.st-page .st-prob-art.st-prob-ill{height:auto;background:none;border-radius:20px;overflow:hidden}
+.st-page .st-prob-ill svg{display:block;width:100%;height:auto}
