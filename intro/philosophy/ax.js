@@ -1,7 +1,7 @@
 (()=>{
  const root=document.querySelector('.axp');if(!root||!('IntersectionObserver' in window))return;
  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
- const sel='.ax .axlogo,.ax h1,.ax h2,.ax h3,.ax section p,.ax section [style*="display:grid"]>*,.ax .axbd,.ax .axq,.ax .bk,.ax section [style*="display:flex;align-items:center;justify-content:center;gap:24px"]>*,.ax section [style*="display:flex;align-items:stretch"]>*,.ax section [style*="position:relative;height:380px"]>*,.ax section [style*="display:flex;align-items:center;gap:20px"]>*,.ax section [style*="justify-content:center;align-items:flex-end;gap:120px"]>*,.ax section [style*="width:720px"],.ax section [style*="width:760px"],.ax section [style*="border-radius:40px"]';
+ const sel='.ax .axlogo,.ax .axinq-c,.ax h1,.ax h2,.ax h3,.ax section p,.ax section [style*="display:grid"]>*,.ax .axbd,.ax .axq,.ax .bk,.ax section [style*="display:flex;align-items:center;justify-content:center;gap:24px"]>*,.ax section [style*="display:flex;align-items:stretch"]>*,.ax section [style*="position:relative;height:380px"]>*,.ax section [style*="display:flex;align-items:center;gap:20px"]>*,.ax section [style*="justify-content:center;align-items:flex-end;gap:120px"]>*,.ax section [style*="width:720px"],.ax section [style*="width:760px"],.ax section [style*="border-radius:40px"]';
  const tagged=[];
  root.querySelectorAll(sel).forEach(el=>{if(el.closest('.sr'))return;el.classList.add('sr');tagged.push(el);});
  // 같은 부모 안 형제끼리 순차 딜레이
