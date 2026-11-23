@@ -211,5 +211,13 @@
    "href": "/mobile-fit.css?v=3"
   },
   "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/tail-motion.css?v=1"
+  },
+  "inner": null
  }
 ]

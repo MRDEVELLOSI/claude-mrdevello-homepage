@@ -432,10 +432,15 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 /* 문제 카드 — 메인 인물 일러스트 장면 (3D 아이콘 대체) */
 .st-page .st-prob-art.st-prob-ill{height:auto;background:none;border-radius:20px;overflow:hidden}
 .st-page .st-prob-ill svg{display:block;width:100%;height:auto}
-/* CTA 3D 아이콘 — 작게 3개 */
-.st-cta .st-deco{width:96px;height:96px}
-.st-cta-i1{left:12%;top:56px;transform:rotate(-10deg)}
-.st-cta-i2{right:11%;top:64px;left:auto;bottom:auto;transform:rotate(8deg)}
-.st-cta-i3{right:7%;bottom:44px;width:84px!important;height:84px!important}
-@media (max-width:1023px){.st-cta .st-deco{width:72px;height:72px}.st-cta-i1{left:24px;top:24px}.st-cta-i2{right:24px;top:28px}.st-cta-i3{right:18px;bottom:8px;width:54px!important;height:54px!important}}
-@media (max-width:767px){.st-cta .st-deco{width:48px;height:48px}.st-cta-i1{left:14px;top:14px}.st-cta-i2{right:14px;top:16px}.st-cta-i3{right:12px;bottom:10px;width:44px!important;height:44px!important}}
+/* CTA 3D 아이콘 — 메인 데코 아이콘(말풍선·화면·로켓) */
+.st-cta .st-deco{width:112px;height:112px;filter:drop-shadow(0 14px 22px rgba(120,80,0,.18))}
+.st-cta-i1{left:11%;top:52px;transform:rotate(-8deg)}
+.st-cta-i2{right:10%;top:48px;left:auto;bottom:auto;transform:rotate(6deg)}
+.st-cta-i3{right:6%;bottom:36px;width:96px!important;height:96px!important;transform:rotate(12deg)}
+@media (prefers-reduced-motion:no-preference){
+  .st-cta .st-deco{animation:st-cta-bob 3.6s ease-in-out infinite alternate}
+  .st-cta-i2{animation-delay:.6s!important}.st-cta-i3{animation-delay:1.2s!important}
+}
+@keyframes st-cta-bob{to{translate:0 -10px}}
+@media (max-width:1023px){.st-cta .st-deco{width:80px;height:80px}.st-cta-i1{left:20px;top:20px}.st-cta-i2{right:20px;top:24px}.st-cta-i3{right:16px;bottom:6px;width:60px!important;height:60px!important}}
+@media (max-width:767px){.st-cta .st-deco{width:54px;height:54px}.st-cta-i1{left:10px;top:10px}.st-cta-i2{right:10px;top:12px}.st-cta-i3{right:8px;bottom:6px;width:46px!important;height:46px!important}}
