@@ -198,4 +198,36 @@
       sx = null;
     });
   }
+
+  /* ---------- 스크롤 등장 애니메이션 (대표이야기와 동일) ---------- */
+  (() => {
+    if (!('IntersectionObserver' in window) || reduceMQ.matches) return;
+    const page = document.querySelector('.wy-page');
+    if (!page) return;
+    const groups = [
+      ['.wy-bubble, .wy-h1, .wy-hero-sub', 'up'], ['.wy-kw', 'up'], ['.wy-hero .wy-deco', 'pop'],
+      ['.wy-rhead > *, .wy-index .wy-h2, .wy-case-l, .wy-case .wy-h3, .wy-case-note', 'up'],
+      ['.wy-cards > li', 'up'], ['.wy-photo', 'photo'], ['.wy-stat, .wy-cmp-box', 'up'],
+      ['.wy-q, .wy-big', 'up'], ['.wy-tl-row .kk', 'bub'], ['.wy-tl-note', 'up'], ['.wy-win', 'panel'], ['.wy-case .wy-textlink', 'up'],
+      ['.mrd-quality__description', 'up'], ['.mrd-quality__rail', 'fade'],
+      ['.wy-phases > li', 'up'], ['.wy-meet', 'panel'],
+      ['.wy-race', 'panel'], ['.wy-rate, .wy-voices', 'up'], ['.wy-voice-list > li', 'bub'], ['.wy-slas > li', 'up'], ['.wy-sla-foot', 'fade'],
+      ['.wy-cta', 'panel'],
+    ];
+    const seen = new Set();
+    groups.forEach(([sel, kind]) => page.querySelectorAll(sel).forEach((el) => {
+      if (seen.has(el)) return; seen.add(el); el.dataset.sr = kind;
+    }));
+    document.documentElement.classList.add('wy-anim');
+    const io = new IntersectionObserver((entries) => {
+      const shown = entries.filter((e) => e.isIntersecting).map((e) => e.target)
+        .sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+      shown.forEach((el, i) => {
+        el.style.setProperty('--d', Math.min(i * 0.07, 0.7).toFixed(2) + 's');
+        el.classList.add('is-in');
+        io.unobserve(el);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    page.querySelectorAll('[data-sr]').forEach((el) => io.observe(el));
+  })();
 })();
