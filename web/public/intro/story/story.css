@@ -349,3 +349,8 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-client-heart{position:absolute;right:-14px;bottom:-14px;width:42px;height:42px;border-radius:999px;background:var(--red);color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center;transform:rotate(-8deg);box-shadow:0 8px 18px rgba(247,92,102,.3)}
 .st-client figcaption{margin:8px 0 0 30px;font-size:14px;font-weight:700;color:var(--mut)}
 @media (max-width:767px){.st-client-bub{margin-left:16px;padding:24px 22px;font-size:20px}.st-client-av{width:44px;height:44px}.st-client figcaption{margin-left:16px}}
+/* ── 04: 제목 한 줄 폭 확보, 문단 3단 ── */
+.st-split-c4{grid-template-columns:1fr;gap:28px}
+.st-split-c4>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.st-split-c4>div .st-p{margin-top:0!important}
+@media (max-width:1023px){.st-split-c4>div{grid-template-columns:1fr;gap:12px}}
