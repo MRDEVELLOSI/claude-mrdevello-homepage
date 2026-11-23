@@ -145,3 +145,10 @@
 #why-3 .is-active .mrd-quality__frame{filter:drop-shadow(0 30px 40px rgba(17,17,17,.18))}
 #why-3 .mrd-quality__progress{background:#e3e6ea;height:3px;border-radius:3px}
 #why-3 .mrd-quality__progress>span{background:var(--q-coral)}
+/* 섹션 머리: 다른 섹션과 같은 간격 */
+#why-3 .wy-rhead .wy-strike{margin-top:18px}
+#why-3 .wy-rhead .wy-h2{margin-top:10px}
+#why-3 .wy-rhead .wy-sub{margin-top:16px}
+/* 카운트·진행바: 프로젝트 고유색 */
+#why-3 .mrd-quality__count b{color:color-mix(in srgb,var(--case-accent) 78%,#000)}
+#why-3 .mrd-quality__progress>span{background:var(--case-accent)}
