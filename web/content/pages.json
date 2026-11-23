@@ -91,7 +91,7 @@
     "slug": "philosophy",
     "route": "/intro/philosophy/",
     "title": "철학 · 의뢰한 대로가 아닌, 의도한 대로 | 미스터디벨로",
-    "description": "AI 시대에도 핵심은 구현이 아니라 소통. 말귀를 못 알아듣는 개발사와 AI 사이에서, 기획 720시간과 매주 정기미팅으로 의도를 찾는 미스터디벨로의 개발 철학.",
+    "description": "AI 시대에도 핵심은 구현이 아니라 소통. 의도를 파악하지 못한 구현이 만드는 문제와, 기획 720시간·매주 정기미팅으로 의도부터 확인하는 미스터디벨로의 개발 철학.",
     "ogImage": "/assets/navigation/philosophy-3d.png",
     "icon": "/assets/navigation/philosophy-3d.png",
     "bodyClass": "ph-body-page",
