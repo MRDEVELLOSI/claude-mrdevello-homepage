@@ -337,3 +337,5 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 @media (max-width:767px){.st-ch{margin-top:20px}.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{top:-18px;right:16px;width:72px;height:72px}}
 
 .st-boss-call{color:#9a9a9a;font-size:.8em}
+.st-resolve{margin-top:48px;text-align:center}.st-resolve .st-end{margin-top:0!important}.st-resolve-sub{margin-top:12px!important;font-size:18px;font-weight:600;color:var(--mut)}
+@media (max-width:767px){.st-resolve{margin-top:36px}.st-resolve-sub{font-size:15px}}
