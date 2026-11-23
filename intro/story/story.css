@@ -335,3 +335,5 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-sim-ic{width:38px;height:38px;border-radius:12px}
 @media (max-width:1279px){.st-sim{grid-template-columns:1fr}}
 @media (max-width:767px){.st-ch{margin-top:20px}.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{top:-18px;right:16px;width:72px;height:72px}}
+
+.st-boss-call{color:#9a9a9a;font-size:.8em}
