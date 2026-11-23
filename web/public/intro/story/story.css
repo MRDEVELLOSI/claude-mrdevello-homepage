@@ -420,4 +420,4 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-anim [data-sr=popR]{translate:80px 0;scale:.2;rotate:24deg;filter:none;transition:opacity .5s ease var(--d,0s),translate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),scale .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),rotate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s)}
 .st-anim [data-sr=popL].is-in,.st-anim [data-sr=popR].is-in{rotate:0deg}
 .st-anim .st-ch-icon[data-sr]{scale:.2;rotate:18deg;transition:opacity .5s ease var(--d,0s),scale .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),rotate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s)}
-.st-anim .st-ch-icon[data-sr].is-in{rotate:0deg}
+.st-anim .st-ch-icon[data-sr].is-in{scale:1;rotate:0deg;opacity:1}
