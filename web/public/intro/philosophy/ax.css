@@ -76,3 +76,8 @@
  .axp [style*="padding:110px 0"]{padding:0!important}.axp [style*="padding:110px 0"]>[aria-hidden]{display:none}
  .axp [style*="gap:120px"]{gap:24px!important}
 }
+
+/* PC: 최상단 섹션을 메인처럼 한 화면(100vh - 헤더 64px) 높이로, 최소 656px */
+@media (min-width:1024px){
+  .ax>section:first-child{box-sizing:border-box;min-height:max(656px,calc(100vh - 64px));min-height:max(656px,calc(100dvh - 64px));display:flex;flex-direction:column;justify-content:center;padding-top:48px!important;padding-bottom:48px!important}
+}

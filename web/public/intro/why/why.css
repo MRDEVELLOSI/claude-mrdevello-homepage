@@ -423,3 +423,8 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
   .wy-deco-1{top:14%}.wy-deco-2{top:11%}
   .wy-deco-3{top:auto;bottom:13%}.wy-deco-4{top:auto;bottom:10%}
 }
+.wy-cta-s{line-height:1.7}
+.wy-cta-ch{display:flex;flex-wrap:wrap;gap:8px}
+.wy-page .wy-cta-ch a{height:40px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;font-size:14px;font-weight:700;display:inline-flex;align-items:center;gap:6px;transition:background .2s}
+.wy-page .wy-cta-ch a:hover{background:rgba(255,255,255,.28)}
+@media (max-width:700px){.wy-cta-s br{display:none}}
