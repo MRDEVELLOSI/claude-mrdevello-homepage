@@ -12,7 +12,7 @@
     ['.st-collage figure, .st-office, .st-team, .st-board', 'photo'],
     ['.st-boss figcaption, .st-client-who', 'up'], ['.st-boss-bub, .st-client-bub', 'bub'], ['.st-boss-me', 'bub'],
     ['.st-sim-lbls > *, .st-sim-card', 'up'], ['.st-sim-n', 'pop'],
-    ['.st-ask > *, .st-probs li, .st-tl li, .st-cta-box', 'up'], ['.st-cta .st-deco', 'pop'],
+    ['.st-ask-lead, .st-probs li, .st-tl li, .st-cta-box', 'up'], ['.st-think-who, .st-think-dots i, .st-think-ic, .st-think-q', 'pop'], ['.st-think-bub', 'bub'], ['.st-cta .st-deco', 'pop'],
   ];
   const seen = new Set();
   groups.forEach(([sel, kind]) => page.querySelectorAll(sel).forEach(el => {
