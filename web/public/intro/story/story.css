@@ -405,3 +405,19 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-think-avw{display:block;width:112px;height:112px;border-radius:999px;overflow:hidden;border:5px solid #fff;box-shadow:0 12px 28px rgba(0,0,0,.12);background:#dfe9f3}
 .st-think-avw .st-think-av{width:100%;height:100%;border:0;box-shadow:none;border-radius:0;object-fit:cover;object-position:50% 0;transform:scale(1.75);transform-origin:50% 44%}
 @media (max-width:767px){.st-think-avw{width:84px;height:84px}.st-think-bub .st-ask-q br{display:none}.st-think-q1{left:10px}}
+/* ── 챕터 3D 아이콘: 더 크게, 좌우로 여러 개 ── */
+.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{width:150px;height:150px;top:-44px;right:48px}
+.st-ch-deco{width:132px;height:132px;z-index:2}
+.st-ch-deco-l{left:-72px;top:38%}
+.st-ch-deco-r{right:-70px;top:64%}
+.st-ch-2 .st-ch-deco-l,.st-ch-4 .st-ch-deco-l{top:58%}
+.st-ch-2 .st-ch-deco-r,.st-ch-4 .st-ch-deco-r{top:30%}
+@media (max-width:1439px){.st-ch-deco{width:104px;height:104px}.st-ch-deco-l{left:-40px}.st-ch-deco-r{right:-40px}}
+@media (max-width:1023px){.st-ch-deco{display:none}}
+@media (max-width:767px){.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{width:96px;height:96px;top:-30px;right:16px}}
+/* 뿅뿅: 바깥쪽에서 튀어 들어오며 커짐 */
+.st-anim [data-sr=popL]{translate:-80px 0;scale:.2;rotate:-24deg;filter:none;transition:opacity .5s ease var(--d,0s),translate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),scale .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),rotate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s)}
+.st-anim [data-sr=popR]{translate:80px 0;scale:.2;rotate:24deg;filter:none;transition:opacity .5s ease var(--d,0s),translate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),scale .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),rotate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s)}
+.st-anim [data-sr=popL].is-in,.st-anim [data-sr=popR].is-in{rotate:0deg}
+.st-anim .st-ch-icon[data-sr]{scale:.2;rotate:18deg;transition:opacity .5s ease var(--d,0s),scale .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),rotate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s)}
+.st-anim .st-ch-icon[data-sr].is-in{rotate:0deg}

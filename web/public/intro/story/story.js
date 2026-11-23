@@ -6,7 +6,7 @@
   if (!page) return;
   const groups = [
     ['.st-hero-copy > *', 'up'], ['.st-hero-bg', 'fade'], ['.st-hero-ceo', 'up'], ['.st-hero .st-deco', 'pop'],
-    ['.st-ch-panel', 'panel'], ['.st-ch-icon', 'pop'], ['.st-badge', 'up'],
+    ['.st-ch-panel', 'panel'], ['.st-ch-icon', 'pop'], ['.st-ch-deco-l', 'popL'], ['.st-ch-deco-r', 'popR'], ['.st-badge', 'up'],
     ['.st-ch h2, .st-h3, .st-closing h2, .st-cta h2', 'up'],
     ['.st-p, .st-p-lg, .st-p-md, .st-end, .st-final, .st-sign, .st-cta-lead, .st-resolve-sub', 'up'],
     ['.st-collage figure, .st-office, .st-team, .st-board', 'photo'],
