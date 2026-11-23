@@ -77,6 +77,17 @@
     "htmlStyle": null
   },
   {
+    "slug": "why",
+    "route": "/intro/why/",
+    "title": "WHY? · 미스터디벨로를 선택해야 하는 다섯 가지 이유 | 미스터디벨로",
+    "description": "팀의 밀도, 의도 해석, 퀄리티, 산출물, 대응속도. 외주가 다 거기서 거기라고 생각한다면, 미스터디벨로가 다른 다섯 가지를 확인해 보세요.",
+    "ogImage": "/assets/navigation/why-3d.png",
+    "icon": "/assets/navigation/why-3d.png",
+    "bodyClass": "ph-body-page",
+    "htmlClass": "",
+    "htmlStyle": null
+  },
+  {
     "slug": "philosophy",
     "route": "/intro/philosophy/",
     "title": "철학 · 의뢰한 대로가 아닌, 의도한 대로 | 미스터디벨로",
