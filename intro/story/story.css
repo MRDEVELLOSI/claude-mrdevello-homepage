@@ -421,3 +421,11 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-anim [data-sr=popL].is-in,.st-anim [data-sr=popR].is-in{rotate:0deg}
 .st-anim .st-ch-icon[data-sr]{scale:.2;rotate:18deg;transition:opacity .5s ease var(--d,0s),scale .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s),rotate .9s cubic-bezier(.34,1.7,.5,1) var(--d,0s)}
 .st-anim .st-ch-icon[data-sr].is-in{scale:1;rotate:0deg;opacity:1}
+/* ── 아바타: 얼굴 중앙 크롭 이미지 사용 ── */
+.st-think-avw .st-think-av{transform:none;object-position:50% 50%}
+/* ── 3D 이모지 아이콘 크기 보정 ── */
+.st-ch-deco{width:120px;height:120px}
+.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{width:136px;height:136px}
+.st-prob-ic{width:112px;height:112px}
+@media (max-width:1439px){.st-ch-deco{width:96px;height:96px}}
+@media (max-width:767px){.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{width:84px;height:84px}.st-prob-ic{width:88px;height:88px}}
