@@ -78,6 +78,7 @@
 .axp .axq{margin-left:calc(-1 * var(--g))!important;margin-right:calc(-1 * var(--g))!important}
 .axp img{max-width:100%}
 @media (max-width:1023px){
+.axp .axtp{flex-direction:column!important}.axp .axtp>div{padding:24px!important;padding-top:56px!important}.axp .axtp>div>span:nth-child(2){font-size:20px!important}
 .axp .axinq{column-count:2!important;column-gap:14px!important}.axp .axinq-c{margin-bottom:14px!important}.axp .axinq-c>span>span{font-size:12px!important}
 .axp .axlogo-mark{width:min(260px,62vw)!important}.axp .axlogo span[style*='font-size:44px']{font-size:28px!important;padding-bottom:9px!important}
  .axp .h1{font-size:52px!important}.axp .h2{font-size:34px!important;line-height:1.3!important}.axp h3{font-size:26px!important}
