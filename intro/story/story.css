@@ -320,3 +320,7 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-end{margin-top:40px!important}.st-h3{margin-top:48px!important}
 .st-boss-bub{font-weight:650}
 @media (max-width:767px){.st-end,.st-end-u,.st-end-center{margin-top:36px!important}}
+
+/* ── 패널 폭 = 헤더(로고~CONTACT US) 폭 ── */
+.st-ch,.st-cta{width:min(1280px,calc(100% - 80px))}
+@media (max-width:767px){.st-ch,.st-cta{width:calc(100% - 40px)}}
