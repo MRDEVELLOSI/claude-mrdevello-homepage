@@ -324,3 +324,14 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 /* ── 패널 폭 = 헤더(로고~CONTACT US) 폭 ── */
 .st-ch,.st-cta{width:min(1280px,calc(100% - 80px))}
 @media (max-width:767px){.st-ch,.st-cta{width:calc(100% - 40px)}}
+
+/* ── 챕터 아이콘을 패널 위 모서리로 · 도식 카드 정리 ── */
+.st-ch{margin-top:24px}
+.st-ch-panel{overflow:visible}
+.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{top:-24px;bottom:auto;right:40px;width:104px;height:104px}
+.st-sim{grid-template-columns:118px minmax(0,1fr);padding:24px}
+.st-sim-cols{gap:0 12px}
+.st-sim-card{padding:14px;font-size:16px;gap:10px}
+.st-sim-ic{width:38px;height:38px;border-radius:12px}
+@media (max-width:1279px){.st-sim{grid-template-columns:1fr}}
+@media (max-width:767px){.st-ch{margin-top:20px}.st-ch .st-ch-icon,.st-ch-1 .st-ch-icon,.st-ch-4 .st-ch-icon{top:-18px;right:16px;width:72px;height:72px}}
