@@ -1,0 +1,16 @@
+/* Shared service card typography: one pixel below each existing card size.
+   Only card terms and descriptions are targeted; main hero copy is unchanged. */
+body :is(#starter_hero,#pro_hero,#check_hero,#team_hero,#booster_hero){--service-card-title:17px;--service-card-copy:15px}
+body #pro_hero{--service-card-copy:13px}
+body :is(#starter_hero,#pro_hero,#check_hero,#team_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents) dt{font-size:var(--service-card-title)}
+body :is(#starter_hero,#pro_hero,#check_hero,#team_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents) dd{font-size:var(--service-card-copy)}
+@media(max-width:767px){
+ body :is(#starter_hero,#pro_hero,#check_hero,#team_hero,#booster_hero){--service-card-title:16px}
+ body #pro_hero{--service-card-title:15px}
+}
+@media(min-width:1280px) and (max-height:920px){
+ body :is(#starter_hero,#pro_hero,#check_hero,#team_hero,#booster_hero){--service-card-copy:13px}
+}
+@media(min-width:1280px) and (max-height:820px){
+ body :is(#starter_hero,#pro_hero,#check_hero,#team_hero,#booster_hero){--service-card-title:15px}
+}

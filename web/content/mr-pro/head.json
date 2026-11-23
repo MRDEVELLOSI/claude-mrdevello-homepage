@@ -1,0 +1,153 @@
+[
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/study.css?v=d9481bc169"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mr-pro/pro.css?v=68a507ee03"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "type": "application/ld+json"
+  },
+  "inner": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"{{SITE_URL}}/mr-pro/#webpage\",\"url\":\"{{SITE_URL}}/mr-pro/\",\"name\":\"MR.PRO · IT 턴키 개발 프로젝트 | 미스터디벨로\",\"description\":\"비즈니스를 이해하는 앱·웹 개발. 서비스 기획부터 디자인, 개발, 테스트와 출시까지 미스터디벨로가 한 팀으로 함께합니다.\",\"inLanguage\":\"ko-KR\",\"mainEntity\":{\"@id\":\"{{SITE_URL}}/mr-pro/#service\"}},{\"@type\":\"Service\",\"@id\":\"{{SITE_URL}}/mr-pro/#service\",\"name\":\"MR.PRO\",\"serviceType\":\"맞춤형 앱·웹 및 업무 시스템 개발\",\"description\":\"비즈니스를 이해하는 앱·웹 개발. 서비스 기획부터 디자인, 개발, 테스트와 출시까지 미스터디벨로가 한 팀으로 함께합니다.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"미스터디벨로\",\"url\":\"https://mrdevello.com/\"}}]}"
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/navigation.js?v=e98175695b"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/mr-pro/pro.js?v=baf95de9c4"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/service-evidence.css?v=e4a134eb91"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mr-pro/pro-hero.css?v=1eb2f7cd66"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/mr-pro/pro-hero.js?v=57795655e0"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "preload",
+   "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
+   "as": "font",
+   "type": "font/woff2",
+   "crossorigin": ""
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/page-experience.0be3a66ff9a5.css"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {},
+  "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/page-transitions.f43ea8b95008.js"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/service-hero-alignment.css?v=5ee8d2f3b6"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/service-hero-viewport.css?v=8bb86e5b6d"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/service-hero-card-type.css?v=7c46010b1f"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/service-hero-b.css?v=a816bad6cd"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/no-gray-sections.css"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mr-footer.css?v=2"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mobile-fit.css?v=3"
+  },
+  "inner": null
+ }
+]

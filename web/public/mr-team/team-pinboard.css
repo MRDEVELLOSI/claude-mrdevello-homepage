@@ -1,0 +1,102 @@
+@font-face{font-family:"Nanum Pen Script";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/team-board/nanum-pen-script.d774c7b19f3a.woff2) format("woff2")}
+  #team_photos.pin-board {
+    flex: 0 1 580px;
+    width: 100%;
+    max-width: 580px;
+    container-type: inline-size;
+  }
+  #team_photos .pin-board__inner {
+    --u: calc(100cqw / 580);
+    position: relative;
+    aspect-ratio: 580 / 720;
+    background: transparent;
+  }
+  #team_photos .pin-board__inner > * { position: absolute; }
+
+  /* 폴라로이드 */
+  #team_photos .polaroid {
+    margin: 0;
+    background: #fff;
+    padding: calc(var(--pad) * var(--u)) calc(var(--pad) * var(--u)) 0;
+    box-shadow: 0 calc(10 * var(--u)) calc(28 * var(--u)) rgba(20, 22, 25, 0.16);
+    transform: rotate(var(--rot));
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s;
+  }
+  #team_photos .polaroid img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  #team_photos .polaroid figcaption {
+    height: calc(var(--cap) * var(--u));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Nanum Pen Script', 'Pretendard', sans-serif;
+    font-size: calc(var(--fs) * var(--u));
+    color: #27292c;
+    white-space: nowrap;
+  }
+  #team_photos .polaroid:hover {
+    transform: rotate(0deg) scale(1.04);
+    box-shadow: 0 calc(20 * var(--u)) calc(44 * var(--u)) rgba(20, 22, 25, 0.22);
+    z-index: 20;
+  }
+
+  /* 포스트잇 */
+  #team_photos .sticky {
+    padding: calc(20 * var(--u)) calc(18 * var(--u));
+    font-family: 'Nanum Pen Script', 'Pretendard', sans-serif;
+    font-size: calc(var(--fs) * var(--u));
+    line-height: 1.15;
+    color: #27292c;
+    box-shadow: 0 calc(8 * var(--u)) calc(18 * var(--u)) rgba(20, 22, 25, 0.14);
+    transform: rotate(var(--rot));
+    transition: transform .35s cubic-bezier(.2,.8,.2,1);
+  }
+  #team_photos .sticky:hover { transform: rotate(0deg) scale(1.05); z-index: 20; }
+
+  /* 마스킹테이프 · 핀 (장식) */
+  #team_photos .tape { height: calc(28 * var(--u)); transform: rotate(var(--rot)); z-index: 5; }
+  #team_photos .pin {
+    width: calc(16 * var(--u)); height: calc(16 * var(--u));
+    border-radius: 50%;
+    box-shadow: 0 calc(2 * var(--u)) calc(4 * var(--u)) rgba(0, 0, 0, 0.3);
+    z-index: 6;
+  }
+
+  /* ── 요소별 위치 (580×720 기준 %) ── */
+  #team_photos .p-group  { left: 5.86%;  top: 6.39%;  width: 63.45%; --pad: 14; --cap: 54; --fs: 25; --rot: -3.5deg; }
+  #team_photos .t-group  { left: 28.97%; top: 4.17%;  width: 18.97%; background: rgba(136, 192, 248, .55); --rot: -6deg; }
+  #team_photos .s-yellow { left: 68.28%; top: 4.72%;  width: 27.24%; aspect-ratio: 1; background: #ffe68a; --fs: 29; --rot: 5deg; padding-top: calc(24 * var(--u)); }
+  #team_photos .pin-red  { left: 80.3%;  top: 3.6%;   background: #c22826; }
+  #team_photos .p-pres   { left: 51.72%; top: 40.5%; width: 43.45%; --pad: 11; --cap: 46; --fs: 26; --rot: 4deg; }
+  #team_photos .t-pres   { left: 66.9%;  top: 38.8%; width: 14.48%; background: rgba(255, 196, 170, .7); --rot: 8deg; }
+  #team_photos .doc      { left: 4.83%;  top: 50%;    width: 43.1%;  margin: 0; padding: calc(8 * var(--u)); background: #fff; box-shadow: 0 calc(8 * var(--u)) calc(22 * var(--u)) rgba(20, 22, 25, .14); transform: rotate(-2deg); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+  #team_photos .doc img  { display: block; width: 100%; aspect-ratio: 234 / 137; object-fit: cover; }
+  #team_photos .doc:hover { transform: rotate(0deg) scale(1.04); z-index: 20; }
+  #team_photos .pin-blue { left: 25.17%; top: 48.61%; background: #1282d9; }
+  #team_photos .p-disc   { left: 12.07%; top: 67.5%;  width: 43.1%;  --pad: 11; --cap: 44; --fs: 26; --rot: -5deg; }
+  #team_photos .s-pink   { left: 60.69%; top: 72.22%; width: 29.31%; height: 20.83%; background: #ffd3dc; --fs: 28; --rot: -4deg; }
+  #team_photos .s-blue   { left: 82.5%;  top: 71.5%; width: 16.55%; height: 11.11%; background: #b1d9ff; color: #002c58; --fs: 24; --rot: 9deg; padding: calc(12 * var(--u)); }
+
+  /* 처음 들어올 때 하나씩 붙는 모션 */
+  @keyframes team-board-stick-in {
+    from { opacity: 0; translate: 0 calc(-18 * var(--u)); }
+    to   { opacity: 1; translate: 0 0; }
+  }
+  #team_photos .pin-board__inner > * { animation: team-board-stick-in .6s cubic-bezier(.2,.8,.2,1) both; }
+  #team_photos .p-group  { animation-delay: .05s; } #team_photos .t-group { animation-delay: .25s; }
+  #team_photos .s-yellow { animation-delay: .35s; } #team_photos .pin-red { animation-delay: .5s; }
+  #team_photos .p-pres   { animation-delay: .45s; } #team_photos .t-pres  { animation-delay: .6s; }
+  #team_photos .doc      { animation-delay: .55s; } #team_photos .pin-blue { animation-delay: .7s; }
+  #team_photos .p-disc   { animation-delay: .65s; } #team_photos .s-pink  { animation-delay: .8s; }
+  #team_photos .s-blue   { animation-delay: .9s; }
+  @media (prefers-reduced-motion: reduce) {
+    #team_photos .pin-board__inner > * { animation: none; }
+    #team_photos .polaroid, #team_photos .sticky, #team_photos .doc { transition: none; }
+  }
+
+
+#team_hero #team_photos.pin-board{flex:none;width:100%;max-width:min(580px,calc((max(720px,100dvh) - 152px) * 580 / 720));min-width:0;justify-self:center;align-self:start}
+#team_photos .pin-board__inner{margin:0}
+#team_photos :is(.polaroid,.doc) img{height:auto;max-width:100%}
+#team_photos :is(.polaroid,.sticky,.doc){font-weight:400;line-height:1.15;letter-spacing:normal;text-align:left}
+#team_photos .polaroid figcaption{font-weight:400;line-height:1.15;letter-spacing:normal}
+#team_photos :is(.polaroid figcaption,.sticky){font-family:"Nanum Pen Script","Pretendard",sans-serif!important}
+@media(max-width:1023px){#team_hero #team_photos.pin-board{max-width:580px;margin:36px auto 0}}
+@media(max-width:767px){#team_hero #team_photos.pin-board{margin-top:32px}}

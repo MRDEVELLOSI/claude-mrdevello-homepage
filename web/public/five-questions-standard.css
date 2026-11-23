@@ -1,0 +1,85 @@
+#five-questions-standard,#five-questions-standard *{font-family:"Pretendard Variable",Pretendard,sans-serif!important;line-height:normal;border:0 none currentColor;box-sizing:border-box}
+#five-questions-standard br{line-height:inherit}
+#five-questions-standard button{letter-spacing:normal}
+#five-questions-standard img{max-width:none}
+#five-questions-standard,#five-questions-standard *{box-sizing:border-box}
+#five-questions-standard{margin:0;background:#FFFFFF}
+#five-questions-standard .fq{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#222;letter-spacing:-.6px;background:#FFFFFF;overflow:hidden}
+#five-questions-standard .fq__inner{width:1200px;margin:0 auto;padding:160px 0;display:flex;flex-direction:column}
+#five-questions-standard .fq h2{margin:0;font-weight:700;line-height:1.3;letter-spacing:-.04em;text-align:center}
+#five-questions-standard .h1{font-size:56px}
+#five-questions-standard .h2{font-size:48px}
+#five-questions-standard .lead{margin:24px 0 0;font-size:20px;line-height:1.6;color:#6A6D70;text-align:center}
+#five-questions-standard .lead strong{color:#222}
+#five-questions-standard .kw{position:relative;display:inline-block;color:#74CDF6}
+#five-questions-standard .kw::after{content:"";position:absolute;left:.02em;right:.02em;bottom:-.04em;height:.07em;border-radius:1000px;background:#74CDF6;transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.65,0,.35,1) .5s}
+#five-questions-standard .in .kw::after{transform:scaleX(1)}
+/* crowd marquee */
+#five-questions-standard .crowd{position:relative;margin:56px -360px 0;display:flex;flex-direction:column;gap:12px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent);mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent)}
+#five-questions-standard .row{display:flex;gap:10px;width:max-content;animation:five-questions-mq 40s linear infinite}
+#five-questions-standard .row.r2{animation-duration:48s;animation-direction:reverse}
+#five-questions-standard .chip{height:44px;padding:0 20px;border-radius:1000px;background:#F5F6FA;border:1px solid #ECEDF2;font-size:16px;font-weight:600;color:#9C9FA1;display:inline-flex;align-items:center;white-space:nowrap}
+@keyframes five-questions-mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+#five-questions-standard .crowd-cap{margin:20px 0 0;text-align:center;font-size:16px;font-weight:600;color:#838689}
+/* questions */
+#five-questions-standard .sub{margin-top:120px;margin-bottom:48px}
+#five-questions-standard .qs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+#five-questions-standard .q{min-height:150px;padding:20px;border-radius:22px;border:1px solid #ECEDF2;background:#FFFFFF;box-shadow:0 12px 32px rgba(46,146,176,.06);font:inherit;text-align:left;display:flex;flex-direction:column;gap:10px;cursor:pointer;transition:transform .3s cubic-bezier(.34,1.56,.64,1),border-color .25s,box-shadow .25s,background .25s}
+#five-questions-standard .q:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(46,146,176,.12)}
+#five-questions-standard .q[aria-selected="true"]{border:2px solid #74CDF6;background:#F0F8FB;box-shadow:0 18px 44px rgba(46,146,176,.18)}
+#five-questions-standard .q:focus-visible{outline:3px solid #74CDF6;outline-offset:3px}
+#five-questions-standard .q__no{font-size:26px;font-weight:700;letter-spacing:-.03em;color:#C9CBD1;transition:color .25s}
+#five-questions-standard .q[aria-selected="true"] .q__no{color:#74CDF6}
+#five-questions-standard .q__cat{font-size:14px;font-weight:700;color:#74CDF6}
+#five-questions-standard .q__q{font-size:16px;font-weight:700;line-height:1.45;color:#222}
+#five-questions-standard .q__bar{margin-top:auto;height:4px;border-radius:1000px;background:#EEEFF4;overflow:hidden}
+#five-questions-standard .q__bar span{display:block;height:100%;width:0;background:#74CDF6}
+#five-questions-standard .q[aria-selected="true"] .q__bar span{width:100%;transition:width .6s cubic-bezier(.65,0,.35,1)}
+#five-questions-standard .detail{margin-top:16px;padding:44px 48px;border-radius:28px;background:#FFFFFF;border:1px solid #ECEDF2;box-shadow:0 16px 40px rgba(46,146,176,.08);display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:40px;align-items:start}
+#five-questions-standard .detail__meta{margin:0;font-size:15px;font-weight:700;color:#74CDF6}
+#five-questions-standard .detail__q{margin:14px 0 0;font-size:30px;font-weight:700;line-height:1.4;letter-spacing:-.03em}
+#five-questions-standard .detail__d{margin:14px 0 0;font-size:17px;line-height:1.75;color:#6A6D70}
+#five-questions-standard .ask{border-radius:20px;background:#EDF7FD;padding:26px 28px}
+#five-questions-standard .ask__t{margin:0;font-size:14px;font-weight:700;color:#147BC1}
+#five-questions-standard .ask__q{margin:10px 0 0;font-size:19px;font-weight:700;line-height:1.55}
+#five-questions-standard .swap>*{animation:five-questions-swapIn .5s cubic-bezier(.2,.8,.2,1) both}
+#five-questions-standard .swap>*:nth-child(2){animation-delay:.08s}
+@keyframes five-questions-swapIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#five-questions-standard .close{margin-top:96px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
+#five-questions-standard .close p{margin:0}
+#five-questions-standard .close__s{font-size:18px;font-weight:600;color:#6A6D70}
+#five-questions-standard .close__b{font-size:48px;font-weight:700;line-height:1.35;letter-spacing:-.04em}
+#five-questions-standard .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+#five-questions-standard .reveal.on{opacity:1;transform:none}
+#five-questions-standard .qs .q.reveal{transition:opacity .6s ease,transform .6s cubic-bezier(.34,1.56,.64,1),border-color .25s,box-shadow .25s,background .25s}
+@media (prefers-reduced-motion:reduce){#five-questions-standard .fq *{animation:none !important;transition:none !important}
+#five-questions-standard .reveal{opacity:1;transform:none}
+#five-questions-standard .kw::after{transform:scaleX(1)}}
+/* ===== 좋은 개발사의 기준 ===== */
+#five-questions-standard .std{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#222;letter-spacing:-.6px;background:#FFFFFF}
+#five-questions-standard .std__inner{width:1200px;margin:0 auto;padding:40px 0 160px;display:grid;grid-template-columns:420px minmax(0,1fr);gap:72px;align-items:start}
+#five-questions-standard .std__side{position:sticky;top:120px;display:flex;flex-direction:column;gap:24px}
+#five-questions-standard .std h2{margin:0;font-size:44px;font-weight:700;line-height:1.35;letter-spacing:-.04em}
+#five-questions-standard .std__lead{margin:0;font-size:17px;line-height:1.75;color:#6A6D70}
+#five-questions-standard .std__lead strong{color:#222}
+#five-questions-standard .std__blog{margin-top:32px}
+#five-questions-standard .std__blog-t{margin:0 0 4px;font-size:13px;font-weight:700;letter-spacing:.1em;color:#838689}
+#five-questions-standard .std__link{min-height:60px;border-bottom:1px solid #E7EBEE;display:flex;align-items:center;justify-content:space-between;font-size:16px;font-weight:600;color:#222;text-decoration:none;transition:padding .25s,color .25s}
+#five-questions-standard .std__link span{color:#74CDF6;transition:transform .25s}
+#five-questions-standard .std__link:hover{padding-left:8px;color:#74CDF6}
+#five-questions-standard .std__link:hover span{transform:translate(3px,-3px)}
+#five-questions-standard .std__list{border-bottom:1px solid #DCDDE3}
+#five-questions-standard .std__row{display:grid;grid-template-columns:170px minmax(0,1fr) 150px;align-items:center;gap:24px;padding:34px 0;border-top:1px solid #DCDDE3}
+#five-questions-standard .std__row:first-child{border-top-color:#222}
+#five-questions-standard .std__no{font-size:110px;font-weight:800;line-height:.9;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px var(--c);transition:color .4s}
+#five-questions-standard .std__row:hover .std__no{color:var(--c)}
+#five-questions-standard .std__t{margin:0;font-size:40px;font-weight:700;line-height:1.25;letter-spacing:-.04em}
+#five-questions-standard .std__img{width:140px;height:140px;filter:drop-shadow(0 14px 20px rgba(16,24,40,.12));transform:rotate(var(--r));transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+#five-questions-standard .std__row:hover .std__img{transform:rotate(0deg) scale(1.08) translateY(-6px)}
+#five-questions-standard .std__img-wrap{animation:five-questions-bob 4s ease-in-out infinite}
+#five-questions-standard .std__row:nth-child(2) .std__img-wrap{animation-delay:-1.3s}
+#five-questions-standard .std__row:nth-child(3) .std__img-wrap{animation-delay:-2.6s}
+@keyframes five-questions-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+#five-questions-standard .std .reveal.on .std__no{animation:five-questions-numIn .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes five-questions-numIn{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#five-questions-standard .std *{animation:none !important;transition:none !important}}

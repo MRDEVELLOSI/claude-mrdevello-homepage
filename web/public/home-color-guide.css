@@ -1,0 +1,225 @@
+/* MR.DEVELLO: docs/mrdevello-color-guide.md is the authoritative color source. */
+:root {
+  --mr-red:#f75c66;
+  --mr-blue:#10a0e8;
+  --mr-green:#04b84c;
+  --mr-orange:#fc6c28;
+  --mr-yellow:#fcd448;
+  --mr-lavender:#ceb0fb;
+  --mr-pink:#fcc0cc;
+  --mr-indigo:#8872fa;
+  --mr-purple:#a76ef8;
+  --mr-ink:#111111;
+  --mr-ink-strong:#0d0d0d;
+  --mr-white:#ffffff;
+  --mr-surface:#f5f5f5;
+}
+
+/* Body text stays black; explicit hero keywords and WHY category labels use color. */
+.devello-home,.devello-home *:not([data-overview-mode-character]),
+#contentful-header,#contentful-header * {color:var(--mr-ink)!important}
+.devello-project-form textarea::placeholder {color:var(--mr-ink);opacity:1}
+.devello-home :is(.btn-primary,.devello-brief-submit,.ai-build__generate),
+.devello-home :is(.btn-primary,.devello-brief-submit,.ai-build__generate) *,
+.devello-home .ai-build__step>span:first-child,
+#contentful-header .devello-contact-button,
+#contentful-header .devello-contact-button * {color:var(--mr-white)!important}
+.devello-home :is(.btn-primary,.devello-brief-submit,.ai-build__generate),
+#contentful-header .devello-contact-button {background:var(--mr-ink)!important;border-radius:999px}
+.devello-home .devello-brief-topics button[aria-pressed="true"] {background:var(--mr-blue);border-color:var(--mr-blue)}
+#contentful-header .devello-service-row:is(:hover,:focus-visible) {background:#f5f5f5}
+
+/* Flat surfaces preserve section boundaries without background gradients. */
+#ai-build,#five-questions-standard #five-questions {background:var(--mr-surface)}
+#why .orb__bg {background:var(--mr-white);box-shadow:none;border-color:var(--mr-blue)}
+#why .orb__ring,#why .orb__pulse {border-color:var(--mr-blue)}
+#why .lines .draw,#why .lines .flow {stroke:var(--mr-blue)}
+#why .spark {box-shadow:none;border:1px solid var(--mr-blue)}
+#why .why__lead {color:var(--mr-ink)!important}
+#why .tabs {background:var(--mr-surface)}
+#why .tabs__ind {background:var(--mr-blue)}
+#why .bubble {border-color:var(--accent)}
+#why .bubble .dot {box-shadow:none}
+#why .bubble__tag {align-self:flex-start;padding:0;border-radius:0;background:transparent;color:var(--accent)!important}
+#why .det__t {text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:3px;text-underline-offset:5px}
+#why .tab {background:var(--mr-white);border-color:#e5e5e5;box-shadow:none}
+#why .tab[aria-selected="true"],#why .tab:nth-of-type(2)[aria-selected="true"] {background:var(--mr-ink);border-color:var(--mr-ink);box-shadow:none;color:var(--mr-white)!important}
+#why .tab[aria-selected="true"] * {color:var(--mr-white)!important}
+#five-questions-standard .std__no {box-shadow:inset 0 -.12em var(--c);width:max-content}
+#five-questions-standard .std__no,#five-questions-standard .std__row:hover .std__no {-webkit-text-stroke:0}
+#five-questions-standard .kw::after {background:linear-gradient(90deg,var(--mr-blue),var(--mr-purple),var(--mr-red),var(--mr-orange))}
+#std-title>.kw {color:var(--mr-blue)!important}
+#five-questions-standard .q[aria-selected="true"],#five-questions-standard .ask {background:var(--tint)}
+
+/* Each category keeps its own hue; there is no three-color cap. */
+#why .b0,#why .det:nth-child(1) {--accent:var(--mr-red);--tint:color-mix(in srgb,var(--mr-red) 12%,white)}
+#why .b1,#why .det:nth-child(2) {--accent:var(--mr-orange);--tint:color-mix(in srgb,var(--mr-orange) 12%,white)}
+#why .b2,#why .det:nth-child(3) {--accent:var(--mr-blue);--tint:color-mix(in srgb,var(--mr-blue) 12%,white)}
+#why .b3,#why .det:nth-child(4) {--accent:var(--mr-green);--tint:color-mix(in srgb,var(--mr-green) 12%,white)}
+#five-questions-standard .q:nth-child(1),#fq-panel[data-question="0"] {--accent:var(--mr-blue);--tint:color-mix(in srgb,var(--mr-blue) 12%,white)}
+#five-questions-standard .q:nth-child(2),#fq-panel[data-question="1"] {--accent:var(--mr-green);--tint:color-mix(in srgb,var(--mr-green) 12%,white)}
+#five-questions-standard .q:nth-child(3),#fq-panel[data-question="2"] {--accent:var(--mr-orange);--tint:color-mix(in srgb,var(--mr-orange) 12%,white)}
+#five-questions-standard .q:nth-child(4),#fq-panel[data-question="3"] {--accent:var(--mr-red);--tint:color-mix(in srgb,var(--mr-red) 12%,white)}
+#five-questions-standard .q:nth-child(5),#fq-panel[data-question="4"] {--accent:var(--mr-purple);--tint:color-mix(in srgb,var(--mr-purple) 12%,white)}
+#five-questions-standard .chip:nth-child(n) {background:color-mix(in srgb,var(--chip-accent) 12%,white);border-color:color-mix(in srgb,var(--chip-accent) 30%,white)}
+#five-questions-standard .chip:nth-child(7n+1) {--chip-accent:var(--mr-red)}
+#five-questions-standard .chip:nth-child(7n+2) {--chip-accent:var(--mr-orange)}
+#five-questions-standard .chip:nth-child(7n+3) {--chip-accent:var(--mr-yellow)}
+#five-questions-standard .chip:nth-child(7n+4) {--chip-accent:var(--mr-green)}
+#five-questions-standard .chip:nth-child(7n+5) {--chip-accent:var(--mr-blue)}
+#five-questions-standard .chip:nth-child(7n+6) {--chip-accent:var(--mr-indigo)}
+#five-questions-standard .chip:nth-child(7n) {--chip-accent:var(--mr-purple)}
+
+/* The five-question conclusion is the decision point of this section. */
+#five-questions-standard .close {width:min(960px,100%);margin:56px auto 0;padding:44px 28px;gap:18px;background:var(--mr-white);border:1px solid #e5e5e5;border-radius:24px}
+#five-questions-standard .close__b {font-size:48px;font-weight:760;line-height:1.3;letter-spacing:-.035em;text-wrap:balance}
+#five-questions-standard .close__b .kw {padding:0 .12em;background:var(--mr-yellow);border-radius:5px}
+#five-questions-standard .close__b .kw::after {display:none}
+@media(max-width:700px){
+  #five-questions-standard .close {margin-top:40px;padding:30px 18px;gap:16px}
+  #five-questions-standard .close__b {font-size:30px;line-height:1.4}
+  #five-questions-standard .close__s {font-size:14px}
+}
+
+/* The AI demonstration retains its original typing and reveal animations. */
+#ai-build .ai-build__prompt {box-shadow:0 0 0 2px var(--mr-blue),0 12px 28px #00000006!important}
+#ai-build .ai-build__viewport>img {background:var(--mr-white)}
+#ai-build .ai-build__prompt>div:first-child>svg {fill:var(--mr-blue)}
+#ai-build .ai-build__toolbar>svg {stroke:var(--mr-ink)}
+#ai-build .ai-build__feature>span {background:var(--mr-green)!important}
+#ai-build .ai-build__feature svg {stroke:var(--mr-ink)}
+#ai-build .ai-build__status-pill {background:var(--mr-yellow)!important}
+#ai-build .ai-build__status-pill:first-child {background:#f5f5f5!important}
+#ai-build .ai-build__status-pill>span {border-color:var(--mr-blue)!important;border-top-color:var(--mr-ink)!important}
+#ai-build .ai-build__status-pill svg {stroke:var(--mr-ink)}
+
+/* 상단 주제 버튼: 개발·운영·확장 모드별 연한 배경, 선택 시에도 연한 톤 유지 */
+.devello-brief-topics button{transition:background .2s ease,border-color .2s ease,color .2s ease}
+.devello-brief-topics[data-mode="0"] button{background:#f1f9fe;border-color:#d6eefb;color:#2d5f7a}
+.devello-brief-topics[data-mode="0"] button:hover{background:#e3f4fd;color:#0b5f8a}
+.devello-brief-topics[data-mode="0"] button[aria-pressed="true"]{background:#d3edfb;border-color:#10a0e8;color:#0b5f8a}
+.devello-brief-topics[data-mode="1"] button{background:#f0fbf4;border-color:#cdeedb;color:#2f6644}
+.devello-brief-topics[data-mode="1"] button:hover{background:#e0f6e8;color:#0a6b30}
+.devello-brief-topics[data-mode="1"] button[aria-pressed="true"]{background:#cdf0da;border-color:#04b84c;color:#0a6b30}
+.devello-brief-topics[data-mode="2"] button{background:#f8f4ff;border-color:#e6dafd;color:#5a4a7a}
+.devello-brief-topics[data-mode="2"] button:hover{background:#f0e8fe;color:#5b3fb5}
+.devello-brief-topics[data-mode="2"] button[aria-pressed="true"]{background:#e9dcfe;border-color:#b48cf2;color:#5b3fb5}
+
+/* 3D 아이콘: 둥둥 떠다니는 느낌 (상단 장식 아이콘 + '기술은 달라졌지만' 01·02·03 아이콘) */
+@keyframes mr-float{0%{transform:translate(0,0) rotate(0deg)}25%{transform:translate(4px,-12px) rotate(2.5deg)}50%{transform:translate(0,-20px) rotate(0deg)}75%{transform:translate(-4px,-10px) rotate(-2.5deg)}100%{transform:translate(0,0) rotate(0deg)}}
+.devello-ambient [data-overview-layer] img{animation:mr-float 6.5s ease-in-out infinite;will-change:transform}
+.devello-ambient [data-overview-layer]:nth-child(2n) img{animation-duration:7.5s;animation-delay:-2s}
+.devello-ambient [data-overview-layer]:nth-child(3n) img{animation-duration:8.5s;animation-delay:-4s}
+.devello-ambient [data-overview-layer*="-mark-"] img{animation:none}
+.std__img-wrap{animation:mr-float 6s ease-in-out infinite!important}
+.std__row:nth-child(2) .std__img-wrap{animation-delay:-2s!important}
+.std__row:nth-child(3) .std__img-wrap{animation-delay:-4s!important}
+@media (prefers-reduced-motion:reduce){.devello-ambient [data-overview-layer] img,.std__img-wrap{animation:none!important}}
+
+/* 장식 아이콘 등장: 하나씩 뿅뿅 튀어나오는 모션 (첫 로드·모드 전환 공통) */
+@keyframes mr-pop{0%{opacity:0;transform:scale(.2)}55%{opacity:1;transform:scale(1.14)}75%{transform:scale(.94)}100%{opacity:1;transform:scale(1)}}
+.study-scene-enter [data-overview-layer]>div>div{animation:mr-pop .55s cubic-bezier(.34,1.56,.64,1) both!important;animation-delay:calc(var(--study-order,0)*90ms + 80ms)!important}
+@keyframes mr-show{to{opacity:1}}
+@media (prefers-reduced-motion:no-preference){
+ .devello-ambient:not([data-mr-ready]) [data-overview-layer]>div>div{opacity:0;animation:mr-show 0s 2.5s forwards}
+}
+
+/* 상단 입력창: 모드별 컬러 라벨·아이콘·안내 문구 */
+.devello-project-form,.devello-project-form[data-mode="0"]{--mm:#10a0e8;--mm-soft:#e3f4fd;--mm-ink:#0b5f8a;--mm-line:#cfeafa;--mm-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310a0e8' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 7l-5 5 5 5M16 7l5 5-5 5'/%3E%3C/svg%3E")}
+.devello-project-form[data-mode="1"]{--mm:#04b84c;--mm-soft:#e2f7ea;--mm-ink:#0a6b30;--mm-line:#c9eed7;--mm-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2304b84c' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z'/%3E%3Cpath d='M9 12l2 2 4-4'/%3E%3C/svg%3E")}
+.devello-project-form[data-mode="2"]{--mm:#9b6ef3;--mm-soft:#f0e8fe;--mm-ink:#5b3fb5;--mm-line:#e2d4fc;--mm-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239b6ef3' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v4M12 17v4M3 12h4M17 12h4'/%3E%3Cpath d='M7 7l2.5 2.5M14.5 14.5L17 17M17 7l-2.5 2.5M9.5 14.5L7 17'/%3E%3C/svg%3E")}
+.devello-project-form{border-color:var(--mm-line);transition:border-color .3s ease,box-shadow .3s ease}
+.devello-project-form label{display:flex;align-items:center;gap:8px;color:var(--mm-ink);font-weight:700;transition:color .3s ease}
+.devello-project-form label::before{content:"";flex:none;width:24px;height:24px;border-radius:8px;background:var(--mm-soft) var(--mm-icon) center/15px no-repeat;transition:background-color .3s ease}
+.devello-form-bottom p{display:flex;align-items:center;gap:7px;color:var(--mm-ink);font-weight:600;transition:color .3s ease}
+.devello-form-bottom p::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--mm);box-shadow:0 0 0 4px var(--mm-soft)}
+.devello-project-form label{display:inline-flex;width:auto;padding:5px 14px 5px 5px;border-radius:999px;background:var(--mm-soft);font-size:13px;transition:background-color .3s ease,color .3s ease}
+.devello-project-form label::before{background-color:#fff}
+
+/* 주제 버튼으로 채운 글을 지우면 같은 글이 회색 안내 문구로 남음 */
+.devello-project-form[data-pinned] textarea::placeholder{color:#9a9da0}
+
+/* 마무리 블록 2안 — ‘네’ 말풍선 5개 */
+#five-questions-standard .close{width:100%;max-width:1120px;padding:72px 24px 80px;border-radius:36px;border:1px solid #ececec;gap:16px}
+#five-questions-standard .close__bubs{display:flex;justify-content:center;gap:14px;margin-bottom:24px}
+#five-questions-standard .close__bub{position:relative;display:inline-flex;align-items:center;justify-content:center;width:84px;height:64px;border-radius:22px;background:var(--c);color:#111;font-size:26px;font-weight:800;transform:rotate(var(--r));box-shadow:0 12px 24px -12px rgba(0,0,0,.25)}
+#five-questions-standard .close__bub::after{content:"";position:absolute;bottom:-9px;left:22px;border:10px solid transparent;border-top-color:var(--c);border-bottom:0}
+#five-questions-standard .close__b{font-size:52px;line-height:1.3;font-weight:800;letter-spacing:-.035em;color:#111}
+#five-questions-standard .close__b .kw{padding:0;background:none;border-radius:0;box-shadow:inset 0 -16px 0 #fcd448}
+@media (prefers-reduced-motion:no-preference){
+#five-questions-standard .close__bub{opacity:0;transform:translateY(14px) scale(.6) rotate(0deg)}
+#five-questions-standard .close.on .close__bub{animation:close-bub-pop .5s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i)*110ms + 200ms)}
+@keyframes close-bub-pop{to{opacity:1;transform:translateY(0) scale(1) rotate(var(--r))}}
+}
+@media (max-width:700px){
+#five-questions-standard .close{padding:44px 16px 52px;border-radius:24px}
+#five-questions-standard .close__bubs{gap:8px;margin-bottom:16px}
+#five-questions-standard .close__bub{width:52px;height:42px;border-radius:14px;font-size:17px}
+#five-questions-standard .close__bub::after{left:13px;border-width:7px}
+#five-questions-standard .close__b{font-size:30px;word-break:keep-all}
+#five-questions-standard .close__b .kw{box-shadow:inset 0 -10px 0 #fcd448}
+}
+
+/* 개발사 이름 흐름 — 좌우 끝까지 꽉 차게 */
+#five-questions-standard .crowd{margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;width:100vw;max-width:none;-webkit-mask-image:none;mask-image:none}
+
+/* 마무리 블록 크기 축소 */
+#five-questions-standard .close{max-width:960px;padding:44px 24px 48px;border-radius:28px;gap:10px;margin-top:56px}
+#five-questions-standard .close__bubs{gap:10px;margin-bottom:14px}
+#five-questions-standard .close__bub{width:58px;height:44px;border-radius:15px;font-size:18px}
+#five-questions-standard .close__bub::after{left:15px;border-width:7px;bottom:-6px}
+#five-questions-standard .close__s{font-size:15px}
+#five-questions-standard .close__b{font-size:36px;letter-spacing:-.03em}
+#five-questions-standard .close__b .kw{box-shadow:inset 0 -11px 0 #fcd448}
+@media (max-width:700px){
+#five-questions-standard .close{padding:32px 16px 36px;border-radius:20px;margin-top:40px}
+#five-questions-standard .close__bubs{gap:6px;margin-bottom:10px}
+#five-questions-standard .close__bub{width:44px;height:34px;border-radius:11px;font-size:14px}
+#five-questions-standard .close__bub::after{left:11px;border-width:6px;bottom:-5px}
+#five-questions-standard .close__s{font-size:13px}
+#five-questions-standard .close__b{font-size:24px}
+#five-questions-standard .close__b .kw{box-shadow:inset 0 -8px 0 #fcd448}
+}
+
+/* 다섯 질문 컬러 = 마무리 ‘네’ 말풍선 컬러 순서 (파랑·노랑·주황·초록·연보라) */
+#five-questions-standard .q:nth-child(1),#five-questions-standard #fq-panel[data-question="0"]{--accent:#10a0e8;--tint:color-mix(in srgb,#10a0e8 12%,white)}
+#five-questions-standard .q:nth-child(2),#five-questions-standard #fq-panel[data-question="1"]{--accent:#fcd448;--tint:color-mix(in srgb,#fcd448 18%,white)}
+#five-questions-standard .q:nth-child(3),#five-questions-standard #fq-panel[data-question="2"]{--accent:#fc6c28;--tint:color-mix(in srgb,#fc6c28 12%,white)}
+#five-questions-standard .q:nth-child(4),#five-questions-standard #fq-panel[data-question="3"]{--accent:#04b84c;--tint:color-mix(in srgb,#04b84c 12%,white)}
+#five-questions-standard .q:nth-child(5),#five-questions-standard #fq-panel[data-question="4"]{--accent:#ceb0fb;--tint:color-mix(in srgb,#ceb0fb 22%,white)}
+
+/* WHY 말풍선 — PC에서 질문 한 줄로 통일 */
+@media (min-width:1001px){
+#why .bubble{width:auto!important;max-width:none}
+#why .bubble__q,#why .bubble__tag{white-space:nowrap}
+#why .bubble__q{font-size:clamp(13px,1.1vw,16px)}
+}
+
+/* WHY 탭 전환 — 말풍선·요소가 빠르게 튀어나오게 */
+#why .swap-out{animation-duration:.16s!important}
+#why .play .person{animation-duration:.5s;animation-delay:0s}
+#why .play .lines .draw{animation-duration:.4s}
+#why .play .lines path:nth-of-type(2){animation-delay:.05s}
+#why .play .lines path:nth-of-type(3){animation-delay:.08s}
+#why .play .lines path:nth-of-type(4){animation-delay:.11s}
+#why .play .lines path:nth-of-type(5){animation-delay:.14s}
+#why .play .lines .flow:nth-of-type(6){animation-delay:.3s,.3s}
+#why .play .lines .flow:nth-of-type(7){animation-delay:.33s,.33s}
+#why .play .lines .flow:nth-of-type(8){animation-delay:.36s,.36s}
+#why .play .lines .flow:nth-of-type(9){animation-delay:.39s,.39s}
+#why .play .bubble{animation-duration:.42s}
+#why .play .b0{animation-delay:.08s}
+#why .play .b1{animation-delay:.14s}
+#why .play .b2{animation-delay:.2s}
+#why .play .b3{animation-delay:.26s}
+#why .play .prop{animation-duration:.45s}
+#why .play .pr0{animation-delay:.05s}
+#why .play .pr1{animation-delay:.1s}
+#why .play .pr2{animation-delay:.15s}
+#why .play .pr3{animation-delay:.2s}
+#why .play .det{animation-duration:.4s}
+#why .play .det:nth-child(1){animation-delay:.3s}
+#why .play .det:nth-child(2){animation-delay:.36s}
+#why .play .det:nth-child(3){animation-delay:.42s}
+#why .play .det:nth-child(4){animation-delay:.48s}
+.devello-project-form textarea::placeholder{color:#a3a6a9!important;opacity:1}

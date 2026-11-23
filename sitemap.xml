@@ -1,2 +1,51 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/</loc><lastmod>2026-11-20</lastmod></url><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/mr-starter/</loc><lastmod>2026-11-20</lastmod></url><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/mr-team/</loc><lastmod>2026-11-20</lastmod></url><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/mr-pro/</loc><lastmod>2026-11-20</lastmod></url><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/mr-booster/</loc><lastmod>2026-11-20</lastmod></url><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/intro/philosophy/</loc><lastmod>2026-11-20</lastmod></url><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/inquiry/</loc><lastmod>2026-11-20</lastmod></url><url><loc>https://devello-overview-study.mrdevello2027.chatgpt.site/mr-check/</loc><lastmod>2026-11-20</lastmod></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://mrdevello.com/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://mrdevello.com/mr-starter/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mrdevello.com/mr-pro/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mrdevello.com/mr-team/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mrdevello.com/mr-check/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mrdevello.com/mr-booster/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mrdevello.com/inquiry/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://mrdevello.com/intro/philosophy/</loc>
+<lastmod>2026-11-23T10:23:15.789Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+</urlset>

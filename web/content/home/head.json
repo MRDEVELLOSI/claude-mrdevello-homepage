@@ -1,0 +1,215 @@
+[
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/assets/93a44be20de215bbef.css?v=f874da5ae3"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/assets/a7935ac30fcaeedc96.css?v=f33315ae56"
+  },
+  "inner": null
+ },
+ {
+  "tag": "style",
+  "attrs": {
+   "data-tailwind-layer-order": "true",
+   "type": "text/css"
+  },
+  "inner": "@layer properties, theme, base, components, utilities;\n"
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/assets/228dd2f8c6d9aaa343.css?v=03a714c346"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/assets/4de152b42431b4c839.css?v=0a37c09a8a"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/study.css?v=d9481bc169"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "preload",
+   "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
+   "as": "font",
+   "type": "font/woff2",
+   "crossorigin": ""
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/page-experience.0be3a66ff9a5.css"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {},
+  "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/page-transitions.f43ea8b95008.js"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/supplied-section-font.css?v=c9619aec86"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/ai-build.css?v=74882502b3"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/why-worries.css?v=efdc4e9d4c"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/five-questions-standard.css?v=611240faeb"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/home-sections-presentation.css?v=2b925ca21c"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/ai-build-sizing.css?v=cb7cc751ea"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/home-section-surfaces.css?v=fcd3ecd658"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/home-color-guide.css?v=32cc895703x2"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/why-worries.js?v=a64f420617"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/five-questions-standard.js?v=f47def84d7"
+  },
+  "inner": null
+ },
+ {
+  "tag": "style",
+  "attrs": {},
+  "inner": "@media (prefers-reduced-motion:no-preference){.devello-ambient:not([data-mr-ready]) [data-overview-layer]>div>div{opacity:0;animation:mr-show 0s 2.5s forwards}}@keyframes mr-show{to{opacity:1}}"
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/no-gray-sections.css"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/inquiry-modal.css?v=2"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/proof-sections.css?v=11"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/last-cta.css?v=5"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mr-footer.css?v=2"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mobile-fit.css?v=3"
+  },
+  "inner": null
+ }
+]

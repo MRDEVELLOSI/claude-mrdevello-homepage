@@ -1,0 +1,30 @@
+/* Values below are DEVELLO_UI_GUIDELINES.md proposals, not measured reference dimensions. */
+:root{--font-sans:"Pretendard",sans-serif;--color-bg:#fff;--color-surface:#f7f7f7;--color-surface-strong:#f2f2f2;--color-text:#0d0d0d;--color-text-secondary:#4e535c;--color-text-muted:#727780;--color-border:#e5e5e5;--starter-tint:#f6f1fd;--starter-accent:#7560c9}
+html{font-family:var(--font-sans);scroll-behavior:smooth;scroll-padding-top:96px}
+body.starter-body{font-family:var(--font-sans);font-size:16px;color:var(--color-text);background:var(--color-bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+.starter-body button,.starter-body input,.starter-body textarea,.starter-body select{font:inherit}
+.starter-body button,.starter-body a{-webkit-tap-highlight-color:transparent}
+.starter-body button{cursor:pointer}
+.starter-body a{color:inherit;text-decoration:none}
+.starter-body button:focus-visible,.starter-body a:focus-visible,.starter-body summary:focus-visible,.starter-page [role=tabpanel]:focus-visible{outline:2px solid var(--starter-accent);outline-offset:5px}
+.starter-page h1,.starter-page h2,.starter-page h3,.starter-page p{margin:0}
+.starter-page [hidden]{display:none!important}
+.starter-page h1,.starter-page h2,.starter-page h3,.starter-page p{word-break:keep-all;overflow-wrap:anywhere}
+.starter-container{width:min(1120px,calc(100% - 80px));margin-inline:auto}
+.starter-eyebrow{font-size:14px;font-weight:500;line-height:1.5;letter-spacing:.025em}
+.starter-hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 10%,#ebe6f7 0,transparent 57%),radial-gradient(ellipse at 10% 36%,var(--starter-tint) 0,transparent 58%),linear-gradient(#fcfaff,#fff);text-align:center}
+.starter-hero-inner{position:relative;max-width:1000px;margin:auto;padding:64px 24px 96px}
+.starter-product-icon{display:block;width:76px;height:76px;object-fit:contain;margin:0 auto 12px}
+.starter-hero h1{margin-top:24px;font-size:clamp(80px,6.2vw,88px);font-weight:700;line-height:1.08;letter-spacing:-.045em;text-wrap:balance}
+.starter-hero-description{max-width:700px;margin:28px auto 0!important;color:var(--color-text-secondary);font-size:16px;line-height:1.6;letter-spacing:-.01em}
+.starter-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 24px;margin-top:32px}
+.starter-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:44px;padding:0 24px;border:0;border-radius:999px;font-size:14px;font-weight:500;line-height:1.4;transition:background .18s ease,transform .18s ease;white-space:nowrap}
+.starter-button:hover{transform:translateY(-2px)}
+.starter-button-dark{background:var(--color-text);color:#fff!important}.starter-button-dark:hover{background:#333}
+.starter-button-light{background:#fff;color:var(--color-text)!important}.starter-button-light:hover{background:#eee}
+.starter-text-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;font-size:14px;font-weight:500;line-height:1.4}.starter-text-link:hover{color:var(--starter-accent)}
+
+@media(max-width:1023px){.starter-hero h1{font-size:72px}}
+@media(max-width:720px){.starter-hero-inner{padding:48px 20px 72px}.starter-product-icon{width:64px;height:64px}.starter-hero h1{font-size:44px}.starter-hero-description br{display:none}}
+@media(max-width:360px){.starter-hero h1{font-size:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.starter-page *{transition:none!important}}

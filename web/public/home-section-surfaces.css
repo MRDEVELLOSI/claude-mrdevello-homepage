@@ -1,0 +1,9 @@
+/* Alternate white sections and soft gray panels instead of separator rules. */
+.devello-home {background:#fff}
+#ai-build,#five-questions-standard #five-questions {margin:24px;border:0;border-radius:40px;background:#f5f5f5}
+#why,#development-standard {background:#fff;border:0}
+#five-questions-standard {background:#fff;border:0}
+#five-questions-standard .std {border:0}
+@media(max-width:800px){
+ #ai-build,#five-questions-standard #five-questions {margin:16px;border-radius:28px}
+}

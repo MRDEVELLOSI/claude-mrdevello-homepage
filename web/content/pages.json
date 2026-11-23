@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "home",
+    "route": "/",
+    "title": "미스터디벨로 - 비즈니스를 이해하는 앱·웹 개발사",
+    "description": "개발, 운영, 확장을 모두 한곳에서. 기획부터 개발·운영까지, 비즈니스를 이해하는 한 팀이 함께합니다.",
+    "ogImage": null,
+    "icon": null,
+    "bodyClass": "font-oai devello-single-screen",
+    "htmlClass": "light",
+    "htmlStyle": "color-scheme: light"
+  },
+  {
+    "slug": "mr-starter",
+    "route": "/mr-starter/",
+    "title": "MR.STARTER · 서비스 기획·프로토타입 | 미스터디벨로",
+    "description": "아이디어를 정리하고, 클릭 가능한 프로토타입으로 화면과 흐름을 확인하세요. 개발을 결정하기 전 함께 만드는 서비스 기획, MR.STARTER.",
+    "ogImage": "/assets/services/starter-3d.png",
+    "icon": "/assets/services/starter-3d.png",
+    "bodyClass": "starter-body starter-selected-b service-style-b",
+    "htmlClass": "light",
+    "htmlStyle": null
+  },
+  {
+    "slug": "mr-pro",
+    "route": "/mr-pro/",
+    "title": "MR.PRO · IT 턴키 개발 프로젝트 | 미스터디벨로",
+    "description": "비즈니스를 이해하는 앱·웹 개발. 서비스 기획부터 디자인, 개발, 테스트와 출시까지 미스터디벨로가 한 팀으로 함께합니다.",
+    "ogImage": "/assets/services/pro-3d.png",
+    "icon": "/assets/services/pro-3d.png",
+    "bodyClass": "pro-body service-style-b",
+    "htmlClass": "",
+    "htmlStyle": null
+  },
+  {
+    "slug": "mr-team",
+    "route": "/mr-team/",
+    "title": "MR.TEAM · 운영·개선 개발팀 구독제 | 미스터디벨로",
+    "description": "출시 이후의 서비스 운영과 지속적인 개선을 함께하는 MR.TEAM 개발팀 구독제입니다. 운영형과 운영·개선형을 비교하고 정기 점검·백업·보안 관리, 월 작업량과 대응 기준을 확인합니다.",
+    "ogImage": "/assets/services/team-3d.png",
+    "icon": "/assets/services/team-3d.png",
+    "bodyClass": "team-body service-style-b",
+    "htmlClass": "",
+    "htmlStyle": null
+  },
+  {
+    "slug": "mr-check",
+    "route": "/mr-check/",
+    "title": "MR.CHECK · 보안·운영비·SEO·GEO 진단 및 개선 | 미스터디벨로",
+    "description": "MR.CHECK는 보안 위험·운영비·SEO·GEO를 함께 진단하고 개선하는 프로젝트입니다. 검색 수집·색인, AI 검색을 위한 정보 구조와 근거, 실제 조치와 전후 확인 기준을 안내합니다.",
+    "ogImage": "/assets/services/care-3d.png",
+    "icon": "/assets/services/care-3d.png",
+    "bodyClass": "team-body check-body service-style-b",
+    "htmlClass": "",
+    "htmlStyle": null
+  },
+  {
+    "slug": "mr-booster",
+    "route": "/mr-booster/",
+    "title": "MR.BOOSTER · AX 전환 프로젝트 | 미스터디벨로",
+    "description": "반복 업무는 AI에게, 우리 팀은 더 중요한 일에. 업무·데이터 진단부터 작은 범위의 PoC 검증, 시스템 연결까지 우리 회사에 맞는 AX 전환을 함께 살펴봅니다.",
+    "ogImage": "/assets/services/booster-3d.png",
+    "icon": "/assets/services/booster-3d.png",
+    "bodyClass": "ax-body service-style-b",
+    "htmlClass": "",
+    "htmlStyle": null
+  },
+  {
+    "slug": "inquiry",
+    "route": "/inquiry/",
+    "title": "문의하기 | 미스터디벨로",
+    "description": "새로운 앱·웹 개발부터 운영 중인 서비스의 개선과 확장까지, 미스터디벨로와 프로젝트의 목표와 범위를 함께 정리합니다.",
+    "ogImage": null,
+    "icon": null,
+    "bodyClass": "iq-body",
+    "htmlClass": "",
+    "htmlStyle": null
+  },
+  {
+    "slug": "philosophy",
+    "route": "/intro/philosophy/",
+    "title": "철학 · 의뢰한 대로가 아닌, 의도한 대로 | 미스터디벨로",
+    "description": "기술은 누구나 구현하는 시대, 미스터디벨로는 의도를 파악하는 데 시간과 비용을 씁니다. 대화와 기획, 실제 디어먼데이 사례로 소개하는 개발 철학.",
+    "ogImage": "/assets/navigation/philosophy-3d.png",
+    "icon": "/assets/navigation/philosophy-3d.png",
+    "bodyClass": "ph-body-page",
+    "htmlClass": "",
+    "htmlStyle": null
+  }
+]

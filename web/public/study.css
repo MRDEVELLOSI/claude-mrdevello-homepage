@@ -1,0 +1,222 @@
+/* Reserve the same scrollbar space on short and long pages. */
+html{scrollbar-gutter:stable}
+#contentful-header.devello-site-header{--header-content-max:1280px;--header-gutter:40px;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:64px;width:100%;box-sizing:border-box;padding:0 max(var(--header-gutter),calc((100% - var(--header-content-max)) / 2));background:#fff}
+.devello-site-header button,.devello-site-header summary,.devello-site-header a{-webkit-tap-highlight-color:transparent;font:inherit;cursor:pointer}
+.devello-site-header button{border:0;background:none;color:inherit}
+.devello-site-header button:focus-visible,.devello-site-header summary:focus-visible,.devello-site-header a:focus-visible{outline:2px solid #111;outline-offset:4px;border-radius:7px}
+.devello-header-logo{display:flex;flex-shrink:0;align-items:center;padding:0}
+.devello-primary-nav{display:block}
+.devello-nav-list{display:flex;align-items:center;gap:4px;margin:0;padding:0;list-style:none}
+.devello-nav-list>li{margin:0;padding:0}
+.devello-nav-group{position:relative}
+.devello-nav-trigger{display:flex;align-items:center;gap:7px;min-height:64px;padding:0 13px;color:#111;font-size:14px!important;font-weight:500!important;white-space:nowrap;list-style:none;user-select:none}
+.devello-nav-trigger::-webkit-details-marker{display:none}
+.devello-nav-trigger:hover,.devello-nav-group[open]>.devello-nav-trigger{color:#111}
+.devello-nav-trigger[aria-current="page"]{color:#111}
+.devello-nav-trigger svg{transition:transform .18s ease}
+.devello-nav-group[open]>.devello-nav-trigger svg{transform:rotate(180deg)}
+.devello-nav-dropdown{position:absolute;top:100%;left:50%;z-index:101;width:180px;padding-top:4px;transform:translateX(-50%)}
+.devello-nav-group:not([open])>.devello-nav-dropdown{display:none}
+.devello-nav-dropdown ul{margin:0;padding:8px;list-style:none;background:#fff;border:1px solid #ededed;border-radius:14px;box-shadow:0 14px 35px #0000000d}
+.devello-nav-dropdown li{margin:0;padding:0}
+.devello-nav-dropdown .devello-nav-leaf{display:block;width:100%;padding:12px;text-align:left;color:#444;font-size:14px;line-height:1.4;border-radius:8px}
+.devello-nav-dropdown .devello-nav-leaf:hover{background:#f5f5f5;color:#111}
+.devello-header-actions{display:flex;flex-shrink:0;align-items:center;gap:16px}
+.devello-site-header .devello-contact-button{display:flex;align-items:center;justify-content:center;gap:4px;min-height:42px;padding:0 20px;border-radius:999px;background:#111;color:#fff;font-size:14px;font-weight:500;white-space:nowrap}
+.devello-site-header .devello-contact-button:hover{background:#333}
+.devello-site-header .devello-menu-toggle,.devello-nav-mobile-contact{display:none}
+@media(min-width:1024px) and (max-width:1150px){#contentful-header.devello-site-header{gap:12px}#contentful-header .devello-header-logo svg{width:155px}.devello-nav-trigger{padding:0 9px}}
+@media(max-width:1023px){
+ #contentful-header.devello-site-header{--header-content-max:760px;gap:12px}
+ .devello-site-header .devello-menu-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:44px;padding:0}
+ .devello-menu-toggle path{stroke:#111;stroke-width:1.6;stroke-linecap:round;transform-origin:center;transition:transform .18s ease}
+ .devello-menu-open .devello-menu-line-first{transform:translateY(4px) rotate(45deg)}
+ .devello-menu-open .devello-menu-line-last{transform:translateY(-4px) rotate(-45deg)}
+ .devello-primary-nav{display:none;position:fixed;top:64px;left:0;right:0;max-height:calc(100dvh - 64px);padding:14px max(var(--header-gutter),calc((100% - var(--header-content-max)) / 2)) 28px;overflow-y:auto;overscroll-behavior:contain;background:#fff;border-bottom:1px solid #eee;box-shadow:0 20px 35px #00000009}
+ .devello-menu-open .devello-primary-nav{display:block}
+ .devello-nav-list{display:block}
+ .devello-nav-list>li+li{border-top:1px solid #f1f1f1}
+ .devello-nav-trigger{justify-content:space-between;width:100%;min-height:56px;padding:0 4px;font-size:17px!important;color:#222}
+ .devello-nav-trigger svg{width:14px;height:14px}
+ .devello-nav-dropdown{position:static;width:auto;padding:0 0 12px;transform:none}
+ .devello-nav-dropdown ul{padding:0;border:0;border-radius:0;box-shadow:none}
+ .devello-nav-dropdown .devello-nav-leaf{padding:12px 16px;font-size:15px}
+ .devello-nav-mobile-contact{display:block}
+}
+@media(max-width:400px){.devello-header-actions{gap:6px}.devello-site-header .devello-contact-button{min-height:38px;padding:0 14px;font-size:12px}}
+#contentful-header .devello-header-logo svg{width:174px;height:auto;color:#111}
+
+html{color-scheme:light!important;background:#fff}
+body{margin:0;min-height:100vh;min-height:100dvh;color:#111;background:#fff}
+*,*::before,*::after{box-sizing:border-box}
+button,textarea{font-family:inherit}
+.devello-onepage{position:relative;isolation:isolate;display:grid;place-items:center;min-height:calc(100vh - 64px);min-height:calc(100dvh - 64px);padding:clamp(20px,4dvh,48px) 24px;overflow:hidden}
+.devello-onepage-content{position:relative;z-index:10;width:min(860px,calc(100vw - 320px));margin:0 auto}
+.devello-intro-copy{text-align:center}
+.devello-headline{margin:0;color:#111;font-size:clamp(58px,min(7vw,11.5dvh),96px);font-weight:700;line-height:1.06;letter-spacing:-.055em;text-align:center;text-wrap:balance}
+.devello-headline [data-overview-headline-mode-group]{display:block;white-space:nowrap}
+.devello-headline button{font:inherit;color:inherit}
+[data-overview-mode-active-indicator]{transition:transform .35s cubic-bezier(.22,1,.36,1)}
+[data-overview-mode-character]{transition:color .4s ease}
+.devello-hero-copy{margin:22px auto 0;letter-spacing:-.025em}
+.devello-hero-copy strong{display:block;font-size:18px;font-weight:500;line-height:1.5;color:#222}
+.devello-hero-copy>span{display:block;margin-top:6px;color:#777;font-size:14px;font-weight:400;line-height:1.6}
+.devello-mobile-break{display:none}
+.devello-hero-actions{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:22px}
+.devello-hero-actions .btn{min-height:38px;padding:0 18px;font-size:13px}
+.devello-project-brief{width:100%;margin:28px auto 0}
+.devello-project-form{margin:0;padding:22px 26px 20px;background:#fff;border:1px solid #dfdfdf;border-radius:25px;box-shadow:0 8px 28px #00000007;transition:border-color .18s ease,box-shadow .18s ease}
+.devello-project-form:focus-within{border-color:#999;box-shadow:0 8px 28px #0000000a,0 0 0 1px #11111108}
+.devello-project-form label{display:block;margin-bottom:10px;color:#333;font-size:13px;font-weight:500;line-height:1.4;letter-spacing:-.02em}
+.devello-project-form textarea{display:block;width:100%;height:58px;min-height:0;margin:0;padding:0;border:0;outline:0;resize:none;background:transparent;color:#171717;font-size:16px;font-weight:400;line-height:1.7;letter-spacing:-.025em}
+.devello-project-form textarea::placeholder{color:#848484;opacity:1}
+.devello-project-form textarea:focus{box-shadow:none;outline:none}
+.devello-form-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}
+.devello-form-bottom p{margin:0;color:#777;font-size:12px;line-height:1.6;letter-spacing:-.02em}
+.devello-brief-submit{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:0 21px;border:0;border-radius:999px;background:#111;color:#fff;font-size:13px;font-weight:500;cursor:pointer;transition:background .18s ease,transform .18s ease}
+.devello-brief-submit:hover{background:#333}
+.devello-brief-submit:active{transform:scale(.98)}
+.devello-brief-submit:focus-visible,.devello-brief-topics button:focus-visible{outline:2px solid #111;outline-offset:4px}
+.devello-brief-topics{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-top:16px;min-height:36px}
+.devello-brief-topics button{padding:9px 13px;border:1px solid #e8e8e8;border-radius:999px;background:#f8f8f8;color:#555;font-size:11px;line-height:1.4;cursor:pointer;white-space:nowrap;transition:background .18s ease,border-color .18s ease}
+.devello-brief-topics button:hover{background:#efefef;color:#222}
+.devello-brief-topics button[aria-pressed="true"]{background:#111;border-color:#111;color:#fff}
+.devello-ambient{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.study-artwork-scene{position:absolute;inset:0;pointer-events:none}
+.devello-ambient [data-overview-layer]{position:absolute;inset-inline-start:var(--ambient-x);top:var(--ambient-y);width:var(--ambient-width);rotate:var(--ambient-rotation);pointer-events:none}
+.devello-ambient img{display:block;width:100%;height:auto;max-width:100%}
+.devello-ambient [data-service-asset]>div{animation:devello-drift 7s ease-in-out infinite alternate;animation-delay:calc(var(--study-order,0)*-1s)}
+.study-scene-enter [data-overview-layer]>div>div{animation:study-layer-in .65s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(var(--study-order,0)*16ms)}
+.study-scene-exit{animation:study-scene-out .34s ease both}
+@keyframes devello-drift{from{transform:translateY(-5px)}to{transform:translateY(5px)}}
+@keyframes study-layer-in{from{opacity:0;transform:translateY(-14px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes study-scene-out{to{opacity:0;transform:translateY(-8px)}}
+@media(max-width:1023px){
+ .devello-onepage{padding:28px 24px}
+ .devello-onepage-content{width:min(700px,calc(100vw - 96px))}
+ .devello-headline{font-size:clamp(42px,min(7vw,11dvh),72px)}
+ .devello-ambient [data-overview-layer]{inset-inline-start:var(--ambient-x-mobile);top:var(--ambient-y-mobile);width:var(--ambient-width-mobile);rotate:var(--ambient-rotation-mobile)}
+}
+@media(max-width:600px){
+ #contentful-header .devello-header-logo svg{width:138px}
+ .devello-onepage{padding:24px 20px max(24px,env(safe-area-inset-bottom))}
+ .devello-onepage-content{width:100%;max-width:420px}
+ .devello-headline{font-size:clamp(29px,9.5vw,44px);line-height:1.08;letter-spacing:-.05em}
+ .devello-hero-copy{margin-top:18px}
+ .devello-hero-copy strong{font-size:16px}
+ .devello-hero-copy>span{font-size:12px;line-height:1.65;margin-top:5px}
+ .devello-mobile-break{display:block}
+ .devello-hero-actions{margin-top:18px;gap:8px}
+ .devello-hero-actions .btn{min-height:34px;padding:0 13px;font-size:11px}
+ .devello-project-brief{margin-top:24px}
+ .devello-project-form{padding:18px;border-radius:22px}
+ .devello-project-form label{font-size:12px;margin-bottom:8px}
+ .devello-project-form textarea{height:80px;min-height:0;font-size:16px;line-height:1.6}
+ .devello-form-bottom{align-items:center;gap:8px;margin-top:10px}
+ .devello-form-bottom p{max-width:140px;font-size:10px;line-height:1.6}
+ .devello-brief-submit{min-height:38px;padding:0 13px;gap:6px;font-size:11px}
+ .devello-brief-submit svg{width:13px;height:13px}
+ .devello-brief-topics{gap:6px;margin-top:13px;min-height:64px;align-content:start}
+ .devello-brief-topics button{padding:7px 10px;font-size:10px}
+}
+@media(max-width:600px) and (max-height:740px){
+ .devello-onepage{padding-top:16px;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+ .devello-headline{font-size:clamp(29px,9vw,38px)}
+ .devello-hero-copy{margin-top:13px}
+ .devello-hero-copy strong{font-size:14px}
+ .devello-hero-copy>span{font-size:11px;line-height:1.6;margin-top:4px}
+ .devello-hero-actions{display:none}
+ .devello-project-brief{margin-top:18px}
+ .devello-project-form{padding:15px 16px}
+ .devello-project-form textarea{height:64px;min-height:0}
+ .devello-form-bottom p{max-width:125px}
+ .devello-brief-submit{min-height:34px}
+ .devello-brief-topics{margin-top:12px}
+}
+@media(min-width:601px) and (max-height:800px){
+ .devello-onepage{padding-top:16px;padding-bottom:16px}
+ .devello-headline{font-size:clamp(40px,min(6vw,11dvh),70px)}
+ .devello-hero-copy{margin-top:14px}
+ .devello-hero-copy strong{font-size:16px}
+ .devello-hero-copy>span{font-size:12px}
+ .devello-hero-actions{margin-top:14px}
+ .devello-project-brief{margin-top:18px}
+ .devello-project-form{padding:16px 22px}
+ .devello-project-form textarea{height:50px;min-height:0}
+ .devello-brief-topics{margin-top:12px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@media(min-width:451px) and (max-height:500px){
+ .devello-onepage{padding:14px 24px}
+ .devello-onepage-content{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:24px;width:min(1100px,calc(100vw - 96px))}
+ .devello-headline{font-size:clamp(26px,4.2vw,42px)}
+ .devello-hero-copy{margin-top:12px}
+ .devello-hero-copy strong{font-size:14px}
+ .devello-hero-copy>span{font-size:10px;line-height:1.6}
+ .devello-hero-actions{margin-top:12px;gap:4px}
+ .devello-hero-actions .btn{min-height:32px;padding:0 10px;font-size:10px}
+ .devello-project-brief{margin:0}
+ .devello-project-form{padding:14px 16px;border-radius:20px}
+ .devello-project-form label{font-size:11px;margin-bottom:7px}
+ .devello-project-form textarea{height:60px;min-height:0;font-size:16px;line-height:1.5}
+ .devello-form-bottom{margin-top:8px;gap:8px}
+ .devello-form-bottom p{max-width:105px;font-size:9px}
+ .devello-brief-submit{min-height:34px;padding:0 12px;font-size:11px;gap:6px}
+ .devello-brief-topics{min-height:58px;margin-top:10px;gap:5px;align-content:start}
+ .devello-brief-topics button{font-size:9px;padding:6px 8px}
+ .devello-ambient [data-service-asset]{width:clamp(38px,7vw,64px)}
+ .devello-ambient [data-overview-layer*="-mark-"]{width:24px}
+}
+
+
+@media(min-width:451px) and (max-width:600px) and (max-height:500px){.devello-onepage{padding:10px 16px}.devello-onepage-content{width:calc(100vw - 48px);gap:16px}.devello-headline{font-size:clamp(22px,4.5vw,27px)}.devello-hero-copy strong{font-size:12px}.devello-hero-copy>span{font-size:9px}.devello-project-form{padding:12px}.devello-project-form label{font-size:10px}.devello-project-form textarea{height:48px;min-height:0}.devello-form-bottom p{max-width:75px;font-size:8px}.devello-brief-submit{min-height:32px;padding:0 10px;font-size:10px}.devello-brief-topics{min-height:58px}.devello-brief-topics button{font-size:8px;padding:5px 7px}}
+
+/* Compact service menu with transparent artwork and distinct product names. */
+.devello-rich-nav-group>.devello-nav-dropdown{width:440px}
+.devello-rich-nav-group .devello-nav-dropdown ul{padding:8px;border-color:#e8e8e8;border-radius:16px}
+.devello-rich-nav-group .devello-nav-dropdown .devello-service-row{display:flex;align-items:center;gap:12px;padding:11px 10px;border-radius:10px;transition:background-color .2s ease}
+.devello-service-row:has(.devello-icon-starter){--service-hover:#f6f1fd}
+.devello-service-row:has(.devello-icon-pro){--service-hover:#eff5ff}
+.devello-service-row:has(.devello-icon-care){--service-hover:#eef8f2}
+.devello-service-row:has(.devello-icon-team){--service-hover:#fff1ed}
+.devello-service-row:has(.devello-icon-booster){--service-hover:#fff8e8}
+.devello-rich-nav-group .devello-nav-dropdown .devello-service-row:is(:hover,:focus-visible){background-color:var(--service-hover)}
+.devello-service-icon{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;background:transparent}
+.devello-service-icon img{display:block;width:40px;height:40px;max-width:100%;object-fit:contain}
+.devello-service-copy{display:block;min-width:0}
+.devello-service-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 9px;line-height:1.5}
+.devello-service-heading strong{color:#171717;font-size:14px;font-weight:650;letter-spacing:-.02em;white-space:nowrap}
+.devello-service-subtitle{color:#6e6e73;font-size:12px;font-weight:400;letter-spacing:-.025em;word-break:keep-all}
+.devello-service-description{display:block;margin-top:4px;color:#8b8b91;font-size:11px;font-weight:400;line-height:1.6;letter-spacing:-.02em;word-break:keep-all;overflow-wrap:anywhere}
+@media(min-width:1024px){.devello-rich-nav-group .devello-nav-dropdown ul{max-height:calc(100dvh - 80px);overflow-y:auto}}
+@media(max-width:1023px){.devello-rich-nav-group>.devello-nav-dropdown{width:auto}.devello-rich-nav-group .devello-nav-dropdown ul{padding:0}.devello-rich-nav-group .devello-nav-dropdown .devello-service-row{gap:10px;padding:12px 2px}.devello-service-icon{flex-basis:36px;width:36px;height:36px}.devello-service-icon img{width:36px;height:36px}.devello-service-heading{gap:1px 7px}.devello-service-heading strong{font-size:13px}.devello-service-subtitle{font-size:11px}}
+
+/* Informational menus share the service menu's icon, title and description rhythm. */
+.devello-info-group>.devello-nav-dropdown{width:400px}
+.devello-info-group[data-menu-section="자료"]>.devello-nav-dropdown{width:360px}
+@media(max-width:1023px){.devello-info-group>.devello-nav-dropdown,.devello-info-group[data-menu-section="자료"]>.devello-nav-dropdown{width:auto}}
+
+.devello-site-header a{color:inherit;text-decoration:none}
+
+/* Shared top navigation: black labels and a quiet rectangular hover surface. */
+.devello-nav-list>li>.devello-nav-trigger,.devello-nav-group>.devello-nav-trigger{position:relative;isolation:isolate;color:#111}
+.devello-nav-list>li>.devello-nav-trigger::before,.devello-nav-group>.devello-nav-trigger::before{content:"";position:absolute;inset:12px 0;z-index:-1;border-radius:8px;background:transparent;transition:background-color .18s ease;pointer-events:none}
+.devello-nav-list>li>.devello-nav-trigger:is(:hover,:focus-visible)::before,.devello-nav-group>.devello-nav-trigger:is(:hover,:focus-visible)::before,.devello-nav-group[open]>.devello-nav-trigger::before{background:#f2f2f2}
+@media(max-width:1023px){.devello-nav-list>li>.devello-nav-trigger::before,.devello-nav-group>.devello-nav-trigger::before{inset:6px -8px}}
+@media(prefers-reduced-motion:reduce){.devello-nav-trigger::before{transition:none!important}}
+
+/* Main document downloads remain available on compact screens. */
+.devello-hero-actions{display:flex}
+.devello-hero-actions .btn{min-height:44px;white-space:nowrap}
+.devello-hero-actions .btn>div{gap:8px}
+.devello-hero-actions .btn svg{flex:none}
+@media(max-width:600px){.devello-hero-actions .btn{font-size:12px;padding:0 12px}}
+
+/* One header grid for every page; independent of the page's body containers. */
+@media(max-width:767px){#contentful-header.devello-site-header{--header-gutter:20px}}
+@media(max-width:360px){
+ #contentful-header.devello-site-header{gap:8px}
+ #contentful-header .devello-header-logo svg{width:112px}
+ #contentful-header .devello-header-actions{gap:4px}
+ #contentful-header .devello-contact-button{font-size:10px;padding-inline:10px}
+}

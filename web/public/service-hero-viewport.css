@@ -1,0 +1,28 @@
+/* Desktop service intros occupy the first screen, including the 64px header. */
+@media(min-width:1280px){
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero){box-sizing:border-box;--service-min-screen-height:720px;--service-header-height:64px;height:calc(100vh - var(--service-header-height));height:calc(100dvh - var(--service-header-height));min-height:calc(var(--service-min-screen-height) - var(--service-header-height));padding-block:clamp(28.8px,4vh,48px)}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{height:100%;min-height:0;align-items:start}
+}
+@media(min-width:1280px) and (max-height:920px){
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{--hero-icon-size:112px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-icon{margin-bottom:16px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-title{font-size:48px;margin-top:20px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-description{font-size:16px;min-height:3.3em;margin-top:20px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents){margin-top:28px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents)>p{margin-bottom:10px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents) dl{gap:8px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents) dl>div{min-height:72px;padding-block:10px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents) dd{font-size:var(--service-card-copy,13px)}
+}
+@media(min-width:1280px) and (max-height:820px){
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{--hero-icon-size:96px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-title{font-size:44px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-description{margin-top:16px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents){margin-top:24px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents) dl>div{min-height:68px;padding-block:8px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy :is(.starter-hero-contents,.pro-hero-contents,.service-hero-contents) dt{font-size:var(--service-card-title,15px)}
+}
+@media(min-width:1280px) and (max-height:740px){
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{--hero-icon-size:80px}
+ body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-title{font-size:40px}
+}

@@ -1,0 +1,68 @@
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:400;src:url(/assets/ee4c2bbea821cbb753.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:500;src:url(/assets/2492a9ad5187d51bb7.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:600;src:url(/assets/cfe044d7979cbfc5d5.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:700;src:url(/assets/ab444ce85c2f70c306.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans Variable Scripts;font-style:normal;font-weight:300 700;src:url(/assets/70a91f055992c0ccbe.woff2)format("woff2");unicode-range:U+11??,U+3130-318F,U+A960-A97F,U+AC00-D7AF}
+/* Three requested white-background studies; applied only to dedicated review routes. */
+body.starter-body[data-starter-concept]{--font-sans:"OpenAI Sans","OpenAI Sans Variable Scripts",sans-serif;background:#fff;font-family:var(--font-sans)!important}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero{background:#fff!important;isolation:isolate}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .service-hero-grid{position:relative;isolation:isolate}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .service-hero-name{background:#151515;color:#fff}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .service-hero-category{color:#68686d}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .starter-hero-contents>p{color:#555961}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .starter-hero-contents>p::before{display:none}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .starter-hero-contents dl>div{--card-color:#1776dc;--card-tint:#eaf4ff;background:#fff;border-color:#e6e7ea;box-shadow:none}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(2){--card-color:#d95c46;--card-tint:#fff0e8}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(3){--card-color:#15896e;--card-tint:#e6f7ee}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .starter-card-icon{color:var(--card-color);background:var(--card-tint)}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .starter-hero-contents dd{color:#66686e}
+body.starter-body[data-starter-concept] #starter_hero#starter_hero .service-hero-title .study-color{display:inline;white-space:nowrap}
+
+/* A — light, precise accents: two title colors and a three-color underline. */
+body.starter-body[data-starter-concept=a] #starter_hero#starter_hero .study-link{color:#9a75d6}
+body.starter-body[data-starter-concept=a] #starter_hero#starter_hero .study-one{color:#039bd3}
+body.starter-body[data-starter-concept=a] #starter_hero#starter_hero .study-color{position:relative}
+body.starter-body[data-starter-concept=a] #starter_hero#starter_hero .study-color::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:3px;background:linear-gradient(90deg,#bd9bea 0 33%,#72cfab 33% 67%,#f6cf58 67%);border-radius:2px}
+body.starter-body[data-starter-concept=a] #starter_hero#starter_hero .starter-hero-contents dl>div{border-left:3px solid var(--card-color)}
+body.starter-body[data-starter-concept=a] #starter_hero#starter_hero .starter-card-icon{border-radius:50%}
+
+/* B — graphic marker: yellow heading highlight, blue label and crisp color rails. */
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .service-hero-name{background:#1967d2}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .study-color{position:relative;color:#171717;z-index:0;padding:0 5px}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .study-color::after{content:"";position:absolute;z-index:-1;left:0;right:0;bottom:1px;height:42%;background:#ffe273;transform:rotate(-1.5deg);border-radius:3px}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dl>div{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;min-height:210px;padding:66px 16px 20px;border-radius:14px;border-top:3px solid var(--card-color)}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-card-icon{top:18px;left:16px;transform:none;width:34px;height:34px;border-radius:9px}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-card-icon svg{width:21px;height:21px}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dt{line-height:1.45}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dd{line-height:1.65}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(2){--card-color:#ef805b;--card-tint:#fff0e9}
+body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dl>div:nth-child(3){--card-color:#3a9c80;--card-tint:#e7f7f0}
+
+/* C — playful dimensional objects: generous white space and colorful small forms. */
+body.starter-body[data-starter-concept=c] #starter_hero#starter_hero .service-hero-icon{object-fit:contain}
+body.starter-body[data-starter-concept=c] #starter_hero#starter_hero .service-hero-name{background:#eaf4ff;color:#1266b0}
+body.starter-body[data-starter-concept=c] #starter_hero#starter_hero .study-link{color:#1777cf}
+body.starter-body[data-starter-concept=c] #starter_hero#starter_hero .study-one{color:#e57359}
+body.starter-body[data-starter-concept=c] #starter_hero#starter_hero .starter-hero-contents dl>div{border-radius:18px;border-color:#ebebee}
+body.starter-body[data-starter-concept=c] #starter_hero#starter_hero .starter-card-icon{background:none;border:1px solid color-mix(in srgb,var(--card-color) 30%,white);border-radius:12px}
+body.starter-body[data-starter-concept=c] #starter_hero#starter_hero .starter-live-demo{position:relative}
+.study-object{position:absolute;pointer-events:none;user-select:none;object-fit:contain;z-index:-1;animation:study-float 7s ease-in-out infinite}
+.study-object--puzzle{width:148px;height:148px;left:-112px;top:45px;transform:rotate(-13deg)}
+.study-object--cursor{width:130px;height:130px;right:-102px;bottom:140px;transform:rotate(9deg);animation-delay:-3s}
+.study-symbol{position:absolute;width:34px;height:34px;pointer-events:none;z-index:-1;opacity:.85}
+.study-symbol--code{right:-60px;top:28px;transform:rotate(10deg)}
+.study-symbol--braces{left:-83px;bottom:165px;transform:rotate(-12deg)}
+@keyframes study-float{50%{translate:0 -10px}}
+@media(max-width:1279px){.study-object--puzzle{left:-96px;width:115px;height:115px}.study-object--cursor{right:-52px;width:106px;height:106px}.study-symbol--code{right:-24px}.study-symbol--braces{left:-42px}}
+@media(max-width:767px){
+ body.starter-body[data-starter-concept] #starter_hero#starter_hero{overflow:clip}
+ body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dl{grid-template-columns:1fr}
+ body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dl>div{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:12px;row-gap:3px;min-height:105px;padding:14px;border-top-width:1px;border-left:3px solid var(--card-color)}
+ body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dt,body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-hero-contents dd{grid-column:2}
+ body.starter-body[data-starter-concept=b] #starter_hero#starter_hero .starter-card-icon{top:50%;left:14px;transform:translateY(-50%);width:40px;height:40px}
+ .study-object--puzzle{width:78px;height:78px;left:-34px;top:8px}
+ .study-object--cursor{width:78px;height:78px;right:-31px;bottom:74px}
+ .study-symbol{display:none}
+}
+@media(prefers-reduced-motion:reduce){.study-object{animation:none}}

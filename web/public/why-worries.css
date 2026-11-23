@@ -1,0 +1,119 @@
+#why,#why *{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif!important;line-height:normal;border:0 none currentColor}
+#why button{letter-spacing:normal}
+#why br{line-height:inherit}
+#why img{max-width:none}
+#why,#why *{box-sizing:border-box}
+#why{margin:0;background:#FFFFFF}
+#why{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#222;letter-spacing:-.6px;background:#FFFFFF;overflow:hidden}
+#why .why__inner{width:1200px;margin:0 auto;padding:160px 0;display:flex;flex-direction:column;align-items:center}
+#why h2{margin:0;font-size:56px;font-weight:700;line-height:1.3;letter-spacing:-.04em;text-align:center}
+#why .why__lead{margin:24px 0 40px;font-size:20px;line-height:1.6;color:#6A6D70;text-align:center}
+#why .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+#why.in .reveal{opacity:1;transform:none}
+#why.in .reveal.d1{transition-delay:.1s}
+#why.in .reveal.d2{transition-delay:.2s}
+/* tabs */
+#why .tabs{position:relative;display:inline-flex;padding:5px;border-radius:1000px;background:#F4F8FA;box-shadow:inset 0 0 0 1px rgba(255,255,255,.9),0 16px 40px rgba(46,146,176,.08)}
+#why .tabs__ind{position:absolute;top:5px;bottom:5px;left:5px;border-radius:1000px;background:#74CDF6;box-shadow:0 10px 24px rgba(46,146,176,.35);transition:transform .55s cubic-bezier(.34,1.56,.64,1),width .55s cubic-bezier(.34,1.56,.64,1)}
+#why .tab{position:relative;z-index:1;height:56px;padding:0 24px 0 8px;border:0;border-radius:1000px;background:transparent;font:inherit;font-size:16px;font-weight:700;color:#6A6D70;display:inline-flex;align-items:center;gap:10px;cursor:pointer;transition:color .35s}
+#why .tab[aria-selected="true"]{color:#FFFFFF}
+#why .tab:focus-visible{outline:3px solid #78CDF7;outline-offset:3px}
+#why .tab__av{width:40px;height:40px;border-radius:1000px;background:#EAF7F0;overflow:hidden;display:inline-flex;align-items:flex-end;justify-content:center;transition:transform .4s cubic-bezier(.34,1.56,.64,1),background .3s}
+#why .tab[aria-selected="true"] .tab__av{background:#FFFFFF;transform:rotate(-8deg) scale(1.06)}
+#why .tab__av img{width:40px;height:40px;display:block}
+/* stage */
+#why .stage{position:relative;width:1200px;height:470px;margin-top:40px}
+#why .lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#why .lines .draw{fill:none;stroke:#A8D9ED;stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+#why .lines .flow{fill:none;stroke:#78CDF7;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:4 14;opacity:0}
+#why .play .lines .draw{animation:why-worries-draw .9s cubic-bezier(.65,0,.35,1) forwards}
+#why .play .lines .flow{animation:why-worries-fadeIn .4s ease forwards,why-worries-flow 1.2s linear infinite}
+#why .play .lines path:nth-of-type(2){animation-delay:.5s}
+#why .play .lines path:nth-of-type(3){animation-delay:.6s}
+#why .play .lines path:nth-of-type(4){animation-delay:.7s}
+#why .play .lines path:nth-of-type(5){animation-delay:.8s}
+#why .play .lines .flow:nth-of-type(6){animation-delay:1.3s,1.3s}
+#why .play .lines .flow:nth-of-type(7){animation-delay:1.4s,1.4s}
+#why .play .lines .flow:nth-of-type(8){animation-delay:1.5s,1.5s}
+#why .play .lines .flow:nth-of-type(9){animation-delay:1.6s,1.6s}
+@keyframes why-worries-draw{to{stroke-dashoffset:0}}
+@keyframes why-worries-flow{to{stroke-dashoffset:-36}}
+@keyframes why-worries-fadeIn{to{opacity:.8}}
+#why .orb{position:absolute;left:50%;top:20px;width:400px;height:400px;margin-left:-200px;border-radius:1000px}
+#why .orb__ring{position:absolute;inset:-16px;border-radius:1000px;border:2px dashed #B8DBE8;animation:why-worries-spin 24s linear infinite}
+#why .orb__bg{position:absolute;inset:0;border-radius:1000px;overflow:hidden;background:#EDF7FD;border:1px solid rgba(255,255,255,.95);box-shadow:0 30px 80px rgba(46,146,176,.18)}
+#why .orb__pulse{position:absolute;inset:0;border-radius:1000px;border:2px solid rgba(46,146,176,.35);opacity:0}
+#why .play .orb__pulse{animation:why-worries-pulse 2.6s cubic-bezier(.2,.8,.2,1) 1.2s infinite}
+#why .play .orb__pulse.p2{animation-delay:2.5s}
+@keyframes why-worries-pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.35);opacity:0}}
+@keyframes why-worries-spin{to{transform:rotate(360deg)}}
+#why .person{position:absolute;left:50px;bottom:0;width:300px;height:333px;transform-origin:50% 100%;transform:translateY(70%) scale(.85);opacity:0}
+#why .play .person{animation:why-worries-rise .9s cubic-bezier(.34,1.56,.64,1) .15s forwards}
+@keyframes why-worries-rise{to{transform:none;opacity:1}}
+#why .person-svg{width:100%;height:100%;display:block;animation:why-worries-breathe 3.6s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes why-worries-breathe{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-5px) rotate(-1deg)}}
+#why .person-svg .eyes{transform-origin:100px 98px;animation:why-worries-blink 4.2s infinite}
+@keyframes why-worries-blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+#why .person-svg .sweat{animation:why-worries-drip 2.4s ease-in infinite}
+@keyframes why-worries-drip{0%{transform:translateY(-4px);opacity:0}20%{opacity:1}80%{transform:translateY(16px);opacity:1}100%{transform:translateY(22px);opacity:0}}
+#why .spark{position:absolute;width:34px;height:34px;border-radius:1000px;background:#FFFFFF;box-shadow:0 8px 20px rgba(46,146,176,.2);font-size:16px;font-weight:800;color:#299DDE;display:flex;align-items:center;justify-content:center;opacity:0}
+#why .play .spark{animation:why-worries-sparkIn .6s cubic-bezier(.34,1.56,.64,1) forwards,why-worries-float 3s ease-in-out infinite}
+@keyframes why-worries-sparkIn{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
+#why .bubble{position:absolute;width:330px;padding:20px 22px;background:#FFFFFF;box-shadow:0 18px 40px rgba(46,146,176,.14);display:flex;flex-direction:column;gap:8px;z-index:2;opacity:0;cursor:default;transition:box-shadow .3s,transform .3s}
+#why .bubble__tag{font-size:13px;font-weight:700;color:#299DDE}
+#why .bubble__q{font-size:19px;font-weight:700;line-height:1.45;letter-spacing:-.03em}
+#why .bubble .dot{position:absolute;width:10px;height:10px;border-radius:1000px;background:#74CDF6;box-shadow:0 0 0 5px rgba(46,146,176,.18)}
+#why .b0{left:0;top:10px;border-radius:20px 20px 6px 20px;transform-origin:100% 100%}
+#why .b0 .dot{right:-5px;bottom:-5px}
+#why .b1{right:0;top:10px;border-radius:20px 20px 20px 6px;transform-origin:0 100%}
+#why .b1 .dot{left:-5px;bottom:-5px}
+#why .b2{left:0;bottom:30px;border-radius:20px 6px 20px 20px;transform-origin:100% 0}
+#why .b2 .dot{right:-5px;top:-5px}
+#why .b3{right:0;bottom:30px;border-radius:6px 20px 20px 20px;transform-origin:0 0}
+#why .b3 .dot{left:-5px;top:-5px}
+#why .play .bubble{animation:why-worries-pop .7s cubic-bezier(.34,1.56,.64,1) forwards}
+#why .play .b0{animation-delay:.9s}
+#why .play .b1{animation-delay:1.05s}
+#why .play .b2{animation-delay:1.2s}
+#why .play .b3{animation-delay:1.35s}
+@keyframes why-worries-pop{from{opacity:0;transform:scale(.4) translateY(10px)}to{opacity:1;transform:none}}
+#why .bubble:hover{box-shadow:0 24px 56px rgba(46,146,176,.24)}
+#why .bubble__inner{animation:why-worries-float 4s ease-in-out infinite}
+#why .b1 .bubble__inner{animation-delay:-1s}
+#why .b2 .bubble__inner{animation-delay:-2s}
+#why .b3 .bubble__inner{animation-delay:-3s}
+@keyframes why-worries-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+#why .prop{position:absolute;width:84px;height:84px;opacity:0;filter:drop-shadow(0 10px 14px rgba(16,24,40,.14));z-index:1}
+#why .prop img{width:100%;height:100%;display:block;animation:why-worries-bob 3.4s ease-in-out infinite}
+#why .pr0{left:350px;top:120px}
+#why .pr1{right:350px;top:120px}
+#why .pr2{left:350px;bottom:120px}
+#why .pr3{right:350px;bottom:120px}
+#why .pr1 img{animation-delay:-.8s}
+#why .pr2 img{animation-delay:-1.6s}
+#why .pr3 img{animation-delay:-2.4s}
+#why .play .prop{animation:why-worries-spinIn .8s cubic-bezier(.34,1.56,.64,1) forwards}
+#why .play .pr0{animation-delay:.6s}
+#why .play .pr1{animation-delay:.7s}
+#why .play .pr2{animation-delay:.8s}
+#why .play .pr3{animation-delay:.9s}
+@keyframes why-worries-spinIn{from{opacity:0;transform:scale(0) rotate(-90deg)}to{opacity:1;transform:none}}
+@keyframes why-worries-bob{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-10px) rotate(6deg)}}
+/* details */
+#why .details{margin-top:32px;width:100%;padding:32px 40px;border-radius:28px;background:#FFFFFF;border:1px solid #E6EEF2;box-shadow:0 16px 40px rgba(46,146,176,.08);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 48px}
+#why .det{display:flex;gap:16px;padding:8px;margin:-8px;border-radius:16px;opacity:0;transform:translateY(16px);transition:background .25s}
+#why .det:hover{background:#F1FAF8}
+#why .play .det{animation:why-worries-up .6s cubic-bezier(.2,.8,.2,1) forwards}
+#why .play .det:nth-child(1){animation-delay:1.5s}
+#why .play .det:nth-child(2){animation-delay:1.6s}
+#why .play .det:nth-child(3){animation-delay:1.7s}
+#why .play .det:nth-child(4){animation-delay:1.8s}
+@keyframes why-worries-up{to{opacity:1;transform:none}}
+#why .det__no{font-size:22px;font-weight:700;color:#74CDF6}
+#why .det__t{margin:0;font-size:17px;font-weight:700}
+#why .det__d{margin:6px 0 0;font-size:15px;line-height:1.65;color:#6A6D70}
+#why .swap-out{animation:why-worries-swapOut .35s ease forwards}
+@keyframes why-worries-swapOut{to{opacity:0;transform:scale(.97);filter:blur(4px)}}
+@media (prefers-reduced-motion:reduce){#why *{animation-duration:.01ms !important;animation-iteration-count:1 !important;animation-delay:0s !important;transition:none !important}
+
+}

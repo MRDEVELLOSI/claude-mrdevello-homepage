@@ -1,0 +1,138 @@
+/* Service-specific imagery and tangible deliverables. Layout values are implementation
+   proposals from DEVELLO_UI_GUIDELINES.md, not reference measurements. */
+.starter-body{--evidence-tint:#f1eef7;--evidence-accent:#7560c9}
+.pro-body{--evidence-tint:#eff5ff;--evidence-accent:#3766ae}
+.team-body{--evidence-tint:#fff1ed;--evidence-accent:#ac4b35}
+.care-body{--evidence-tint:#eef8f2;--evidence-accent:#34634c}
+.ax-body{--evidence-tint:#fff8e8;--evidence-accent:#85551c}
+/* Keep each service's original soft brand gradient from its own stylesheet. */
+body :is(.starter-hero,.pro-hero,.team-hero,.care-hero,.ax-hero){padding-top:72px;padding-bottom:48px}
+body :is(.starter-hero-inner,.pro-hero-inner,.team-hero .hero-inner,.ax-hero-inner){padding-top:0;padding-bottom:0}
+body .care-hero{padding-inline:0}
+body .service-hero-grid{width:min(1280px,calc(100% - 80px));margin:auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start;--hero-icon-size:128px;--hero-title-size:clamp(40px,3.7vw,52px);--hero-ink:#0d0d0d;--hero-description:#4e535c;--hero-muted:#727780}
+body .service-hero-copy{text-align:left;min-width:0;font-family:var(--font-sans)}
+body .service-hero-grid .service-hero-copy>.service-hero-icon{display:block;width:var(--hero-icon-size);height:var(--hero-icon-size);margin:0 0 20px;object-fit:contain;flex-shrink:0}
+body .service-hero-copy>.service-hero-label{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px;margin:0;font-size:14px;line-height:1.6;letter-spacing:0;color:var(--hero-muted)}
+body .service-hero-label>.service-hero-name{font-weight:600;color:var(--hero-ink)}
+body .service-hero-label>.service-hero-category{font-weight:400}
+body .service-hero-grid .service-hero-copy>.service-hero-title{font-size:var(--hero-title-size);font-weight:700;line-height:1.12;letter-spacing:-.04em;color:var(--hero-ink);min-height:2.24em;margin:24px 0 0;text-align:left;text-wrap:initial;word-break:keep-all;overflow-wrap:anywhere}
+body .service-hero-title>span{display:block}
+body .service-hero-grid .service-hero-copy>.service-hero-description{margin:24px 0 0;font-size:16px;font-weight:400;line-height:1.65;letter-spacing:0;color:var(--hero-description);min-height:3.3em;word-break:keep-all;overflow-wrap:anywhere}
+body .service-hero-copy>.service-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px;margin:32px 0 0;padding:0}
+body .service-hero-actions>a{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:44px;margin:0;font-size:14px;font-weight:500;line-height:1.4;letter-spacing:0;text-decoration:none;border:1px solid transparent;border-radius:999px;box-sizing:border-box}
+body .service-hero-actions>.service-hero-primary{padding:11px 20px;background:var(--hero-ink);color:#fff;border-color:var(--hero-ink)}
+body .service-hero-actions>.service-hero-secondary{padding:11px 0;background:transparent;color:var(--hero-ink)}
+body .service-hero-actions>a:focus-visible{outline:2px solid var(--evidence-accent);outline-offset:5px}
+body .service-context{width:min(1120px,calc(100% - 80px));margin:0 auto 28px;font-size:13px;font-weight:400;line-height:1.6;color:#727780;text-align:left}
+body .service-hero-copy :is(.starter-hero-inner,.pro-hero-inner,.hero-inner,.ax-hero-inner){width:100%;padding-inline:0;margin-inline:0;text-align:left}
+body .service-hero-copy :is(.starter-product-icon,.pro-product-icon,.product-icon,.ax-product-icon),body .care-hero .service-hero-copy>img{display:block;width:46px;height:46px;margin:0 0 14px}
+body .service-hero-copy :is(.starter-eyebrow,.pro-eyebrow,.eyebrow,.care-eyebrow,.ax-eyebrow){margin:0;font-size:14px;line-height:1.6}
+body .service-hero-grid .service-hero-copy h1{font-size:clamp(40px,4vw,56px);text-wrap:initial;margin:24px 0 0}
+body .service-hero-copy :is(.starter-hero-description,.pro-hero-description,.hero-description,.care-hero-description,.ax-lead){font-size:16px;margin:24px 0 0!important}
+body .service-hero-copy :is(.actions,.pro-actions,.care-actions,.ax-actions){justify-content:flex-start;flex-wrap:wrap}
+body .service-hero-grid .service-visual{width:100%;margin:0}
+body .service-hero-grid .service-visual__frame img{aspect-ratio:1400/820;object-fit:contain}
+body .service-hero-grid .service-visual figcaption{display:block}
+body .service-hero-grid .service-visual figcaption span:last-child{display:block;text-align:left;max-width:100%;margin-top:4px}
+body .service-hero-grid .service-visual--photo img{aspect-ratio:3/2}
+body .service-hero-grid .service-visual--project .service-visual__frame{padding:16px}
+body :is(.starter-product-icon,.pro-product-icon,.team-hero .product-icon,.care-hero>img,.ax-product-icon){width:46px;height:46px;margin-bottom:14px}
+body :is(.starter-hero h1,.pro-hero h1,.team-hero h1,.care-hero h1,.ax-hero h1){font-size:clamp(40px,5vw,72px);line-height:1.12;letter-spacing:-.04em}
+body :is(.starter-hero-description,.pro-hero-description,.hero-description,.care-hero-description,.ax-lead){font-size:18px;line-height:1.65}
+body :is(.team-ribbon,.ax-ribbon){display:none}
+body .service-visual{width:min(1120px,calc(100% - 80px));margin:46px auto 0;text-align:left;font-family:var(--font-sans);letter-spacing:0;box-sizing:border-box}
+body .service-visual__frame{position:relative;display:block;overflow:hidden;border-radius:16px;background:var(--evidence-tint);border:1px solid #e5e5e5;isolation:isolate}
+body .service-visual__frame img{display:block;width:100%;height:auto;aspect-ratio:1400/820;object-fit:contain;object-position:center;margin:0;max-width:none}
+body .service-visual--photo .service-visual__frame img{aspect-ratio:16/9;object-fit:cover;object-position:50% 55%}
+body .service-visual--project .service-visual__frame{padding:30px 44px}
+body .service-visual--project .service-visual__frame img{aspect-ratio:1319/846;max-height:520px;border-radius:5px;object-fit:contain}
+body .service-visual__open{position:absolute;right:16px;bottom:16px;display:flex;align-items:center;gap:12px;min-height:44px;padding:10px 15px;background:#fff;color:#242424;border:1px solid #ddd;border-radius:999px;font-size:13px;line-height:1.4;transition:background 180ms}
+body .service-visual__frame:hover .service-visual__open{background:#f3f3f3}
+body .service-visual__frame:focus-visible{outline:2px solid var(--evidence-accent);outline-offset:5px}
+body .service-visual figcaption{display:flex;justify-content:space-between;align-items:start;gap:24px;padding-top:16px;font-size:13px;line-height:1.6;color:#62676b;text-align:left}
+body .service-visual figcaption strong{font-weight:500;color:#1f2325;font-size:14px}
+body .service-visual figcaption span:last-child{text-align:right;max-width:58%}
+body .service-evidence{padding:96px 0;background:#fff;color:#0d0d0d;font-family:var(--font-sans)}
+body .service-evidence__intro{width:min(1120px,calc(100% - 80px));margin:0 auto 34px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end}
+body .service-evidence__label{font-size:13px;font-weight:500;color:var(--evidence-accent);margin:0 0 12px;letter-spacing:.02em}
+body .service-evidence__intro h2{font-size:40px;font-weight:500;line-height:1.25;letter-spacing:-.03em;margin:0;word-break:keep-all}
+body .service-evidence__description{font-size:16px;line-height:1.7;color:#4e535c;margin:0;word-break:keep-all;max-width:480px}
+body .service-evidence .service-visual{margin-top:0}
+body .service-evidence__details{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;width:min(1120px,calc(100% - 80px));margin:32px auto 0;padding:0;list-style:none}
+body .service-evidence__details li{padding-top:16px;border-top:1px solid #e5e5e5}
+body .service-evidence__details strong{display:block;font-size:16px;font-weight:500;margin-bottom:8px}
+body .service-evidence__details p{font-size:14px;line-height:1.7;color:#62676b;margin:0}
+@media(min-width:1600px){body :is(.starter-hero,.pro-hero,.team-hero,.care-hero,.ax-hero){padding-top:88px}}
+@media(min-width:1024px){body :is(.starter-hero,.pro-hero,.team-hero,.care-hero,.ax-hero){padding-bottom:96px}}
+@media(max-width:1023px){body .service-hero-grid{grid-template-columns:1fr;gap:40px;max-width:760px}body .service-hero-copy,body .service-hero-copy :is(.starter-hero-inner,.pro-hero-inner,.hero-inner,.ax-hero-inner){text-align:left}body .service-hero-copy :is(.actions,.pro-actions,.care-actions,.ax-actions){justify-content:flex-start}body .service-hero-copy :is(.starter-product-icon,.pro-product-icon,.product-icon,.ax-product-icon),body .care-hero .service-hero-copy>img{margin-inline:0}body .service-hero-copy h1{font-size:52px}}
+@media(max-width:767px){
+ body .service-hero-grid{width:calc(100% - 40px);gap:32px;--hero-icon-size:96px}
+ body .service-hero-grid .service-hero-copy>.service-hero-title{font-size:clamp(32px,9vw,36px);line-height:1.16;min-height:2.32em}
+ body .service-hero-grid .service-hero-copy>.service-hero-description{min-height:6.6em}
+ body .service-context{width:calc(100% - 40px)}
+ body :is(.starter-hero,.pro-hero,.team-hero,.care-hero,.ax-hero){padding-top:44px;padding-bottom:32px}
+ body :is(.starter-hero h1,.pro-hero h1,.team-hero h1,.care-hero h1,.ax-hero h1){font-size:40px;line-height:1.16}
+ body :is(.starter-hero-description,.pro-hero-description,.hero-description,.care-hero-description,.ax-lead){font-size:16px}
+ body .service-visual{width:calc(100% - 40px);margin-top:32px}
+ body .service-visual__frame{border-radius:10px}
+ body .service-visual--project .service-visual__frame{padding:16px}
+ body .service-visual__open{right:8px;bottom:8px;padding:8px 11px;font-size:12px;min-height:44px}
+ body .service-visual figcaption{display:block;padding-top:12px;font-size:12px}
+ body .service-visual figcaption strong{font-size:13px}
+ body .service-visual figcaption span{display:block}
+ body .service-visual figcaption span:last-child{max-width:100%;text-align:left;margin-top:4px}
+ body .service-evidence{padding:64px 0}
+ body .service-evidence__intro{width:calc(100% - 40px);display:block;margin-bottom:24px}
+ body .service-evidence__intro h2{font-size:30px}
+ body .service-evidence__description{margin-top:18px}
+ body .service-evidence__details{width:calc(100% - 40px);grid-template-columns:1fr;gap:20px;margin-top:24px}
+}
+@media(prefers-reduced-motion:reduce){body .service-visual__open{transition:none}}
+
+/* Shared content grid: hero, every body section, media and footer use one edge.
+   The values below are implementation choices requested by the site owner. */
+body:is(.starter-body,.pro-body,.team-body,.care-body,.ax-body){--service-content-max:1280px;--service-content-gutter:40px}
+body :is(.service-hero-grid,.starter-container,.pro-wrap,.team-container,.care-container,.ax-container,.service-context,.service-evidence__intro,.service-evidence__details),
+body .service-evidence>.service-visual{
+ width:min(var(--service-content-max),calc(100% - 2 * var(--service-content-gutter)));
+ max-width:none;margin-inline:auto;padding-inline:0;box-sizing:border-box;
+}
+body .starter-source .wrap,
+body .starter-source .apply{
+ width:min(var(--service-content-max),calc(100% - 2 * var(--service-content-gutter)));
+ max-width:none;margin-inline:auto;padding-inline:0;box-sizing:border-box;
+}
+body .starter-source :is(.hgrid,.faq){max-width:none;margin-inline:0}
+body .starter-source .shead.mid{text-align:left;margin-inline:0}
+body .starter-source .acolw{padding-left:0}
+body .starter-source .fpanel{padding-right:0}
+body .starter-source :is(.acol,.fpanel-in){margin-inline:0}
+body :is(.pro-contact,.team-page .closing,.care-contact,.ax-closing){text-align:left}
+body .pro-contact p:not(.pro-eyebrow){margin-left:0;margin-right:0}
+body .team-page .closing img{margin-left:0;margin-right:0}
+body .team-page .closing .text-link{margin-left:0;margin-right:0}
+body .care-contact{padding-inline:0}
+body .care-contact p:not(.care-eyebrow){margin-left:0;margin-right:0}
+body .care-footer{width:min(var(--service-content-max),calc(100% - 2 * var(--service-content-gutter)));margin-inline:auto;padding-inline:0}
+body .pro-project-heading{display:block}
+body .pro-project-heading>p{max-width:700px;margin:24px 0 0!important}
+body .service-evidence__intro{display:block}
+body .service-evidence__description{max-width:700px;margin:24px 0 0}
+body .team-page .process-intro{display:block}
+body .team-page .process-intro>p{margin:24px 0 0;max-width:700px}
+@media(max-width:1023px){
+ body:is(.starter-body,.pro-body,.team-body,.care-body,.ax-body){--service-content-max:760px}
+ body .starter-source :is(.acolw,.fpanel){padding-inline:0}
+}
+@media(max-width:767px){
+ body:is(.starter-body,.pro-body,.team-body,.care-body,.ax-body){--service-content-gutter:20px}
+}
+
+/* STARTER's embedded demo has a more specific legacy full-width rule. */
+body .starter-source .hero>.wrap{width:min(var(--service-content-max),calc(100% - 2 * var(--service-content-gutter)));margin-inline:auto;padding-inline:0;max-width:none}
+body .starter-source .hgrid{justify-items:stretch;justify-content:stretch}
+/* The plan heading shares the section edge; the list retains its card inset. */
+body .care-plan{border:0;border-radius:0;overflow:visible;background:transparent}
+body .care-plan-top{padding-inline:0;border-bottom:0;background:transparent}
+body .care-plan-list{border:1px solid #dfe8e2;border-radius:24px;overflow:hidden;background:#fff}
+body .care-plan-caption{margin-inline:0!important}

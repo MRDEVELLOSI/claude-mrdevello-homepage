@@ -1,0 +1,24 @@
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:400;src:url(/assets/ee4c2bbea821cbb753.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:500;src:url(/assets/2492a9ad5187d51bb7.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:600;src:url(/assets/cfe044d7979cbfc5d5.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans;font-style:normal;font-weight:700;src:url(/assets/ab444ce85c2f70c306.woff2)format("woff2");unicode-range:U+0-36F,U+1E??,U+2000-206F,U+20A0-20CF,U+2100-214F,U+2190-21FF,U+22??,U+25A0-25FF,U+FB00-FB06,U+FE0?,U+FFFD}
+@font-face{font-display:block;font-family:OpenAI Sans Variable Scripts;font-style:normal;font-weight:300 700;src:url(/assets/70a91f055992c0ccbe.woff2)format("woff2");unicode-range:U+11??,U+3130-318F,U+A960-A97F,U+AC00-D7AF}
+:root{--font-sans:"OpenAI Sans","OpenAI Sans Variable Scripts",sans-serif}
+html,body,body.ph-body-page #contentful-header{font-family:var(--font-sans)!important}
+button,input,textarea,select{font-family:inherit}
+/* Only opacity changes: text metrics and fixed-position navigation remain stable. */
+html{background:#fff}
+html[data-page-ready="pending"] body{opacity:0}
+html[data-page-ready="ready"] body{animation:devello-page-enter 320ms cubic-bezier(.22,1,.36,1) both}
+@keyframes devello-page-enter{from{opacity:0}to{opacity:1}}
+@view-transition{navigation:auto}
+::view-transition-group(root){animation-duration:320ms}
+::view-transition-old(root){animation:devello-page-exit 180ms ease-out both;mix-blend-mode:normal}
+::view-transition-new(root){animation:devello-page-enter 320ms cubic-bezier(.22,1,.36,1) both;mix-blend-mode:normal}
+@keyframes devello-page-exit{to{opacity:0}}
+html[data-page-native] body,html[data-page-restored] body{animation:none}
+@media(prefers-reduced-motion:reduce){
+ @view-transition{navigation:none}
+ html[data-page-ready="ready"] body{animation:none}
+ ::view-transition-group(root),::view-transition-old(root),::view-transition-new(root){animation:none}
+}
