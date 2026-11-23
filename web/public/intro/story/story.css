@@ -376,3 +376,11 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .st-anim [data-sr] .st-u,.st-anim [data-sr] .st-ul{box-shadow:none;background:linear-gradient(var(--uc,var(--yellow)),var(--uc,var(--yellow))) no-repeat 0 100%/0% .16em;transition:background-size .7s cubic-bezier(.6,0,.2,1) calc(var(--d,0s) + .4s)}
 .st-anim [data-sr].is-in .st-u,.st-anim [data-sr].is-in .st-ul{background-size:100% .16em}
 .st-anim .st-boss-bub .st-mk{color:#111}
+/* ── 03 문제 카드: 3D 이미지 + 짧은 같은 길이 문구 ── */
+.st-probs li{position:relative;min-height:0;padding:28px 28px 32px;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:14px;row-gap:18px;align-items:center}
+.st-prob-art{grid-column:1/-1;position:relative;height:150px;border-radius:20px;background:color-mix(in srgb,var(--orange) 10%,#fff);display:flex;align-items:center;justify-content:center}
+.st-prob-ic{width:128px;height:128px;object-fit:contain}
+.st-prob-badge{position:absolute;right:calc(50% - 86px);top:16px;min-width:44px;height:36px;padding:0 10px;border-radius:999px;color:#fff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;transform:rotate(8deg);box-shadow:0 8px 16px rgba(0,0,0,.12)}
+.st-probs li .st-num{font-size:30px}
+.st-probs li p{font-size:22px;white-space:nowrap}
+@media (max-width:767px){.st-prob-art{height:120px}.st-prob-ic{width:100px;height:100px}.st-probs li p{font-size:19px}}
