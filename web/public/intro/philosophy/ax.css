@@ -98,6 +98,7 @@
  .axp [style*="padding:110px 0"] [style*="translateY"]{transform:none!important}
  .axp [style*="padding:110px 0"]{padding:0!important}.axp [style*="padding:110px 0"]>[aria-hidden]{display:none}
  .axp [style*="gap:120px"]{gap:24px!important}
+ .axp .axtl-line{display:none!important}.axp .axtl>div:empty{display:none}.axp .axtl-now{order:1}
 }
 
 /* 타이포 — 메인·대표이야기·WHY와 동일 스케일 */
