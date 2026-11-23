@@ -125,9 +125,9 @@
 #why-3 .mrd-quality__logo img,#why-3 .mrd-quality__logo img[src*="logo-dear-monday."]{filter:brightness(0)}
 #why-3 .mrd-quality__name{color:#111;font-weight:800;letter-spacing:-.04em}
 #why-3 p{color:#4b5158}
-#why-3 [data-quality-details]>span{background:var(--q-coral-p);border:0;border-radius:999px;color:#111;font-size:13px;font-weight:700;padding:0 14px;height:32px;gap:8px}
-#why-3 [data-quality-details]>span::before{background:var(--q-coral);width:7px;height:7px}
-#why-3 [data-quality-details]>span svg{color:var(--q-coral-i);stroke:currentColor}
+#why-3 [data-quality-details]>span{background:color-mix(in srgb,var(--case-accent) 14%,#fff);border:0;border-radius:999px;color:#111;font-size:13px;font-weight:700;padding:0 14px;height:32px;gap:8px}
+#why-3 [data-quality-details]>span::before{background:var(--case-accent);width:7px;height:7px}
+#why-3 [data-quality-details]>span svg{color:color-mix(in srgb,var(--case-accent) 75%,#000);stroke:currentColor}
 #why-3 .mrd-quality__controls{border-top-color:#e3e6ea}
 #why-3 .mrd-quality__controls button{border:1.5px solid #111;color:#111;background:#fff}
 #why-3 .mrd-quality__controls button:hover{background:#111;border-color:#111;color:#fff}

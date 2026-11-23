@@ -416,3 +416,10 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 /* 대응속도 막대는 보일 때 자라남 */
 .wy-anim .wy-race .wy-fast-bar{animation-play-state:paused}
 .wy-anim .wy-race.is-in .wy-fast-bar{animation-play-state:running;animation-delay:.5s}
+
+/* PC: 최상단 섹션을 메인처럼 한 화면(100vh - 헤더 64px) 높이로, 최소 656px */
+@media (min-width:1024px){
+  .wy-hero{box-sizing:border-box;height:calc(100vh - 64px);height:calc(100dvh - 64px);min-height:656px;padding-block:48px;display:flex;flex-direction:column;justify-content:center}
+  .wy-deco-1{top:14%}.wy-deco-2{top:11%}
+  .wy-deco-3{top:auto;bottom:13%}.wy-deco-4{top:auto;bottom:10%}
+}
