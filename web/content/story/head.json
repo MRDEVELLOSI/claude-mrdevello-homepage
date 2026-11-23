@@ -11,7 +11,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/intro/story/story.css?v=26"
+   "href": "/intro/story/story.css?v=27"
   },
   "inner": null
  },
@@ -19,7 +19,7 @@
   "tag": "script",
   "attrs": {
    "defer": "",
-   "src": "/intro/story/story.js?v=26"
+   "src": "/intro/story/story.js?v=27"
   },
   "inner": null
  },
