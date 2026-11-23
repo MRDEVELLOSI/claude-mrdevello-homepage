@@ -112,9 +112,36 @@
 #why-3 .mrd-quality__logo[hidden] { display: none; }
 @keyframes homepage-quality-copy-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @keyframes homepage-quality-aura-breathe{from{transform:scale(.96);opacity:.85}to{transform:scale(1.04);opacity:1}}
-#why-3 .wy-chip{background:rgba(108,159,255,.14);color:#dce8ff}
-#why-3 .wy-chip:before{background:var(--case-accent)}
 #why-3 .mrd-quality__title{margin-top:16px;line-height:1.35}
 #why-3 .mrd-quality__logo img{width:auto;max-width:calc(203px*var(--quality-logo-scale,1))}
-#why-3 .mrd-quality__controls a{color:rgb(196,208,227)}
 #why-3 .mrd-quality__phone{font:inherit}
+
+/* ---- WHY? 시안 색상(화이트 · 코랄) 적용: 동작은 메인과 동일 ---- */
+#why-3{--quality-bg:#fff;--q-coral:#f0573c;--q-coral-p:#fdebe5;--q-coral-i:#b2361f;background:#fff;color:#111;padding-top:110px}
+#why-3 .wy-rhead p.wy-strike{color:#8a9098;font-size:17px;font-weight:600;line-height:1.5;letter-spacing:0}
+#why-3 .wy-rhead p.wy-sub{color:#555;font-size:16px;line-height:1.65;letter-spacing:-.6px}
+#why-3 .wy-rhead .wy-h2{color:#111}
+#why-3 .mrd-quality__layout{margin-top:56px}
+#why-3 .mrd-quality__logo img,#why-3 .mrd-quality__logo img[src*="logo-dear-monday."]{filter:brightness(0)}
+#why-3 .mrd-quality__name{color:#111;font-weight:800;letter-spacing:-.04em}
+#why-3 p{color:#4b5158}
+#why-3 [data-quality-details]>span{background:var(--q-coral-p);border:0;border-radius:999px;color:#111;font-size:13px;font-weight:700;padding:0 14px;height:32px;gap:8px}
+#why-3 [data-quality-details]>span::before{background:var(--q-coral);width:7px;height:7px}
+#why-3 [data-quality-details]>span svg{color:var(--q-coral-i);stroke:currentColor}
+#why-3 .mrd-quality__controls{border-top-color:#e3e6ea}
+#why-3 .mrd-quality__controls button{border:1.5px solid #111;color:#111;background:#fff}
+#why-3 .mrd-quality__controls button:hover{background:#111;border-color:#111;color:#fff}
+#why-3 .mrd-quality__count{color:#8a9098}
+#why-3 .mrd-quality__count b{color:var(--q-coral-i);font-weight:800}
+#why-3 .mrd-quality__controls a{color:#111;font-size:17px;font-weight:800;text-decoration-thickness:2px;text-decoration-color:#111}
+#why-3 .mrd-quality__rail::before{background:linear-gradient(90deg,#fff,transparent)}
+#why-3 .mrd-quality__screen{box-shadow:0 18px 30px rgba(17,17,17,.12)}
+#why-3 .mrd-quality__dim{background:rgba(255,255,255,.5)}
+#why-3 .mrd-quality__phone[style*="--x"]:not(.is-active) .mrd-quality__dim{opacity:1}
+#why-3 .mrd-quality__aura{background:radial-gradient(ellipse,var(--q-coral-p) 0%,rgba(253,235,229,.6) 38%,transparent 66%)}
+#why-3 .mrd-quality__aura::after{display:none}
+#why-3 .mrd-quality__screen-label{color:#6b7178;font-size:13px;font-weight:700;letter-spacing:0}
+#why-3 .mrd-quality__screen-label i{background:var(--q-coral);box-shadow:none;width:7px;height:7px}
+#why-3 .is-active .mrd-quality__frame{filter:drop-shadow(0 30px 40px rgba(17,17,17,.18))}
+#why-3 .mrd-quality__progress{background:#e3e6ea;height:3px;border-radius:3px}
+#why-3 .mrd-quality__progress>span{background:var(--q-coral)}

@@ -11,7 +11,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/intro/why/why.css?v=2"
+   "href": "/intro/why/why.css?v=3"
   },
   "inner": null
  },
@@ -19,7 +19,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/intro/why/quality.css?v=1"
+   "href": "/intro/why/quality.css?v=2"
   },
   "inner": null
  },
