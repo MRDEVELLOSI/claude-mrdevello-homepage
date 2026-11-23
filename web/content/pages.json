@@ -91,7 +91,7 @@
     "slug": "philosophy",
     "route": "/intro/philosophy/",
     "title": "철학 · 의뢰한 대로가 아닌, 의도한 대로 | 미스터디벨로",
-    "description": "기술은 누구나 구현하는 시대, 미스터디벨로는 의도를 파악하는 데 시간과 비용을 씁니다. 대화와 기획, 실제 디어먼데이 사례로 소개하는 개발 철학.",
+    "description": "AI 시대에도 핵심은 구현이 아니라 소통. 말귀를 못 알아듣는 개발사와 AI 사이에서, 기획 720시간과 매주 정기미팅으로 의도를 찾는 미스터디벨로의 개발 철학.",
     "ogImage": "/assets/navigation/philosophy-3d.png",
     "icon": "/assets/navigation/philosophy-3d.png",
     "bodyClass": "ph-body-page",

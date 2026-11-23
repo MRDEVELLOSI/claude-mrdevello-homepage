@@ -16,6 +16,14 @@
   "inner": null
  },
  {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/intro/philosophy/ax.css?v=2"
+  },
+  "inner": null
+ },
+ {
   "tag": "script",
   "attrs": {
    "defer": "",
@@ -26,17 +34,9 @@
  {
   "tag": "script",
   "attrs": {
-   "defer": "",
-   "src": "/intro/philosophy/philosophy.js?v=2675d64d57"
-  },
-  "inner": null
- },
- {
-  "tag": "script",
-  "attrs": {
    "type": "application/ld+json"
   },
-  "inner": "{\"@context\": \"https://schema.org\", \"@type\": \"AboutPage\", \"name\": \"철학 · 의뢰한 대로가 아닌, 의도한 대로 | 미스터디벨로\", \"description\": \"기술은 누구나 구현하는 시대, 미스터디벨로는 의도를 파악하는 데 시간과 비용을 씁니다. 대화와 기획, 실제 디어먼데이 사례로 소개하는 개발 철학.\", \"url\": \"{{SITE_URL}}/intro/philosophy/\", \"about\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\", \"url\": \"https://mrdevello.com\"}}"
+  "inner": "{\"@context\": \"https://schema.org\", \"@type\": \"AboutPage\", \"name\": \"철학 · 의뢰한 대로가 아닌, 의도한 대로 | 미스터디벨로\", \"description\": \"기술은 누구나 구현하는 시대, 미스터디벨로는 의도를 파악하는 데 시간과 비용을 씁니다. AI 시대에도 핵심은 구현이 아니라 소통. 기획 720시간, 매주 정기미팅으로 의도를 찾는 미스터디벨로의 개발 철학.\", \"url\": \"{{SITE_URL}}/intro/philosophy/\", \"about\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\", \"url\": \"https://mrdevello.com\"}}"
  },
  {
   "tag": "link",
