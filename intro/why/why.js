@@ -17,10 +17,11 @@
       [...(text || ' ')].forEach((ch) => {
         const s = document.createElement('span');
         s.textContent = ch;
-        if (ch !== ' ') s.style.color = HUE[n++ % HUE.length];
+        if (ch !== ' ') s.style.color = CARET[w % CARET.length];
         out.appendChild(s);
       });
       caret.style.background = CARET[w % CARET.length];
+      out.style.setProperty('--wc', CARET[w % CARET.length]);
       chips.forEach((c, i) => c.classList.toggle('is-on', i === w));
     };
     if (reduceMQ.matches || !words.length) {
