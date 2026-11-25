@@ -2,7 +2,8 @@
    메인 기준: 섹션 제목 40/650(모바일 26), 소제목 32/650(모바일 22), 강조 문장 22~26/600~700, 큰 숫자 ≤64/800 */
 
 /* ── 공통: 서브 페이지 히어로 64/700 (모바일 33) ── */
-.about-why .wy-h1,.about-philosophy h1.h1{font-size:64px!important;font-weight:700!important;letter-spacing:-.05em!important;line-height:1.15!important}
+.about-why .wy-h1,.about-philosophy h1.h1{font-size:min(96px,7vw)!important;font-weight:700!important;letter-spacing:-.055em!important;line-height:1.06!important}
+.about-why .wy-h1 *,.about-philosophy h1.h1 *{font-weight:inherit!important}
 
 /* ── WHY ── */
 .about-why .wy-rate strong{font-size:56px}
@@ -26,11 +27,8 @@
 /* ── 대표이야기 ── */
 .about-story .st-final{font-size:40px;font-weight:700}
 
-@media (max-width:1100px){
-  .about-why .wy-h1,.about-philosophy h1.h1{font-size:52px!important}
-}
 @media (max-width:767px){
-  .about-why .wy-h1,.about-philosophy h1.h1{font-size:33px!important}
+  .about-why .wy-h1,.about-philosophy h1.h1{font-size:clamp(28px,8.4vw,34px)!important;line-height:1.08!important}
   .about-why .wy-rate strong{font-size:44px}
   .about-why .wy-big strong{font-size:32px}
   .about-why .wy-stat strong{font-size:30px}
