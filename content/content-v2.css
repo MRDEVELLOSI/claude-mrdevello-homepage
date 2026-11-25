@@ -1,0 +1,123 @@
+/* ===== CONTENT v2 — 숫자로 증명 · 대표이야기 결 (2단 챕터) ===== */
+.cx2 .cx2-ch{position:relative;padding:140px 0;background:#fff}
+.cx2 .cx2-ch.cx2-soft{background:#f5f6f8}
+.cx2 .cx2-in{width:min(1200px,calc(100% - 48px));margin:0 auto;display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:72px;align-items:start}
+.cx2 .cx2-side-in{position:sticky;top:150px;display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.cx2 .cx2-ico{width:92px;height:92px;object-fit:contain}
+.cx2 .cx2-no{font-size:72px;font-weight:900;letter-spacing:-.05em;line-height:1;box-shadow:inset 0 -10px color-mix(in srgb,var(--c) 55%,#fff);color:#111}
+.cx2 .cx2-side h2{margin:0;font-size:42px;font-weight:800;line-height:1.3;letter-spacing:-.045em;color:#111}
+.cx2 .cx2-yb{background:#fcd448;border-radius:8px;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.cx2 .cx2-desc{margin:0;font-size:17px;line-height:1.7;color:#666}
+.cx2 .cx2-btn{display:inline-flex;align-items:center;gap:8px;height:50px;padding:0 26px;border-radius:999px;background:#111;color:#fff!important;font-size:16px;font-weight:700;white-space:nowrap;transition:transform .2s}
+.cx2 .cx2-btn:hover{transform:translateY(-2px)}
+.cx2 .cx2-btn span{color:#fff!important}
+.cx2 .cx2-meta{font-size:13px;color:#999;font-weight:600}
+.cx2 .cx2-th{position:relative;display:block;overflow:hidden;border-radius:20px;background:#eee}
+.cx2 .cx2-th img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cx2 a:hover .cx2-th img{transform:scale(1.04)}
+.cx2 .cx2-169{aspect-ratio:16/9}.cx2 .cx2-916{aspect-ratio:9/16}
+.cx2 .cx2-play{position:absolute;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.94);box-shadow:0 10px 30px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center}
+.cx2 .cx2-play i{width:0;height:0;border-left:19px solid #f75c66;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+/* 유튜브 */
+.cx2 .cx2-feat{display:flex;flex-direction:column;gap:10px}
+.cx2 .cx2-feat .cx2-th{border-radius:24px}
+.cx2 .cx2-feat-t{margin-top:8px;font-size:24px;font-weight:800;line-height:1.4;color:#111}
+.cx2 .cx2-ytl{margin-top:36px;padding-top:30px;border-top:1px solid #ececef;display:flex;flex-direction:column;gap:18px}
+.cx2 .cx2-yts{display:grid;grid-template-columns:190px 1fr;gap:20px;align-items:center}
+.cx2 .cx2-yts .cx2-th{border-radius:14px}.cx2 .cx2-yts .cx2-play{width:36px;height:36px}.cx2 .cx2-yts .cx2-play i{border-left-width:11px;border-top-width:7px;border-bottom-width:7px;margin-left:3px}
+.cx2 .cx2-yts-c{display:flex;flex-direction:column;gap:6px}
+.cx2 .cx2-yts-t{font-size:17px;font-weight:700;line-height:1.45;color:#111}
+.cx2 .cx2-shorts{margin-top:36px;padding-top:30px;border-top:1px solid #ececef}
+.cx2 .cx2-sh-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.cx2 .cx2-sh-h b{font-size:20px;font-weight:800;color:#111}
+.cx2 .cx2-sh-h a{font-size:15px;font-weight:700;color:#111;box-shadow:inset 0 -1.5px #111}
+.cx2 .cx2-sh-g{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.cx2 .cx2-short{display:flex;flex-direction:column;gap:12px}
+.cx2 .cx2-short .cx2-th{border-radius:16px}
+.cx2 .cx2-sh-tag{position:absolute;left:10px;top:10px;width:28px;height:28px;border-radius:8px;background:#ff0033;display:flex;align-items:center;justify-content:center}
+.cx2 .cx2-sh-tag i{width:0;height:0;border-left:8px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+.cx2 .cx2-short-t{font-size:15px;font-weight:700;line-height:1.45;color:#111;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* 블로그 */
+.cx2 .cx2-toc{display:flex;flex-direction:column;width:100%;border-top:1px solid #e3e3e6;max-height:none}
+.cx2 .cx2-toc button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;padding:9px 2px;border-bottom:1px solid #ececef;font-size:15px;font-weight:600;color:#666;cursor:pointer;transition:color .15s}
+.cx2 .cx2-toc button span{font-size:13px;color:#aaa;font-weight:600}
+.cx2 .cx2-toc button:hover{color:#111}
+.cx2 .cx2-toc button.is-on{color:#111;font-weight:800}
+.cx2 .cx2-toc button.is-on::before{content:"";width:6px;height:6px;border-radius:6px;background:#04b84c;margin-right:8px;flex:none}
+.cx2 .cx2-toc button.is-on{justify-content:flex-start}.cx2 .cx2-toc button.is-on span{margin-left:auto}
+.cx2 .cx2-toc button:focus-visible{outline:2px solid #04b84c;outline-offset:2px}
+.cx2 .cx2-bl{counter-reset:chn;border-bottom:1px solid #ececef;display:block}
+.cx2 .cx2-bl .ch-blog-row{display:grid;grid-template-columns:64px minmax(0,1fr) 150px;gap:24px;align-items:center;padding:24px 0;border-top:1px solid #ececef;color:#111;counter-increment:chn}
+.cx2 .cx2-bl .ch-blog-row[hidden]{display:none}
+.cx2 .cx2-bl .ch-num{display:block;font-size:30px;font-weight:900;letter-spacing:-.04em;color:#04b84c}
+.cx2 .cx2-bl .ch-num::before{content:counter(chn,decimal-leading-zero)}
+.cx2 .cx2-bl .ch-blog-c{display:flex;flex-direction:column;gap:8px;min-width:0}
+.cx2 .cx2-bl .ch-cat{font-size:13px;font-weight:700;color:#04b84c}
+.cx2 .cx2-bl .ch-cat em{font-style:normal;color:#b5b5b5;margin-left:6px}
+.cx2 .cx2-bl .ch-blog-t{font-size:19px;font-weight:800;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cx2 .cx2-bl .ch-blog-img{display:block;height:96px;width:auto;border-radius:14px;overflow:hidden;aspect-ratio:auto}
+.cx2 .cx2-bl .ch-blog-img img{width:100%;height:100%;object-fit:cover;display:block}
+.cx2 .cx2-bl .ch-blog-row:hover .ch-blog-t{text-decoration:underline}
+/* 인스타그램 */
+.cx2 .cx2-ig{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:240px 240px;gap:16px}
+.cx2 .cx2-igc{position:relative;display:block;border-radius:22px;overflow:hidden;background:#eee}
+.cx2 .cx2-igc:first-child{grid-row:span 2}
+.cx2 .cx2-igc img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.cx2 .cx2-igc:hover img{transform:scale(1.04)}
+.cx2 .cx2-igc span{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.62));color:#fff;font-size:14px;font-weight:700}
+.cx2 .cx2-igc:first-child span{font-size:17px}
+/* 뉴스 */
+.cx2 .cx2-nw{border-bottom:1px solid #e3e3e6}
+.cx2 .cx2-nwr{display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:center;padding:28px 0;border-top:1px solid #e3e3e6;color:#111}
+.cx2 .cx2-nwr .cx2-th{aspect-ratio:16/10}
+.cx2 .cx2-nw-c{display:flex;flex-direction:column;gap:14px}
+.cx2 .cx2-nw-top{display:flex;gap:12px;align-items:center}
+.cx2 .cx2-tag{padding:5px 12px;border-radius:999px;background:color-mix(in srgb,var(--c) 12%,#fff);color:var(--c);font-size:13px;font-weight:800}
+.cx2 .cx2-nw-t{font-size:22px;font-weight:800;line-height:1.45}
+.cx2 .cx2-more{align-self:flex-start;font-size:15px;font-weight:700;color:#666;box-shadow:inset 0 -1.5px #666}
+/* CTA */
+.cx2 .cx2-cta-wrap{padding:120px 0 0;background:#fff}
+.cx2 .cx2-cta{width:min(1200px,calc(100% - 48px));margin:0 auto;border-radius:32px;background:#111;padding:72px 80px;display:flex;justify-content:space-between;align-items:center;gap:40px;position:relative;overflow:hidden}
+.cx2 .cx2-cta::before{content:"";position:absolute;right:-120px;top:-220px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(252,212,72,.22) 0,rgba(17,17,17,0) 68%);pointer-events:none}
+.cx2 .cx2-cta-c{position:relative;display:flex;flex-direction:column;gap:18px}
+.cx2 .cx2-cta h2{margin:0;font-size:48px;font-weight:800;line-height:1.3;letter-spacing:-.045em;color:#fff}
+.cx2 .cx2-cta h2 span{color:#fcd448}
+.cx2 .cx2-cta p{margin:0;font-size:18px;color:rgba(255,255,255,.65)}
+.cx2 .cx2-cta-b{position:relative;display:flex;gap:12px;flex:none}
+.cx2 .cx2-cta-b a{height:62px;padding:0 30px;border-radius:999px;display:inline-flex;align-items:center;font-size:18px;font-weight:700;white-space:nowrap;transition:transform .2s}
+.cx2 .cx2-cta-b a:hover{transform:translateY(-2px)}
+.cx2 .cx2-cta-y{background:#fcd448;color:#111!important}.cx2 .cx2-cta-g{background:rgba(255,255,255,.12);color:#fff!important}
+/* 반응형 */
+@media(max-width:1100px){
+.cx2 .cx2-in{grid-template-columns:minmax(0,1fr);gap:40px}
+.cx2 .cx2-side,.cx2 .cx2-main,.cx2 .cx2-side-in{min-width:0;max-width:100%}
+.cx2 .cx2-side-in{position:static}
+.cx2 .cx2-cta{flex-direction:column;align-items:flex-start;padding:56px 48px}
+}
+@media(max-width:720px){
+.cx2 .cx2-ch{padding:80px 0}
+.cx2 .cx2-in{width:calc(100% - 32px)}
+.cx2 .cx2-ico{width:68px;height:68px}
+.cx2 .cx2-no{font-size:52px}
+.cx2 .cx2-side h2{font-size:32px}
+.cx2 .cx2-desc{font-size:15px}
+.cx2 .cx2-feat-t{font-size:19px}
+.cx2 .cx2-yts{grid-template-columns:128px 1fr;gap:14px}.cx2 .cx2-yts-t{font-size:15px}
+.cx2 .cx2-sh-g{display:flex;overflow-x:auto;gap:10px;scroll-snap-type:x mandatory;margin-right:-16px;padding-right:16px}
+.cx2 .cx2-short{flex:0 0 42%;scroll-snap-align:start}
+.cx2 .cx2-toc{display:flex;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:8px;border-top:0;margin-right:-16px;padding-right:16px}
+.cx2 .cx2-toc button{width:auto;flex:none;padding:0 14px;height:40px;border:1px solid #e3e3e6;border-radius:999px;gap:6px;white-space:nowrap;background:#fff}
+.cx2 .cx2-toc button.is-on{background:#111;color:#fff;border-color:#111}.cx2 .cx2-toc button.is-on::before{display:none}.cx2 .cx2-toc button.is-on span{margin-left:6px;color:rgba(255,255,255,.6)}
+.cx2 .cx2-bl .ch-blog-row{grid-template-columns:36px minmax(0,1fr) 92px;gap:12px;padding:18px 0}
+.cx2 .cx2-bl .ch-num{font-size:20px}
+.cx2 .cx2-bl .ch-blog-t{font-size:16px}
+.cx2 .cx2-bl .ch-blog-img{height:64px;border-radius:10px}
+.cx2 .cx2-ig{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+.cx2 .cx2-igc{aspect-ratio:1/1}.cx2 .cx2-igc:first-child{grid-row:auto;grid-column:1/-1;aspect-ratio:4/3}
+.cx2 .cx2-nwr{grid-template-columns:1fr;gap:16px}
+.cx2 .cx2-nw-t{font-size:18px}
+.cx2 .cx2-cta-wrap{padding-top:64px}
+.cx2 .cx2-cta{width:calc(100% - 32px);padding:40px 26px;border-radius:24px}
+.cx2 .cx2-cta h2{font-size:30px}
+.cx2 .cx2-cta-b{flex-direction:column;width:100%}.cx2 .cx2-cta-b a{justify-content:center;height:54px;font-size:16px}
+}
