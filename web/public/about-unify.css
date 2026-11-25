@@ -1,0 +1,69 @@
+/* ABOUT(WHY·철학·대표이야기) 타이포를 메인 스케일로 통일
+   메인 기준: 섹션 제목 40/650(모바일 26), 소제목 32/650(모바일 22), 강조 문장 22~26/600~700, 큰 숫자 ≤64/800 */
+
+/* ── 공통: 서브 페이지 히어로 64/700 (모바일 33) ── */
+.about-why .wy-h1,.about-philosophy h1.h1{font-size:64px!important;font-weight:700!important;letter-spacing:-.05em!important;line-height:1.15!important}
+
+/* ── WHY ── */
+.about-why .wy-rate strong{font-size:56px}
+.about-why .wy-win-h{font-size:26px;font-weight:700}
+.about-why .mrd-quality__name{font-size:26px!important;font-weight:700!important}
+.about-why .wy-cta-h{font-size:40px}
+.about-why .wy-cta-bh{font-weight:650}
+.about-why .wy-meet-h{font-weight:700}
+.about-why .wy-sla strong{font-size:28px}
+
+/* ── 철학 ── */
+.about-philosophy h1.h1 + p{font-size:22px!important;font-weight:650!important}
+.about-philosophy h2.h2,.about-philosophy h3[style]{font-weight:650!important}
+.about-philosophy h2 .mk,.about-philosophy h3 .mk{font-size:inherit!important;font-weight:inherit!important}
+.about-philosophy [style*="font-size:26px"],.about-philosophy [style*="font-size:24px"],.about-philosophy [style*="font-size:22px"]{font-weight:650!important}
+.about-philosophy .phx-t{font-size:36px;font-weight:700}
+.about-philosophy .phx-t span{font-weight:inherit}
+.about-philosophy .phc-h{font-size:40px;font-weight:650}
+.about-philosophy .phc-bh{font-size:22px;font-weight:650}
+
+/* ── 대표이야기 ── */
+.about-story .st-final{font-size:40px;font-weight:700}
+
+@media (max-width:1100px){
+  .about-why .wy-h1,.about-philosophy h1.h1{font-size:52px!important}
+}
+@media (max-width:767px){
+  .about-why .wy-h1,.about-philosophy h1.h1{font-size:33px!important}
+  .about-why .wy-rate strong{font-size:44px}
+  .about-why .wy-big strong{font-size:32px}
+  .about-why .wy-stat strong{font-size:30px}
+  .about-why .wy-win-h{font-size:22px}
+  .about-why .wy-sla strong{font-size:22px}
+  .about-why .wy-cta-h{font-size:26px}
+  .about-why .wy-cta-bh{font-size:18px}
+  .about-why .mrd-quality__name{font-size:22px!important}
+  .about-philosophy h1.h1 + p{font-size:18px!important}
+  .about-philosophy h2.h2{font-size:26px!important}
+  .about-philosophy h3[style]{font-size:22px!important}
+  .about-philosophy .num{font-size:40px!important}
+  .about-philosophy .num[style*="font-size:56px"]{font-size:30px!important}
+  .about-philosophy [style*="font-size:26px"],.about-philosophy [style*="font-size:24px"]{font-size:18px!important}
+  .about-philosophy [style*="font-size:22px"]{font-size:17px!important}
+  .about-philosophy [style*="font-size:36px"]{font-size:22px!important}
+  .about-philosophy .phx-t{font-size:22px}
+  .about-philosophy .phc-h{font-size:26px}
+  .about-philosophy .phc-bh{font-size:18px}
+  .about-story .st-final{font-size:26px}
+  .about-story .st-num{font-size:24px}
+}
+/* 형광펜: 메인과 같은 꽉 찬 노랑 하이라이트 */
+.about-why .wy-mk{background:#fcd448!important;background-image:none!important;border-radius:5px;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+/* 철학 A′·AA·B 카드: 모바일에서 화면 밖으로 넘치지 않게 */
+@media (max-width:767px){
+  .about-philosophy div[style*="width:150px;padding:22px 16px"]{width:auto!important;flex:1 1 0;min-width:0;padding:16px 8px!important}
+  .about-philosophy div:has(> div[style*="width:150px;padding:22px 16px"]){width:100%;justify-content:center}
+}
+/* 태블릿(768~1023) 다듬기 */
+@media (min-width:768px) and (max-width:1023px){
+  .about-story .st-probs li{padding:22px}
+  .about-story .st-probs p{font-size:17px;white-space:normal;overflow:visible;text-overflow:clip}
+  .about-why .wy-stat{flex-direction:column;align-items:flex-start;justify-content:space-between;gap:14px}
+  .about-why .wy-stat strong{font-size:36px}
+}

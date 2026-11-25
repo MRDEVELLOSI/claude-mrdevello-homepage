@@ -83,7 +83,7 @@
     "description": "팀의 밀도, 의도 해석, 퀄리티, 산출물, 대응속도. 외주가 다 거기서 거기라고 생각한다면, 미스터디벨로가 다른 다섯 가지를 확인해 보세요.",
     "ogImage": "/assets/navigation/why-3d.png",
     "icon": "/assets/navigation/why-3d.png",
-    "bodyClass": "ph-body-page",
+    "bodyClass": "ph-body-page about-why",
     "htmlClass": "",
     "htmlStyle": null
   },
@@ -94,7 +94,7 @@
     "description": "AI 시대에도 핵심은 구현이 아니라 소통. 의도를 파악하지 못한 구현이 만드는 문제와, 기획 720시간·매주 정기미팅으로 의도부터 확인하는 미스터디벨로의 개발 철학.",
     "ogImage": "/assets/navigation/philosophy-3d.png",
     "icon": "/assets/navigation/philosophy-3d.png",
-    "bodyClass": "ph-body-page",
+    "bodyClass": "ph-body-page about-philosophy",
     "htmlClass": "",
     "htmlStyle": null
   },
@@ -105,7 +105,7 @@
     "description": "건축학도에서 개발자로, 2평 소호 사무실에서 홍대입구 60평까지. 미스터디벨로 대표 송익주의 이야기.",
     "ogImage": "/assets/story/ceo.webp",
     "icon": "/assets/navigation/story-3d.png",
-    "bodyClass": "ph-body-page",
+    "bodyClass": "ph-body-page about-story",
     "htmlClass": "",
     "htmlStyle": null
   }
