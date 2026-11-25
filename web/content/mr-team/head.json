@@ -144,5 +144,21 @@
    "href": "/mobile-fit.css?v=3"
   },
   "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/svc/svc-live.css?v=6"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/svc/svc-live.js?v=6"
+  },
+  "inner": null
  }
 ]

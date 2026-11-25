@@ -186,7 +186,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/mr-starter/starter-v1.css?v=4"
+   "href": "/mr-starter/starter-v1.css?v=5"
   },
   "inner": null
  },
@@ -195,6 +195,22 @@
   "attrs": {
    "defer": "",
    "src": "/mr-starter/starter-v1.js?v=4"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/svc/svc-live.css?v=6"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/svc/svc-live.js?v=6"
   },
   "inner": null
  }

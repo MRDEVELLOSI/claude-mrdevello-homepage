@@ -212,7 +212,7 @@ td.s1-hi .s1-mx{background:var(--blue)}
 }
 
 /* 신청 — 파란 블록 (시안 ①) */
-#apply.s1-keep{background:linear-gradient(90deg,#1b8fe6 0,#2a78e5 50%,#fff 50%)}
+#apply.s1-keep{background:linear-gradient(90deg,#7560c9 0,#6b55ba 50%,#fff 50%)}
 #apply.s1-keep .acolw{background:transparent;color:#fff;padding:120px 64px 120px 0}
 #apply.s1-keep .fpanel{padding-top:120px;padding-bottom:120px}
 #apply.s1-keep .acol h2{color:#fff;font-size:48px;font-weight:800;letter-spacing:-.045em;line-height:1.3}
@@ -220,7 +220,7 @@ td.s1-hi .s1-mx{background:var(--blue)}
 #apply.s1-keep .acol .lede{color:rgba(255,255,255,.85);font-size:17px}
 #apply.s1-keep .tlist li{border-left-color:rgba(255,255,255,.3)}
 #apply.s1-keep .tlist li:last-child{border-left-color:transparent}
-#apply.s1-keep .tlist li::before{background:#fff!important;color:#10a0e8!important;border-color:#fff!important}
+#apply.s1-keep .tlist li::before{background:#fff!important;color:#7560c9!important;border-color:#fff!important}
 #apply.s1-keep .tlist .w{color:rgba(255,255,255,.75)}
 #apply.s1-keep .tlist b{color:#fff;font-size:17px}
 #apply.s1-keep .tlist em{color:rgba(255,255,255,.8)}
@@ -235,7 +235,7 @@ td.s1-hi .s1-mx{background:var(--blue)}
 .s1-close{position:relative;z-index:1}
 @media (max-width:1023px){
   #apply.s1-keep{background:#fff}
-  #apply.s1-keep .acolw{margin:0 -20px;padding:64px 20px 48px;background:linear-gradient(135deg,#1b8fe6,#2f6fe4)}
+  #apply.s1-keep .acolw{margin:0 -20px;padding:64px 20px 48px;background:linear-gradient(135deg,#7560c9,#6b55ba)}
   #apply.s1-keep .fpanel{padding-top:40px;padding-bottom:64px}
   #apply.s1-keep .acol h2{font-size:30px}
   .s1-pill-o{flex-direction:column;align-items:flex-start;gap:4px;border-radius:20px;padding:14px 18px}
