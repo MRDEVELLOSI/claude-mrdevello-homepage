@@ -71,11 +71,11 @@ a:hover>.ch-thumb img{transform:scale(1.04)}
 .ch-yt-side-c{display:flex;flex-direction:column;gap:6px}
 .ch-shorts-h{display:flex;align-items:center;gap:10px;padding-top:8px;font-size:22px;font-weight:800}
 .ch-shorts-h .ch-more{margin-left:auto;font-size:15px}
-.ch-shorts{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.ch-shorts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
 .ch-short{display:flex;flex-direction:column;gap:10px}
 .ch-short .ch-thumb{border-radius:18px}
 .ch-short .ch-yt-t{font-size:15px}
-.ch-short-tag{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.6);color:#fff;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:800}
+.ch-short-tag{position:absolute;left:10px;top:10px;display:grid;place-items:center;width:34px;height:34px;background:#fff;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.18)}.ch-short-tag .ch-logo{display:block}
 
 /* blog */
 .ch-blog-grid{display:grid;grid-template-columns:340px minmax(0,1fr);gap:64px;align-items:start}
@@ -140,7 +140,7 @@ a:hover>.ch-thumb img{transform:scale(1.04)}
 .ch-page .ch-f-5,.ch-d-2,.ch-d-4{display:none}
 .ch-h1{font-size:72px}
 .ch-yt-top{grid-template-columns:1fr}
-.ch-shorts{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ch-shorts{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
 .ch-blog-grid{grid-template-columns:1fr;gap:32px}
 .ch-blog-side{position:static}
 .ch-igs{display:flex;overflow-x:auto;gap:12px;margin:0 -24px;padding:0 24px;scrollbar-width:none}.ch-ig{flex:0 0 30%}
