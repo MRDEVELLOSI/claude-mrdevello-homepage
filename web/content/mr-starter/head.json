@@ -181,5 +181,21 @@
    "href": "/mobile-fit.css?v=3"
   },
   "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mr-starter/starter-v1.css?v=2"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/mr-starter/starter-v1.js?v=2"
+  },
+  "inner": null
  }
 ]
