@@ -198,3 +198,5 @@
 .cx2 .cx2-run span{gap:10px}
 .cx2 .cx2-run i{width:7px;height:7px}
 @media(max-width:720px){.cx2 .cx2-tape{height:104px}.cx2 .cx2-band{height:38px;font-size:13px}.cx2 .cx2-run{gap:22px;padding-right:22px}}
+/* 블로그: 오른쪽 목록 시작선을 왼쪽 설명 문단 높이에 맞춤 */
+@media(min-width:1101px){.cx2 #ch-blog .cx2-main{padding-top:270px}}
