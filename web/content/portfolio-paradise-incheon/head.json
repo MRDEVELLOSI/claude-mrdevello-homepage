@@ -1,0 +1,107 @@
+[
+  {
+    "tag": "style",
+    "attrs": {},
+    "inner": "html.ts-pending body{visibility:hidden}"
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "src": "/type-scale.js?v=9",
+      "defer": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/study.css?v=d9481bc169"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/portfolio/portfolio-detail.css?v=1"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/navigation.js?v=e98175695b"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "type": "application/ld+json"
+    },
+    "inner": "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"CreativeWork\", \"@id\": \"{{SITE_URL}}/portfolio/paradise-incheon/#content\", \"name\": \"파라다이스호텔 인천 · 백엔드 개발\", \"url\": \"{{SITE_URL}}/portfolio/paradise-incheon/\", \"inLanguage\": \"ko-KR\", \"description\": \"파라다이스 호텔 및 카지노 고객을 위한 프리미엄 라이프스타일 통합 앱입니다. 객실 예약부터 모바일 체크인, 룸 키 서비스, 멤버십 혜택 확인까지 모든 과정을 앱 하나로 간편하게 제공합니다. 호텔뿐 아니라 아트 전시, 공연 등 다양한 엔터테인먼트 정보도 함께 제공하여 고객에게 더 나은 파라다이스시티 이용 경험을 제공합니다.\", \"image\": \"{{SITE_URL}}/portfolio/paradise-incheon/banner.webp\", \"creator\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\"}, \"sourceOrganization\": {\"@type\": \"Organization\", \"name\": \"파라다이스 호텔 인천\"}}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"미스터디벨로\", \"item\": \"{{SITE_URL}}/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"포트폴리오\", \"item\": \"{{SITE_URL}}/portfolio/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"파라다이스호텔 인천\", \"item\": \"{{SITE_URL}}/portfolio/paradise-incheon/\"}]}]}"
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "preload",
+      "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/page-experience.0be3a66ff9a5.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/page-transitions.f43ea8b95008.js"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/no-gray-sections.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mr-footer.css?v=5"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mobile-fit.css?v=3"
+    },
+    "inner": null
+  }
+]

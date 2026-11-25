@@ -1,5 +1,5 @@
 :HL["/study.css?v=d9481bc169","style"]
-:HL["/portfolio/portfolio.css?v=1","style"]
+:HL["/portfolio/portfolio.css?v=2","style"]
 :HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/page-experience.0be3a66ff9a5.css","style"]
 :HL["/no-gray-sections.css","style"]
@@ -8,4 +8,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"portfolio","h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(portfolio)","h":48,"c":"$Q2"}]]
-0:{"b":"dHb5CMjOKHTMPPMwwREQ4","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"WaQXvaBkjAEgh6htUencD","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

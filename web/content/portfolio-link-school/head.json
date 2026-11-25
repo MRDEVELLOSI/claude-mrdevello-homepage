@@ -1,0 +1,107 @@
+[
+  {
+    "tag": "style",
+    "attrs": {},
+    "inner": "html.ts-pending body{visibility:hidden}"
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "src": "/type-scale.js?v=9",
+      "defer": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/study.css?v=d9481bc169"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/portfolio/portfolio-detail.css?v=1"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/navigation.js?v=e98175695b"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "type": "application/ld+json"
+    },
+    "inner": "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"CreativeWork\", \"@id\": \"{{SITE_URL}}/portfolio/link-school/#content\", \"name\": \"링스쿨 · 프론트 개발\", \"url\": \"{{SITE_URL}}/portfolio/link-school/\", \"inLanguage\": \"ko-KR\", \"description\": \"LG헬로비전의 교육공간혁신 플랫폼 링스쿨은 교실 내 디지털 기기와 학습 환경을 하나의 플랫폼에서 통합 제어할 \\t수 있는 디지털 교육 플랫폼입니다. 교사와 학생이 직관적인 UI/UX 환경에서 기기 간 연결, 자료 공유, 수업 모니터링 등을 \\t손쉽게 실행할 수 있으며, 교실 환경 제어 및 유지보수까지 원스톱으로 지원합니다. 학습자 중심의 수업 운영과 맞춤형 학습 \\t지원을 통해 디지털 기반 교육의 효율성과 몰입도를 높여줍니다. 링스쿨은 교실을 넘어 미래형 학습 공간을 구현합니다.\", \"image\": \"{{SITE_URL}}/portfolio/link-school/banner.webp\", \"creator\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\"}, \"sourceOrganization\": {\"@type\": \"Organization\", \"name\": \"LG 헬로비전\"}}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"미스터디벨로\", \"item\": \"{{SITE_URL}}/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"포트폴리오\", \"item\": \"{{SITE_URL}}/portfolio/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"링스쿨\", \"item\": \"{{SITE_URL}}/portfolio/link-school/\"}]}]}"
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "preload",
+      "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/page-experience.0be3a66ff9a5.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/page-transitions.f43ea8b95008.js"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/no-gray-sections.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mr-footer.css?v=5"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mobile-fit.css?v=3"
+    },
+    "inner": null
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "tag": "style",
+    "attrs": {},
+    "inner": "html.ts-pending body{visibility:hidden}"
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "src": "/type-scale.js?v=9",
+      "defer": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/study.css?v=d9481bc169"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/portfolio/portfolio-detail.css?v=1"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/navigation.js?v=e98175695b"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "type": "application/ld+json"
+    },
+    "inner": "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"CreativeWork\", \"@id\": \"{{SITE_URL}}/portfolio/hyundai/#content\", \"name\": \"현대 HMG · 프론트엔드\", \"url\": \"{{SITE_URL}}/portfolio/hyundai/\", \"inLanguage\": \"ko-KR\", \"description\": \"The Voice of HMG Leadership은 현대자동차그룹 정의선 회장의 메시지를 비롯해 그룹 주요 CEO 및 사장단의 비전과 철학을 임직원들이 쉽고 편리하게 접할 수 있도록 지원하는 디지털 플랫폼입니다.  단순한 콘텐츠 제공을 넘어, 그룹의 미래지향적 가치와 경영 철학을 반영한 구조와 디자인으로 구성되어 있으며, 다국어 기능과 트랜스크립트 기능을 통해 다양한 언어권 사용자도 접근이 가능합니다.\", \"image\": \"{{SITE_URL}}/portfolio/hyundai/banner.webp\", \"creator\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\"}, \"sourceOrganization\": {\"@type\": \"Organization\", \"name\": \"현대 오토에버\"}}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"미스터디벨로\", \"item\": \"{{SITE_URL}}/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"포트폴리오\", \"item\": \"{{SITE_URL}}/portfolio/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"현대 HMG\", \"item\": \"{{SITE_URL}}/portfolio/hyundai/\"}]}]}"
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "preload",
+      "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/page-experience.0be3a66ff9a5.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/page-transitions.f43ea8b95008.js"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/no-gray-sections.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mr-footer.css?v=5"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mobile-fit.css?v=3"
+    },
+    "inner": null
+  }
+]

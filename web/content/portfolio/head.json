@@ -1,5 +1,23 @@
 [
   {
+    "tag": "style",
+    "attrs": {},
+    "inner": "html.ts-pending body{visibility:hidden}"
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "src": "/type-scale.js?v=9",
+      "defer": ""
+    },
+    "inner": null
+  },
+  {
     "tag": "link",
     "attrs": {
       "rel": "stylesheet",
@@ -11,7 +29,7 @@
     "tag": "link",
     "attrs": {
       "rel": "stylesheet",
-      "href": "/portfolio/portfolio.css?v=1"
+      "href": "/portfolio/portfolio.css?v=2"
     },
     "inner": null
   },
@@ -19,7 +37,7 @@
     "tag": "script",
     "attrs": {
       "defer": "",
-      "src": "/portfolio/portfolio.js?v=1"
+      "src": "/portfolio/portfolio.js?v=2"
     },
     "inner": null
   },
@@ -36,7 +54,7 @@
     "attrs": {
       "type": "application/ld+json"
     },
-    "inner": "{\"@context\": \"https://schema.org\", \"@type\": \"CollectionPage\", \"name\": \"포트폴리오 | 미스터디벨로\", \"url\": \"{{SITE_URL}}/portfolio/\", \"inLanguage\": \"ko-KR\", \"description\": \"수많은 클라이언트가 인정한 미스터디벨로의 실력. 미스터디벨로가 기획·개발한 앱·웹 서비스 포트폴리오.\", \"mainEntity\": {\"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"현대 HMG\", \"url\": \"https://mrdevello.com/portfolio/hyundai\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"링스쿨\", \"url\": \"https://mrdevello.com/portfolio/link-school\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"파라다이스호텔 부산\", \"url\": \"https://mrdevello.com/portfolio/paradise-busan\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"파라다이스호텔 인천\", \"url\": \"https://mrdevello.com/portfolio/paradise-incheon\"}, {\"@type\": \"ListItem\", \"position\": 5, \"name\": \"부릉\", \"url\": \"https://mrdevello.com/portfolio/vroong\"}, {\"@type\": \"ListItem\", \"position\": 6, \"name\": \"OCU\", \"url\": \"https://mrdevello.com/portfolio/ocu\"}, {\"@type\": \"ListItem\", \"position\": 7, \"name\": \"똑똑365\", \"url\": \"https://mrdevello.com/portfolio/ttokttok365\"}, {\"@type\": \"ListItem\", \"position\": 8, \"name\": \"디어먼데이\", \"url\": \"https://mrdevello.com/portfolio/dear-monday\"}, {\"@type\": \"ListItem\", \"position\": 9, \"name\": \"아트라상\", \"url\": \"https://mrdevello.com/portfolio/atrasan\"}, {\"@type\": \"ListItem\", \"position\": 10, \"name\": \"폰의 민족\", \"url\": \"https://mrdevello.com/portfolio/phone-people\"}, {\"@type\": \"ListItem\", \"position\": 11, \"name\": \"놀토\", \"url\": \"https://mrdevello.com/portfolio/nolto\"}, {\"@type\": \"ListItem\", \"position\": 12, \"name\": \"아티켓\", \"url\": \"https://mrdevello.com/portfolio/artiket\"}, {\"@type\": \"ListItem\", \"position\": 13, \"name\": \"닥터두피\", \"url\": \"https://mrdevello.com/portfolio/drdp\"}, {\"@type\": \"ListItem\", \"position\": 14, \"name\": \"반려시대\", \"url\": \"https://mrdevello.com/portfolio/pet-era\"}, {\"@type\": \"ListItem\", \"position\": 15, \"name\": \"킹스랜드\", \"url\": \"https://mrdevello.com/portfolio/kingsland\"}, {\"@type\": \"ListItem\", \"position\": 16, \"name\": \"운세나우\", \"url\": \"https://mrdevello.com/portfolio/unsae-now\"}, {\"@type\": \"ListItem\", \"position\": 17, \"name\": \"하트쉐어\", \"url\": \"https://mrdevello.com/portfolio/heart-share\"}]}}"
+    "inner": "{\"@context\": \"https://schema.org\", \"@type\": \"CollectionPage\", \"name\": \"포트폴리오 | 미스터디벨로\", \"url\": \"{{SITE_URL}}/portfolio/\", \"inLanguage\": \"ko-KR\", \"description\": \"수많은 클라이언트가 인정한 미스터디벨로의 실력. 미스터디벨로가 기획·개발한 앱·웹 서비스 포트폴리오.\", \"mainEntity\": {\"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"현대 HMG\", \"url\": \"/portfolio/hyundai/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"링스쿨\", \"url\": \"/portfolio/link-school/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"파라다이스호텔 부산\", \"url\": \"/portfolio/paradise-busan/\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"파라다이스호텔 인천\", \"url\": \"/portfolio/paradise-incheon/\"}, {\"@type\": \"ListItem\", \"position\": 5, \"name\": \"부릉\", \"url\": \"/portfolio/vroong/\"}, {\"@type\": \"ListItem\", \"position\": 6, \"name\": \"OCU\", \"url\": \"/portfolio/ocu/\"}, {\"@type\": \"ListItem\", \"position\": 7, \"name\": \"똑똑365\", \"url\": \"/portfolio/ttokttok365/\"}, {\"@type\": \"ListItem\", \"position\": 8, \"name\": \"디어먼데이\", \"url\": \"/portfolio/dear-monday/\"}, {\"@type\": \"ListItem\", \"position\": 9, \"name\": \"아트라상\", \"url\": \"/portfolio/atrasan/\"}, {\"@type\": \"ListItem\", \"position\": 10, \"name\": \"폰의 민족\", \"url\": \"/portfolio/phone-people/\"}, {\"@type\": \"ListItem\", \"position\": 11, \"name\": \"놀토\", \"url\": \"/portfolio/nolto/\"}, {\"@type\": \"ListItem\", \"position\": 12, \"name\": \"아티켓\", \"url\": \"/portfolio/artiket/\"}, {\"@type\": \"ListItem\", \"position\": 13, \"name\": \"닥터두피\", \"url\": \"/portfolio/drdp/\"}, {\"@type\": \"ListItem\", \"position\": 14, \"name\": \"반려시대\", \"url\": \"/portfolio/pet-era/\"}, {\"@type\": \"ListItem\", \"position\": 15, \"name\": \"킹스랜드\", \"url\": \"/portfolio/kingsland/\"}, {\"@type\": \"ListItem\", \"position\": 16, \"name\": \"운세나우\", \"url\": \"/portfolio/unsae-now/\"}, {\"@type\": \"ListItem\", \"position\": 17, \"name\": \"하트쉐어\", \"url\": \"/portfolio/heart-share/\"}]}}"
   },
   {
     "tag": "link",

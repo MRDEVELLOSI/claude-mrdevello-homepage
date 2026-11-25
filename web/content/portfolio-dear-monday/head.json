@@ -1,0 +1,107 @@
+[
+  {
+    "tag": "style",
+    "attrs": {},
+    "inner": "html.ts-pending body{visibility:hidden}"
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "src": "/type-scale.js?v=9",
+      "defer": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/study.css?v=d9481bc169"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/portfolio/portfolio-detail.css?v=1"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/navigation.js?v=e98175695b"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "type": "application/ld+json"
+    },
+    "inner": "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"CreativeWork\", \"@id\": \"{{SITE_URL}}/portfolio/dear-monday/#content\", \"name\": \"디어먼데이 · 1차,2차 턴키개발\", \"url\": \"{{SITE_URL}}/portfolio/dear-monday/\", \"inLanguage\": \"ko-KR\", \"description\": \"Dear Monday는 아름다운 뷰로 리프레시 할 수 있는 장소에 창의력과 몰입을 극대화하는 공간을 큐레이션 합니다.  최적의 업무 환경을 갖춘 숙소와 코워킹 스페이스에서 워케이션을 즐기며 업무 생산성을 극대화하세요.  다양한 지역에서 제공되는 프리미엄 워케이션 공간을 통해, 일과 휴식을 조화롭게 결합한 새로운 방식의 라이프스타일을 경험할 수 있습니다.  단순한 원격 근무를 넘어, 지역 문화 체험, 웰니스 프로그램, 리프레시 활동 등을 결합하여 일과 삶의 균형을 찾을 수 있습니다.  웹을 통해 간편하게 예약하고, 나만의 맞춤형 워케이션 플랜을 세워보세요.\", \"image\": \"{{SITE_URL}}/portfolio/dear-monday/banner.webp\", \"creator\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\"}}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"미스터디벨로\", \"item\": \"{{SITE_URL}}/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"포트폴리오\", \"item\": \"{{SITE_URL}}/portfolio/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"디어먼데이\", \"item\": \"{{SITE_URL}}/portfolio/dear-monday/\"}]}]}"
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "preload",
+      "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": ""
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/page-experience.0be3a66ff9a5.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "script",
+    "attrs": {},
+    "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+  },
+  {
+    "tag": "script",
+    "attrs": {
+      "defer": "",
+      "src": "/page-transitions.f43ea8b95008.js"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/no-gray-sections.css"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mr-footer.css?v=5"
+    },
+    "inner": null
+  },
+  {
+    "tag": "link",
+    "attrs": {
+      "rel": "stylesheet",
+      "href": "/mobile-fit.css?v=3"
+    },
+    "inner": null
+  }
+]

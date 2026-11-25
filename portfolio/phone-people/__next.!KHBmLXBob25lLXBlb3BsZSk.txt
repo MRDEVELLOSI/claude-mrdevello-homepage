@@ -1,0 +1,52 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/3qfy96eoyh-ek.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+:HL["/study.css?v=d9481bc169","style"]
+:HL["/portfolio/portfolio-detail.css?v=1","style"]
+:HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/page-experience.0be3a66ff9a5.css","style"]
+6:X
+6:C
+7:X
+9:T55f,(()=>{
+ const root=document.documentElement;
+ root.dataset.pageReady='pending';
+ let shown=false;
+ function reveal(reason){
+  if(shown)return;shown=true;clearTimeout(deadline);
+  root.dataset.fontLoad=reason;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));
+ }
+ const deadline=setTimeout(()=>reveal('timeout'),2200);
+ const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));
+ const fonts=document.fonts?Promise.all([
+  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px "Pretendard"','MR.DEVELLO 미스터디벨로'))
+ ]):Promise.resolve();
+ Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));
+ addEventListener('pagereveal',event=>{
+  if(!event.viewTransition)return;
+  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px "Pretendard"','MR.DEVELLO 미스터디벨로'));
+  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}
+  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';
+  root.dataset.pageNative='true';root.dataset.pageReady='ready';
+ });
+ addEventListener('pageshow',event=>{
+  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}
+ });
+})();8:[["children",{"s":"(pf-phone-people)","h":48,"d":{"r":["$","$1","c",{"children":[null,["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[[["$","style","0",{"dangerouslySetInnerHTML":{"__html":"html.ts-pending body{visibility:hidden}"}}],["$","script","1",{"dangerouslySetInnerHTML":{"__html":"document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"}}],["$","script","2",{"src":"/type-scale.js?v=9","defer":true}],["$","link","3",{"rel":"stylesheet","href":"/study.css?v=d9481bc169"}],["$","link","4",{"rel":"stylesheet","href":"/portfolio/portfolio-detail.css?v=1"}],["$","script","5",{"defer":true,"src":"/navigation.js?v=e98175695b"}],["$","script","6",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"CreativeWork\", \"@id\": \"https://mrdevello.com/portfolio/phone-people/#content\", \"name\": \"폰의 민족 · 브랜딩, 턴키 개발\", \"url\": \"https://mrdevello.com/portfolio/phone-people/\", \"inLanguage\": \"ko-KR\", \"description\": \"폰의 민족은 휴대폰 구매를 위한 견적과 상담 정보를 확인하는 서비스입니다. 빠른 견적과 상세 견적, 받은 견적 확인, 휴대폰 정보 및 거래 후기 화면을 통해 구매에 필요한 정보를 살펴볼 수 있습니다.\", \"image\": \"https://mrdevello.com/portfolio/phone-people/banner.webp\", \"creator\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\"}, \"sourceOrganization\": {\"@type\": \"Organization\", \"name\": \"폰의 민족\"}}, {\"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"미스터디벨로\", \"item\": \"https://mrdevello.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"포트폴리오\", \"item\": \"https://mrdevello.com/portfolio/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"폰의 민족\", \"item\": \"https://mrdevello.com/portfolio/phone-people/\"}]}]}"}}],["$","link","7",{"rel":"preload","href":"/assets/pretendard-variable.9599f12fd42f.woff2","as":"font","type":"font/woff2","crossOrigin":""}],["$","link","8",{"rel":"stylesheet","href":"/page-experience.0be3a66ff9a5.css"}],["$","script","9",{"dangerouslySetInnerHTML":{"__html":"$9"}}],"$La","$Lb","$Lc","$Ld"],"$undefined"]}],"$Le"]}]]}],"p":"$@f","v":null,"s":"$7"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]]}],"p":"$@5","v":"$6","s":"$7"},"c":"$Q8"}},"a":"$@10","u":"$@11","b":"WaQXvaBkjAEgh6htUencD"}
+:HL["/no-gray-sections.css","style"]
+:HL["/mr-footer.css?v=5","style"]
+:HL["/mobile-fit.css?v=3","style"]
+a:["$","script","10",{"defer":true,"src":"/page-transitions.f43ea8b95008.js"}]
+b:["$","link","11",{"rel":"stylesheet","href":"/no-gray-sections.css"}]
+c:["$","link","12",{"rel":"stylesheet","href":"/mr-footer.css?v=5"}]
+d:["$","link","13",{"rel":"stylesheet","href":"/mobile-fit.css?v=3"}]
+e:["$","body",null,{"className":"ph-body-page portfolio-detail","suppressHydrationWarning":true,"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:style","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:1:props:style","children":404}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:style","children":["$","h2",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:children:props:style","children":"This page could not be found."}]}]]}]}]],[]]}]}]
+7:300
+11:true
+7:C
+10:0
+5:"$undefined"
+f:"$undefined"

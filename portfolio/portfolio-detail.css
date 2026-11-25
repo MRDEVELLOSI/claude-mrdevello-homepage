@@ -1,0 +1,116 @@
+/* PORTFOLIO 상세 — 히어로(텍스트+배너 카드) · 스티키 정보 패널 2단 · 다음 포트폴리오
+   색은 프로젝트마다 main[style] 변수로 주입: --pd-point(디자인 시스템 Point) --pd-ink(흰 배경 텍스트용) --pd-accent --pd-second --pd-deep --pd-tint --pd-glow1/2 --pd-mark */
+.pd-page{color:#111;letter-spacing:-.02em;word-break:keep-all}
+.pd-page *{box-sizing:border-box}
+.pd-page h1,.pd-page h2,.pd-page p,.pd-page dl,.pd-page dd,.pd-page figure{margin:0}
+.pd-page a{color:inherit;text-decoration:none}
+.pd-page ul{list-style:none;margin:0;padding:0}
+.ph-skip{position:absolute;left:16px;top:-60px;z-index:200;padding:10px 16px;border-radius:999px;background:#111;color:#fff!important;font-weight:700;text-decoration:none}
+.ph-skip:focus{top:12px}
+
+/* ── 히어로: 첫 화면(100dvh-헤더)·최소 800px ── */
+.pd-hero{position:relative;overflow:hidden;height:calc(100vh - 64px);height:calc(100dvh - 64px);min-height:800px;display:flex;align-items:center;background:#fff}
+.pd-glow span{position:absolute;border-radius:50%;pointer-events:none}
+.pd-g1{left:-8%;top:10%;width:760px;height:760px;background:radial-gradient(circle,var(--pd-glow1) 0,rgba(255,255,255,0) 68%)}
+.pd-g2{right:-6%;bottom:-20%;width:820px;height:820px;background:radial-gradient(circle,var(--pd-glow2) 0,rgba(255,255,255,0) 68%)}
+.pd-hero-in{position:relative;width:min(1200px,calc(100% - 48px));margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 440px;gap:40px;align-items:center}
+.pd-hero-txt{display:flex;flex-direction:column;align-items:flex-start;gap:26px}
+.pd-crumb{display:flex;gap:8px;align-items:center;font-size:14px;font-weight:600;color:#8a8a92}
+.pd-crumb i{font-style:normal;color:#c8c8cd}
+.pd-crumb a:hover{color:#111}
+.pd-crumb span{color:#111}
+.pd-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:var(--pd-tint);color:#111;font-size:15px;font-weight:800}
+.pd-tag::before{content:'';width:8px;height:8px;border-radius:8px;background:var(--pd-accent)}
+.pd-h1{font-size:min(96px,7vw);font-weight:700;line-height:1.1;letter-spacing:-.055em;color:#111}
+.pd-lead{font-size:19px;line-height:1.75;color:#555;max-width:680px}
+.pd-hero-card{position:relative;height:min(680px,calc(100dvh - 160px));min-height:560px;border-radius:40px;overflow:hidden;background:var(--pd-deep);box-shadow:0 40px 80px -40px var(--pd-deep)}
+.pd-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% center;transform:scale(1.02)}
+.pd-hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08) 0,var(--pd-deep0) 35%,var(--pd-deep7) 72%,var(--pd-deep) 100%)}
+.pd-hero-logo{position:absolute;left:32px;bottom:32px;width:auto;height:auto;max-width:300px;max-height:96px;object-fit:contain;object-position:left bottom}
+
+/* ── 본문 2단 ── */
+.pd-body{width:min(1200px,calc(100% - 48px));margin:0 auto;padding:80px 0 120px;display:grid;grid-template-columns:360px minmax(0,1fr);gap:60px;align-items:start}
+.pd-aside{position:sticky;top:88px}
+.pd-panel{border-radius:28px;background:#f6f6f8;padding:32px;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden}
+.pd-panel::before{content:'';position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,var(--pd-point),var(--pd-second))}
+.pd-panel-h{font-size:13px;font-weight:800;color:var(--pd-ink);letter-spacing:.1em;margin-bottom:8px!important}
+.pd-info-row{display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:1px solid #e5e5e8}
+.pd-info-row dt{font-size:13px;font-weight:700;color:#8a8a92}
+.pd-info-row dd{font-size:19px;font-weight:800;line-height:1.4}
+.pd-ds{padding:18px 0;border-top:1px solid #e5e5e8;display:flex;flex-direction:column;gap:14px}
+.pd-ds-h{font-size:13px;font-weight:700;color:#8a8a92}
+.pd-ds ul{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.pd-ds li{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
+.pd-sw{width:48px;height:48px;border-radius:14px}
+.pd-sw--line{box-shadow:inset 0 0 0 1px #e3e3e6}
+.pd-ds b{font-size:11px;font-weight:700;color:#8a8a92}
+.pd-ds em{font-style:normal;font-size:10.5px;font-weight:700;color:#555;letter-spacing:-.02em}
+.pd-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 22px;border-radius:999px;background:#111;color:#fff!important;font-size:16px;font-weight:700;margin-top:8px;transition:transform .18s ease,background .18s ease}
+.pd-btn i{font-style:normal}
+.pd-btn:hover{transform:translateY(-2px);background:var(--pd-ink)}
+.pd-btn--w{background:#fff;color:#111!important;border:1px solid #e3e3e6;margin-top:0;height:auto;min-height:56px;padding:12px 22px;font-size:15px;text-align:center;line-height:1.4}
+.pd-btn--w:hover{background:#fff;border-color:var(--pd-ink)}
+.pd-back{align-self:center;margin-top:10px;font-size:14px;font-weight:700;color:#8a8a92}
+.pd-back:hover{color:#111}
+
+.pd-main{display:flex;flex-direction:column;gap:56px;min-width:0}
+.pd-scope{display:flex;flex-direction:column;gap:22px}
+.pd-scope h2{font-size:40px;font-weight:650;letter-spacing:-.04em;line-height:1.3}
+.pd-mk{background:linear-gradient(180deg,transparent 52%,var(--pd-mark) 52%);padding:0 .08em}
+.pd-lead2{font-size:18px;line-height:1.8;color:#333}
+.pd-ctx{font-size:17px;line-height:1.8;color:#555;white-space:pre-line}
+.pd-note{border-radius:22px;background:linear-gradient(135deg,var(--pd-tint),rgba(255,255,255,0));border:1px solid var(--pd-tint);padding:24px 28px;display:flex;flex-direction:column;gap:16px}
+.pd-note p{font-size:16px;line-height:1.75;color:#333}
+.pd-note strong{color:var(--pd-ink)}
+.pd-chips{display:flex;flex-wrap:wrap;gap:8px}
+.pd-chips li{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border-radius:999px;background:var(--pd-point);color:var(--pd-on);font-size:14px;font-weight:800}
+.pd-chips li::before{content:'✓'}
+
+.pd-shots{display:flex;flex-direction:column;gap:40px}
+.pd-fig{display:flex;flex-direction:column;gap:14px}
+.pd-fig figcaption{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:800}
+.pd-fig figcaption span{color:var(--pd-ink)}
+.pd-fig img{display:block;width:100%;height:auto;border-radius:24px;background:#f4f4f6}
+
+/* ── 다음 포트폴리오 ── */
+.pd-next{width:min(1200px,calc(100% - 48px));margin:0 auto 100px}
+.pd-page .pd-next-card{color:#fff}
+.pd-next-card{position:relative;display:grid;grid-template-columns:1fr auto;align-items:end;gap:30px;min-height:400px;border-radius:36px;overflow:hidden;padding:56px 64px;color:#fff;isolation:isolate}
+.pd-next-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.pd-next-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,var(--nx-a1) 0,var(--nx-a2) 55%,var(--nx-a3) 100%)}
+.pd-next-txt{display:flex;flex-direction:column;gap:14px}
+.pd-next-txt em{font-style:normal;font-size:15px;font-weight:800;letter-spacing:.08em;opacity:.8}
+.pd-next-txt b{font-size:60px;font-weight:800;letter-spacing:-.05em;line-height:1.1}
+.pd-next-txt i{font-style:normal;display:inline-block;transition:transform .3s ease}
+.pd-next-logo{width:auto;height:auto;max-width:280px;max-height:90px;object-fit:contain}
+.pd-next-card:hover .pd-next-bg{transform:scale(1.05)}
+.pd-next-card:hover .pd-next-txt i{transform:translateX(8px)}
+.pd-next-card:focus-visible,.pd-btn:focus-visible{outline:2px solid #111;outline-offset:4px}
+
+@media (max-width:1100px){
+  .pd-hero-in{grid-template-columns:minmax(0,1fr) 360px}
+  .pd-body{grid-template-columns:300px minmax(0,1fr);gap:40px}
+  .pd-sw{width:40px;height:40px}
+}
+@media (max-width:860px){
+  .pd-hero{height:auto;min-height:0;padding:48px 0 56px}
+  .pd-hero-in{grid-template-columns:1fr;gap:32px}
+  .pd-h1{font-size:clamp(34px,9vw,52px)}
+  .pd-lead{font-size:16px}
+  .pd-hero-card{height:360px;min-height:0;border-radius:28px}
+  .pd-hero-logo{left:22px;bottom:22px;max-width:220px;max-height:72px}
+  .pd-body{grid-template-columns:1fr;padding:48px 0 80px;gap:40px}
+  .pd-aside{position:static}
+  .pd-panel{padding:26px 22px}
+  .pd-scope h2{font-size:26px}
+  .pd-lead2,.pd-ctx{font-size:16px}
+  .pd-note{padding:20px}
+  .pd-note p{font-size:15px}
+  .pd-shots{gap:28px}
+  .pd-fig img{border-radius:16px}
+  .pd-next{margin-bottom:64px}
+  .pd-next-card{grid-template-columns:1fr;min-height:300px;padding:32px 26px;border-radius:26px}
+  .pd-next-txt b{font-size:36px}
+  .pd-next-logo{max-width:180px;max-height:60px;order:-1}
+}
+@media (prefers-reduced-motion:reduce){.pd-next-bg,.pd-btn,.pd-next-txt i{transition:none}}
