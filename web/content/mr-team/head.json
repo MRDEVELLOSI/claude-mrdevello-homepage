@@ -149,7 +149,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/svc/svc-live.css?v=6"
+   "href": "/svc/svc-live.css?v=7"
   },
   "inner": null
  },
@@ -157,7 +157,7 @@
   "tag": "script",
   "attrs": {
    "defer": "",
-   "src": "/svc/svc-live.js?v=6"
+   "src": "/svc/svc-live.js?v=7"
   },
   "inner": null
  }

@@ -310,3 +310,6 @@ td.s1-hi .s1-mx{background:var(--blue)}
   #sample.s1-keep .gphs .dev,#sample.s1-keep .gphs .lk .lkv{border-radius:14px}
   #sample.s1-keep .gform{padding:32px 22px}
 }
+
+#faq.s1-keep summary,#faq.s1-keep summary:hover,#faq.s1-keep details[open] summary{color:#7560c9}
+#faq.s1-keep details[open] summary::after{background:#7560c9}
