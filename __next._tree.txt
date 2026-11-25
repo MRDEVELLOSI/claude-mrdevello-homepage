@@ -17,9 +17,9 @@
 :HL["/inquiry-modal.css?v=2","style"]
 :HL["/proof-sections.css?v=11","style"]
 :HL["/last-cta.css?v=6","style"]
-:HL["/mr-footer.css?v=2","style"]
+:HL["/mr-footer.css?v=3","style"]
 :HL["/mobile-fit.css?v=3","style"]
 :HL["/tail-motion.css?v=1","style"]
 2:[["children",{"s":"__PAGE__","h":128}]]
 1:[["children",{"s":"(home)","h":48,"c":"$Q2"}]]
-0:{"b":"TTAbs3jF2mjrFLy9grELt","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"R-i-KQKnne3U-9HwsX3jV","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

@@ -4,11 +4,11 @@
 :HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/page-experience.0be3a66ff9a5.css","style"]
 :HL["/no-gray-sections.css","style"]
-:HL["/mr-footer.css?v=2","style"]
+:HL["/mr-footer.css?v=3","style"]
 :HL["/mobile-fit.css?v=3","style"]
 :HL["/about-unify.css?v=7","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":"philosophy","h":96,"c":"$Q4"}]]
 2:[["children",{"s":"intro","h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(philosophy)","h":48,"c":"$Q2"}]]
-0:{"b":"TTAbs3jF2mjrFLy9grELt","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"R-i-KQKnne3U-9HwsX3jV","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

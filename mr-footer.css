@@ -42,7 +42,10 @@
 .mf .mf-nav{grid-template-columns:1fr 1fr;padding:26px 22px;gap:28px 20px;border-radius:20px}
 .mf .mf-info span{white-space:normal}
 }
-.mf .mf-nav{grid-template-columns:repeat(5,auto)}
+.mf .mf-nav{grid-template-columns:repeat(4,auto)}
 .mf .mf-col p{letter-spacing:.02em}
 .mf .mf-na{font-size:15px;font-weight:500;color:#9a9a9a!important;display:inline-flex;align-items:center;gap:8px}
 @media (max-width:700px){.mf .mf-nav{grid-template-columns:1fr 1fr}}
+
+.mf .mf-col p a.mf-col-h{font-size:15px;font-weight:800;color:#111!important;letter-spacing:.02em}
+.mf .mf-col p a.mf-col-h:hover{color:#555!important}
