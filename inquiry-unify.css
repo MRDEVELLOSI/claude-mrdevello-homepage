@@ -10,3 +10,9 @@
   .iq-body main h2{font-size:20px!important}
   .iq-body .q2-sec{padding-bottom:80px!important}
 }
+/* 왼쪽 안내 영역 스크롤 따라오기 (PC) */
+@media (min-width:1101px){
+  .iq-body .q2-sec{overflow:clip!important}
+  .iq-body .q2-left{align-self:stretch!important}
+  .iq-body .q2-left-in{position:sticky!important;top:96px!important}
+}
