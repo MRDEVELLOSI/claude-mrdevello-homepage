@@ -253,3 +253,9 @@
 .cx2 .cx2-end-bar{left:22px;right:22px;bottom:28px}
 }
 @media(prefers-reduced-motion:reduce){.cx2 .cx2-ring circle,.cx2 .cx2-end-fill,.cx2 .cx2-next-q i{animation:none}.cx2 .cx2-ring circle{stroke-dashoffset:30}}
+/* 최상단: 첫 화면 꽉 채움(헤더 64px 제외) + 최소 높이 + 세로 가운데 정렬 */
+@media(min-width:721px){
+.cx2 .cx2-hero{box-sizing:border-box;height:calc(100vh - 64px);height:calc(100dvh - 64px);min-height:800px;display:flex;flex-direction:column;justify-content:center;padding:32px 0}
+.cx2 .cx2-player{flex:none;height:min(600px,calc(100dvh - 64px - 240px));min-height:520px}
+.cx2 .cx2-tape{flex:none;width:100%;align-self:stretch}
+}
