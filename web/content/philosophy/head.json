@@ -19,7 +19,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/intro/philosophy/ax.css?v=30"
+   "href": "/intro/philosophy/ax.css?v=31"
   },
   "inner": null
  },
@@ -27,7 +27,7 @@
   "tag": "script",
   "attrs": {
    "defer": "",
-   "src": "/intro/philosophy/ax.js?v=30"
+   "src": "/intro/philosophy/ax.js?v=31"
   },
   "inner": null
  },
