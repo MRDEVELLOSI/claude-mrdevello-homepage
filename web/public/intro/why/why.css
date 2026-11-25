@@ -437,3 +437,6 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 .wy-cta-ch img{width:22px;height:22px;object-fit:contain}
 .wy-th-ico{width:22px;height:22px;border-radius:6px;background:#fff;color:#111;display:inline-flex;align-items:center;justify-content:center}
 .wy-th-ico svg{width:14px;height:14px}
+
+.wy-q .wy-q-ico{top:auto;bottom:14px;right:22px;width:128px;filter:drop-shadow(0 14px 22px rgba(17,17,17,.12))}
+@media (max-width:767px){.wy-q .wy-q-ico{width:84px;bottom:12px;right:14px}}

@@ -152,3 +152,5 @@
 /* 카운트·진행바: 프로젝트 고유색 */
 #why-3 .mrd-quality__count b{color:color-mix(in srgb,var(--case-accent) 78%,#000)}
 #why-3 .mrd-quality__progress>span{background:var(--case-accent)}
+
+.mrd-quality__rail::before{display:none}
