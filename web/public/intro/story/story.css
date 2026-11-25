@@ -616,3 +616,6 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .sb-anim.is-in .sb-quote{opacity:1;transform:none}
 .sb-anim .sb-i{opacity:0;scale:.6;transition:opacity .6s ease var(--d,0ms),scale .7s cubic-bezier(.34,1.56,.64,1) var(--d,0ms)}
 .sb-anim.is-in .sb-i{opacity:1;scale:1}
+.st-ask-q{font-size:32px!important}
+@media (max-width:1023px){.st-ask-q{font-size:26px!important}}
+@media (max-width:767px){.st-ask-q{font-size:20px!important}}
