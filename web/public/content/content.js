@@ -25,11 +25,13 @@
   // blog category filter
   var btns = root.querySelectorAll('.ch-filter button');
   var rows = root.querySelectorAll('.ch-blog-row');
+  var more = root.querySelector('.ch-blog-more');
   btns.forEach(function (b) {
     b.addEventListener('click', function () {
       var c = b.getAttribute('data-cat');
-      btns.forEach(function (x) { x.classList.toggle('is-on', x === b); });
-      rows.forEach(function (r) { r.hidden = !(c === 'all' || r.getAttribute('data-cat') === c); });
+      btns.forEach(function (x) { var on = x === b; x.classList.toggle('is-on', on); x.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+      rows.forEach(function (r) { r.hidden = c === 'all' ? !r.hasAttribute('data-all') : r.getAttribute('data-cat') !== c; if (!r.hidden) r.classList.add('is-in'); });
+      if (more) { if (c === 'all') { more.href = 'https://blog.naver.com/mrdevello'; more.firstChild.nodeValue = '블로그 전체 보기 '; } else { more.href = more.getAttribute('data-base') + c; more.firstChild.nodeValue = b.firstChild.nodeValue + ' 글 더 보기 '; } }
     });
   });
 })();

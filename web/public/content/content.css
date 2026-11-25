@@ -83,6 +83,12 @@ a:hover>.ch-thumb img{transform:scale(1.04)}
 .ch-filter{display:flex;flex-wrap:wrap;gap:8px}
 .ch-filter button{border:1px solid #dadde1;background:#fff;border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;font-weight:600;color:#111;cursor:pointer}
 .ch-filter button.is-on{background:#111;border-color:#111;color:#fff}
+.ch-filter button span{margin-left:6px;font-size:12px;font-weight:700;color:var(--mute)}
+.ch-filter button.is-on span{color:#a9aeb5}
+.ch-blog-main{display:flex;flex-direction:column;gap:28px;align-items:flex-start}
+.ch-blog-list{width:100%;counter-reset:chn}
+.ch-blog-row:not([hidden]){counter-increment:chn}
+.ch-num::before{content:counter(chn,decimal-leading-zero)}
 .ch-blog-row{display:grid;grid-template-columns:48px minmax(0,1fr) 136px;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
 .ch-blog-row[hidden]{display:none}
 .ch-num{font-size:20px;font-weight:800;color:#c6cad0}
@@ -95,7 +101,10 @@ a:hover>.ch-thumb img{transform:scale(1.04)}
 
 /* instagram */
 .ch-chip-follow{background:#fcebf6}
-.ch-igs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.ch-igs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.ch-4x5{aspect-ratio:4/5}
+.ch-ig-cap{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;font-size:14px;font-weight:700;line-height:1.4;opacity:0;transition:opacity .25s}
+.ch-ig:hover .ch-ig-cap{opacity:1}
 .ch-ig .ch-thumb{border-radius:16px}
 
 /* news */
@@ -110,7 +119,7 @@ a:hover>.ch-thumb img{transform:scale(1.04)}
 .ch-news-more{margin-top:auto;font-size:14px;color:var(--mute)}
 
 /* cta */
-.ch-cta-wrap{padding:0 24px 120px;background:var(--soft)}
+.ch-cta-wrap{padding:0 24px 120px;background:#fff}
 .ch-cta{position:relative;max-width:1200px;margin:0 auto;border-radius:32px;background:var(--yel);padding:72px;box-sizing:border-box;overflow:hidden;display:flex;justify-content:space-between;align-items:center;gap:32px}
 .ch-cta-f1{position:absolute;right:300px;top:-30px;width:150px;transform:rotate(-12deg);opacity:.9}
 .ch-cta-f2{position:absolute;right:40px;bottom:-30px;width:110px;transform:rotate(14deg)}
@@ -134,7 +143,7 @@ a:hover>.ch-thumb img{transform:scale(1.04)}
 .ch-shorts{grid-template-columns:repeat(3,minmax(0,1fr))}
 .ch-blog-grid{grid-template-columns:1fr;gap:32px}
 .ch-blog-side{position:static}
-.ch-igs{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ch-igs{display:flex;overflow-x:auto;gap:12px;margin:0 -24px;padding:0 24px;scrollbar-width:none}.ch-ig{flex:0 0 30%}
 .ch-newsgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .ch-cta{flex-direction:column;align-items:flex-start;padding:56px 48px}
 .ch-cta-f1{right:120px}
@@ -169,7 +178,7 @@ a:hover>.ch-thumb img{transform:scale(1.04)}
 .ch-num{display:none}
 .ch-blog-t{font-size:15px}
 .ch-blog-img{height:72px}
-.ch-igs{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.ch-igs{margin:0 -20px;padding:0 20px}.ch-ig{flex:0 0 46%}.ch-ig-cap{opacity:1;font-size:12px;padding:28px 10px 10px}
 .ch-ig .ch-thumb{border-radius:12px}
 .ch-newsgrid{grid-template-columns:1fr;gap:12px}
 .ch-news-body{padding:18px 20px 22px}
