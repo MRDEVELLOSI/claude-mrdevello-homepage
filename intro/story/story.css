@@ -602,3 +602,17 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .sb-facts{width:min(720px,100%)}
 .sb-facts div{padding:0 22px}
 @media (max-width:767px){.sb-facts div{padding:0 14px}}
+/* 히어로 숫자 컬러 */
+.sb-facts div:nth-child(2) dd{color:#1aa35a}
+.sb-facts div:nth-child(3) dd{color:#ff6b2c}
+.sb-facts dd{font-variant-numeric:tabular-nums}
+/* 히어로 등장 애니메이션 */
+.sb-ln{display:block}
+.sb-anim .sb-r{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0ms)}
+.sb-anim.is-in .sb-r{opacity:1;transform:none}
+.sb-anim .sb-photo img{opacity:0;transform:scale(1.06);transition:opacity 1s ease,transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.sb-anim.is-in .sb-photo img{opacity:1;transform:none}
+.sb-anim .sb-quote{opacity:0;transform:translateY(20px);transition:opacity .7s ease .9s,transform .7s cubic-bezier(.2,.8,.2,1) .9s}
+.sb-anim.is-in .sb-quote{opacity:1;transform:none}
+.sb-anim .sb-i{opacity:0;scale:.6;transition:opacity .6s ease var(--d,0ms),scale .7s cubic-bezier(.34,1.56,.64,1) var(--d,0ms)}
+.sb-anim.is-in .sb-i{opacity:1;scale:1}
