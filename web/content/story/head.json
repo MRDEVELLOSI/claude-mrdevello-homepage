@@ -1,5 +1,23 @@
 [
  {
+  "tag": "style",
+  "attrs": {},
+  "inner": "html.ts-pending body{visibility:hidden}"
+ },
+ {
+  "tag": "script",
+  "attrs": {},
+  "inner": "document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "src": "/type-scale.js?v=9",
+   "defer": ""
+  },
+  "inner": null
+ },
+ {
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
@@ -98,7 +116,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/about-unify.css?v=7"
+   "href": "/about-unify.css?v=8"
   },
   "inner": null
  }
