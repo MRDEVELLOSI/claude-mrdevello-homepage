@@ -108,5 +108,16 @@
     "bodyClass": "ph-body-page about-story",
     "htmlClass": "",
     "htmlStyle": null
+  },
+  {
+    "slug": "content",
+    "route": "/content/",
+    "title": "CONTENT · 유튜브·블로그·인스타그램·뉴스 | 미스터디벨로",
+    "description": "일하는 진짜 모습을 콘텐츠로. 외주 개발 노하우부터 현장 이야기까지, 미스터디벨로의 영상·글·사진·소식을 한곳에서 확인하세요.",
+    "ogImage": "/content/t/yt_Cyza5Gn4OQ4.webp",
+    "icon": "/assets/navigation/youtube-3d.png",
+    "bodyClass": "ph-body-page content-hub",
+    "htmlClass": "",
+    "htmlStyle": null
   }
 ]
