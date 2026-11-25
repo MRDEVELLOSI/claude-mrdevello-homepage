@@ -440,3 +440,5 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 
 .wy-q .wy-q-ico{top:auto;bottom:14px;right:22px;width:128px;filter:drop-shadow(0 14px 22px rgba(17,17,17,.12))}
 @media (max-width:767px){.wy-q .wy-q-ico{width:84px;bottom:12px;right:14px}}
+
+@media (max-width:1023px){.wy-cta .wy-cta-s br,.wy-cta-s br{display:inline!important}}
