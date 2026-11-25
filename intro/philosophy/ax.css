@@ -72,12 +72,9 @@
 @media (prefers-reduced-motion:reduce){.ax .pc-type,.ax .pc-caret,.ax .pc-send,.ax .pc-done,.ax .pc-bk *{animation:none!important}.ax .pc-gen{display:none}}
 @media (prefers-reduced-motion:reduce){.ax .kb,.ax .kb2,.ax .rec,.ax .mq,.ax .mq2,.ax .fl,.ax .caret{animation:none}}
 
-@keyframes axz_hit{0%{transform:scale(1)}30%{transform:scale(1.14) rotate(-3deg)}55%{transform:scale(.96) rotate(2deg)}100%{transform:scale(1)}}
-.axzero.sr.is-in .axz-c{animation:axz_hit .7s cubic-bezier(.34,1.56,.64,1) .9s both;box-shadow:0 0 0 8px rgba(247,92,102,.25),0 18px 40px rgba(247,92,102,.4)}
-.axzero.sr .axz-t{transition:opacity .5s,transform .6s cubic-bezier(.2,.7,.2,1)}
-.axzero.sr:not(.is-in) .axz-t{opacity:0;transform:translateY(16px)}
-.axzero.sr.is-in .axz-b{transition-delay:.15s}.axzero.sr.is-in .axz-c{transition-delay:.3s}
-@media (max-width:1023px){.axzero{padding:40px 20px!important;border-radius:28px!important;gap:24px!important}.axzero>p:first-of-type{font-size:24px!important}.axzero [role=img]{gap:8px!important}.axzero .axz-t{width:auto!important;flex:1;padding:16px 8px 14px!important;border-radius:20px!important}.axzero .axz-t>span:first-child{font-size:36px!important}.axzero .axz-t>span:last-child{font-size:12px!important}.axzero [role=img]>span{font-size:26px!important}}
+@keyframes axz_hit{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.12);opacity:1}100%{transform:scale(1)}}
+.axzero.sr.is-in .axz-c{animation:axz_hit .6s cubic-bezier(.34,1.56,.64,1) .5s both}
+@media (max-width:1023px){.axzero{flex-direction:column!important;align-items:flex-start!important;gap:16px!important;padding:22px 22px!important;border-radius:20px!important}.axzero>p{font-size:17px!important}.axzero [role=img]{font-size:26px!important;gap:10px!important}.axzero .axz-c{width:44px!important;height:44px!important}}
 @keyframes axh_pop{0%{opacity:0;scale:.55}70%{opacity:1;scale:1.06}100%{opacity:1;scale:1}}
 @keyframes axh_float{0%,100%{translate:0 0}50%{translate:0 -14px}}
 @keyframes axh_strike{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
