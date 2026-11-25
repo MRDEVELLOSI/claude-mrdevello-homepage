@@ -556,3 +556,40 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
   .sb-quote{top:calc(min(92vw,420px) - 76px);right:16px;padding:10px 14px}
   .sb-quote b{font-size:14px}
 }
+/* B안 보강: 하단 팩트 + 3D 아이콘 */
+.sb-copy{padding:120px 0 96px}
+.sb-facts{margin:48px 0 0;display:flex;gap:0;width:min(820px,100%)}
+.sb-facts div{flex:1;padding:0 24px;border-left:1px solid #e6e8eb}
+.sb-facts div:first-child{padding-left:0;border-left:0}
+.sb-facts dt{font-size:14px;font-weight:600;color:#5f6368;letter-spacing:-.02em}
+.sb-facts dd{margin:6px 0 0;font-size:44px;font-weight:800;letter-spacing:-.05em;line-height:1;color:#111}
+.sb-facts dd small{font-size:20px;font-weight:700;margin-left:2px;color:#111}
+.sb-facts div:nth-child(1) dd{color:#10a0e8}
+.sb-facts div:nth-child(3) dd{color:#f5b70a}
+.sb-i{position:absolute;z-index:2;height:auto!important;pointer-events:none;filter:drop-shadow(0 18px 30px rgba(40,60,120,.16))}
+.sb-i1{left:max(12px,calc(50% - 716px));top:22px;width:136px;transform:rotate(-10deg)}
+.sb-i2{left:max(8px,calc(50% - 700px));bottom:56px;width:136px;transform:rotate(8deg)}
+.sb-i3{right:max(16px,calc(50% - 700px));top:72px;width:132px;transform:rotate(10deg)}
+.sb-i4{right:calc(min(46vw,720px) - 150px);bottom:36px;width:120px}
+@media (prefers-reduced-motion:no-preference){
+  .sb-i{animation:sh-bob 4.2s ease-in-out infinite alternate}
+  .sb-i2{animation-delay:-1.4s}.sb-i3{animation-delay:-2.2s}.sb-i4{animation-delay:-.7s}
+}
+@media (max-width:1300px){.sb-i1{width:104px;top:20px}.sb-i2{width:88px;bottom:14px}}
+@media (max-width:1100px){
+  .sb-copy{padding:8px 0 72px}
+  .sb-i1{top:auto;bottom:auto;left:auto;right:24px;top:calc(min(56vw,520px) + 20px);width:110px}
+  .sb-i2{left:auto;right:28px;bottom:60px;width:100px}
+  .sb-i3{top:20px;right:auto;left:20px;width:100px}
+  .sb-i4{display:none!important}
+}
+@media (max-width:767px){
+  .sb-facts{margin-top:32px}
+  .sb-facts div{padding:0 14px}
+  .sb-facts dt{font-size:12px}
+  .sb-facts dd{font-size:30px}
+  .sb-facts dd small{font-size:15px}
+  .sb-i1{width:64px;top:calc(min(92vw,420px) + 14px);right:12px}
+  .sb-i2{display:none!important}
+  .sb-i3{width:64px;top:14px;left:12px}
+}
