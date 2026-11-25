@@ -186,7 +186,7 @@
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
-   "href": "/mr-starter/starter-v1.css?v=2"
+   "href": "/mr-starter/starter-v1.css?v=4"
   },
   "inner": null
  },
@@ -194,7 +194,7 @@
   "tag": "script",
   "attrs": {
    "defer": "",
-   "src": "/mr-starter/starter-v1.js?v=2"
+   "src": "/mr-starter/starter-v1.js?v=4"
   },
   "inner": null
  }
