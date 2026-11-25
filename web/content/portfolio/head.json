@@ -29,7 +29,7 @@
     "tag": "link",
     "attrs": {
       "rel": "stylesheet",
-      "href": "/portfolio/portfolio.css?v=2"
+      "href": "/portfolio/portfolio.css?v=3"
     },
     "inner": null
   },
@@ -37,7 +37,7 @@
     "tag": "script",
     "attrs": {
       "defer": "",
-      "src": "/portfolio/portfolio.js?v=2"
+      "src": "/portfolio/portfolio.js?v=3"
     },
     "inner": null
   },

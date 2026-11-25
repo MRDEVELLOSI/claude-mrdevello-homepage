@@ -110,17 +110,6 @@
     "htmlStyle": null
   },
   {
-    "slug": "portfolio",
-    "route": "/portfolio/",
-    "title": "포트폴리오 | 미스터디벨로",
-    "description": "수많은 클라이언트가 인정한 미스터디벨로의 실력. 현대 HMG, 링스쿨, 파라다이스호텔 등 미스터디벨로가 만든 앱·웹 서비스를 확인하세요.",
-    "ogImage": "/portfolio/thumbs/hyundai.webp",
-    "icon": null,
-    "bodyClass": "ph-body-page portfolio-page",
-    "htmlClass": "",
-    "htmlStyle": null
-  },
-  {
     "slug": "portfolio-hyundai",
     "route": "/portfolio/hyundai/",
     "title": "현대 HMG · 프론트엔드 | 미스터디벨로",
@@ -304,6 +293,17 @@
     "ogImage": "/portfolio/heart-share/banner.webp",
     "icon": null,
     "bodyClass": "ph-body-page portfolio-detail",
+    "htmlClass": "",
+    "htmlStyle": null
+  },
+  {
+    "slug": "portfolio",
+    "route": "/portfolio/",
+    "title": "포트폴리오 | 미스터디벨로",
+    "description": "수많은 클라이언트가 인정한 미스터디벨로의 실력. 현대 HMG, 링스쿨, 파라다이스호텔 등 미스터디벨로가 만든 앱·웹 서비스를 확인하세요.",
+    "ogImage": "/portfolio/thumbs/hyundai.webp",
+    "icon": null,
+    "bodyClass": "ph-body-page portfolio-page",
     "htmlClass": "",
     "htmlStyle": null
   },

@@ -18,7 +18,7 @@
 .pf-i3{right:calc(50% - 720px);top:58%;width:122px;animation-delay:-2.1s}
 .pf-i4{right:calc(50% - 740px);top:17%;width:110px;transform:rotate(8deg);animation-delay:-.6s}
 @keyframes pf-bob{to{translate:0 -12px}}
-.pf-hero-in{position:relative;display:flex;flex-direction:column;align-items:center;gap:36px;text-align:center;padding:0 24px;margin-top:-40px}
+.pf-hero-in{position:relative;display:flex;flex-direction:column;align-items:center;gap:36px;text-align:center;padding:0 24px;margin-top:-110px}
 .pf-h1{font-size:min(96px,7vw);font-weight:700;line-height:1.16;letter-spacing:-.055em;color:#111;text-wrap:balance}
 .pf-mk{background:#fcd448;border-radius:8px;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .pf-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
@@ -27,10 +27,14 @@
 .pf-btn:hover{transform:translateY(-2px);background:#000}
 .pf-page .pf-btn--w{background:#fff;color:#111;border:1px solid #e3e3e6}
 .pf-btn--w:hover{background:#f6f6f8}
-.pf-ticker{position:absolute;left:0;right:0;bottom:0;height:150px;border-top:1px solid #f0f0f2;display:flex;align-items:center;overflow:hidden}
-.pf-ticker-run{display:flex;gap:0;white-space:nowrap;animation:pf-mq 60s linear infinite;width:max-content}
-.pf-ticker-run span{font-size:30px;font-weight:800;color:#d4d4d8;letter-spacing:-.03em;padding:0 22px;position:relative}
-.pf-ticker-run span::after{content:'·';position:absolute;right:-6px;color:#e4e4e7}
+.pf-logos{position:absolute;left:0;right:0;bottom:0;padding:30px 0 34px;border-top:1px solid #f0f0f2;display:flex;flex-direction:column;gap:26px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%)}
+.pf-lrow{display:flex;width:max-content;animation:pf-mq 48s linear infinite}
+.pf-lrow--r{animation-direction:reverse;animation-duration:54s}
+.pf-lrun{display:flex;align-items:center;list-style:none;margin:0;padding:0}
+.pf-lrun li{flex:none;display:flex;align-items:center;height:48px;padding:0 44px}
+.pf-lrun img{display:block;width:auto;max-width:none;opacity:.82;transition:opacity .2s ease}
+.pf-logos:hover .pf-lrow{animation-play-state:paused}
+.pf-lrun img:hover{opacity:1}
 @keyframes pf-mq{to{transform:translateX(-50%)}}
 
 /* ── 목록: 아코디언 (행 클릭 = 열고 닫기, '포트폴리오 보기' = 상세 이동) ── */
@@ -116,8 +120,9 @@
   .pf-h1{font-size:clamp(30px,8.6vw,38px);line-height:1.2}
   .pf-hero-in{gap:26px;margin-top:-30px}
   .pf-btn{height:48px;padding:0 20px;font-size:15px}
-  .pf-ticker{height:96px}
-  .pf-ticker-run span{font-size:20px;padding:0 14px}
+  .pf-logos{padding:20px 0 22px;gap:16px}
+  .pf-lrun li{height:36px;padding:0 24px}
+  .pf-lrun img{height:auto;max-height:28px}
   .pf-list-sec{padding:16px 0 96px}
   .pf-row{grid-template-columns:minmax(0,1fr) 40px;gap:14px;min-height:0;padding:22px 0}
   .pf-sq,.pf-thumb{display:none}
@@ -134,5 +139,5 @@
   .pf-skel-row em{order:-1;width:100%;height:180px}
 }
 @media (prefers-reduced-motion:reduce){
-  .pf-ico,.pf-ticker-run,.pf-item.pf-in,.pf-skel-row *,.pf-spin::before{animation:none!important}
+  .pf-ico,.pf-lrow,.pf-item.pf-in,.pf-skel-row *,.pf-spin::before{animation:none!important}
 }
