@@ -5,8 +5,10 @@
 :HL["/no-gray-sections.css","style"]
 :HL["/mr-footer.css?v=5","style"]
 :HL["/mobile-fit.css?v=3","style"]
+:HL["/type-system.css?v=4","style"]
+:HL["/site-reveal.css?v=1","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":"ocu","h":96,"c":"$Q4"}]]
 2:[["children",{"s":"portfolio","h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(pf-ocu)","h":48,"c":"$Q2"}]]
-0:{"b":"qXM6gCRIUxP_xs8xCFHEa","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"BYsmoDKCUD7OowJs9gCWp","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

@@ -4,13 +4,13 @@
 4:I[37457,["$2"],"default"]
 :HL["/study.css?v=d9481bc169","style"]
 :HL["/mr-booster/booster.css?v=deeeac1d2e","style"]
+:HL["/service-evidence.css?v=e4a134eb91-o1","style"]
+:HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 6:X
 6:C
 7:X
-9:T63f,{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://d2ufacxk4b6xve.cloudfront.net/#organization","name":"미스터 디벨로","alternateName":["미스터디벨로","MR.DEVELLO","Mr. Devello","mrdevello"],"url":"https://d2ufacxk4b6xve.cloudfront.net/","logo":"https://d2ufacxk4b6xve.cloudfront.net/logo512.webp","image":"https://d2ufacxk4b6xve.cloudfront.net/og-image.jpg","slogan":"의뢰한 대로가 아닌, 의도한 대로 개발합니다","description":"기획·디자인·개발을 한 팀이 전담하는 턴키 방식의 IT 외주 개발사. 모바일 앱, 웹 서비스, 플랫폼, MVP 개발과 운영·유지보수를 제공합니다.","telephone":"+82-70-8860-0092","email":"contact@mrdevello.com","founder":{"@type":"Person","name":"송익주"},"taxID":"507-87-02801","address":{"@type":"PostalAddress","streetAddress":"동교로 156-4 B1","addressLocality":"마포구","addressRegion":"서울","addressCountry":"KR"},"areaServed":"KR","knowsAbout":["모바일 앱 개발","웹 서비스 개발","플랫폼 개발","MVP 개발","턴키 개발","IT 외주 개발","서비스 기획","UI/UX 디자인","운영·유지보수","AI 전환(AX)"],"sameAs":["https://www.youtube.com/@mr.devello","https://blog.naver.com/mrdevello","https://www.instagram.com/mr.devello/","https://www.threads.com/@mr.devello"]},{"@type":"WebSite","@id":"https://d2ufacxk4b6xve.cloudfront.net/#website","name":"미스터디벨로","url":"https://d2ufacxk4b6xve.cloudfront.net/","inLanguage":"ko-KR","publisher":{"@id":"https://d2ufacxk4b6xve.cloudfront.net/#organization"}}]}8:[["children",{"s":"(mr-booster)","h":48,"d":{"r":["$","$1","c",{"children":[null,["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"name":"theme-color","content":"#ffffff"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$9"}}],[["$","style","0",{"dangerouslySetInnerHTML":{"__html":"html.ts-pending body{visibility:hidden}"}}],["$","script","1",{"dangerouslySetInnerHTML":{"__html":"document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"}}],["$","script","2",{"src":"/type-scale.js?v=9","defer":true}],["$","link","3",{"rel":"stylesheet","href":"/study.css?v=d9481bc169"}],["$","link","4",{"rel":"stylesheet","href":"/mr-booster/booster.css?v=deeeac1d2e"}],["$","script","5",{"defer":true,"src":"/navigation.js?v=e98175695b"}],["$","script","6",{"defer":true,"src":"/mr-booster/booster.js?v=a3b1a533b9"}],["$","script","7",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\": \"https://schema.org\", \"@type\": \"Service\", \"name\": \"MR.BOOSTER · AX 전환 프로젝트\", \"description\": \"반복 업무는 AI에게, 우리 팀은 더 중요한 일에. 업무·데이터 진단부터 작은 범위의 PoC 검증, 시스템 연결까지 우리 회사에 맞는 AX 전환을 함께 살펴봅니다.\", \"url\": \"https://d2ufacxk4b6xve.cloudfront.net/mr-booster/\", \"serviceType\": \"업무 진단·AI 적용 검증·시스템 연동\", \"provider\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\", \"url\": \"https://mrdevello.com\"}}"}}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a"],"$undefined"]}],"$L1b"]}]]}],"p":"$@1c","v":null,"s":"$7"}}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]]}],"p":"$@5","v":"$6","s":"$7"},"c":"$Q8"}},"a":"$@1d","u":"$@1e","b":"qXM6gCRIUxP_xs8xCFHEa"}
-:HL["/service-evidence.css?v=e4a134eb91-o1","style"]
-:HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+9:T63f,{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://d2ufacxk4b6xve.cloudfront.net/#organization","name":"미스터 디벨로","alternateName":["미스터디벨로","MR.DEVELLO","Mr. Devello","mrdevello"],"url":"https://d2ufacxk4b6xve.cloudfront.net/","logo":"https://d2ufacxk4b6xve.cloudfront.net/logo512.webp","image":"https://d2ufacxk4b6xve.cloudfront.net/og-image.jpg","slogan":"의뢰한 대로가 아닌, 의도한 대로 개발합니다","description":"기획·디자인·개발을 한 팀이 전담하는 턴키 방식의 IT 외주 개발사. 모바일 앱, 웹 서비스, 플랫폼, MVP 개발과 운영·유지보수를 제공합니다.","telephone":"+82-70-8860-0092","email":"contact@mrdevello.com","founder":{"@type":"Person","name":"송익주"},"taxID":"507-87-02801","address":{"@type":"PostalAddress","streetAddress":"동교로 156-4 B1","addressLocality":"마포구","addressRegion":"서울","addressCountry":"KR"},"areaServed":"KR","knowsAbout":["모바일 앱 개발","웹 서비스 개발","플랫폼 개발","MVP 개발","턴키 개발","IT 외주 개발","서비스 기획","UI/UX 디자인","운영·유지보수","AI 전환(AX)"],"sameAs":["https://www.youtube.com/@mr.devello","https://blog.naver.com/mrdevello","https://www.instagram.com/mr.devello/","https://www.threads.com/@mr.devello"]},{"@type":"WebSite","@id":"https://d2ufacxk4b6xve.cloudfront.net/#website","name":"미스터디벨로","url":"https://d2ufacxk4b6xve.cloudfront.net/","inLanguage":"ko-KR","publisher":{"@id":"https://d2ufacxk4b6xve.cloudfront.net/#organization"}}]}8:[["children",{"s":"(mr-booster)","h":48,"d":{"r":["$","$1","c",{"children":[null,["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"name":"theme-color","content":"#ffffff"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$9"}}],[["$","link","0",{"rel":"stylesheet","href":"/study.css?v=d9481bc169"}],["$","link","1",{"rel":"stylesheet","href":"/mr-booster/booster.css?v=deeeac1d2e"}],["$","script","2",{"defer":true,"src":"/navigation.js?v=e98175695b"}],["$","script","3",{"defer":true,"src":"/mr-booster/booster.js?v=a3b1a533b9"}],["$","script","4",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\": \"https://schema.org\", \"@type\": \"Service\", \"name\": \"MR.BOOSTER · AX 전환 프로젝트\", \"description\": \"반복 업무는 AI에게, 우리 팀은 더 중요한 일에. 업무·데이터 진단부터 작은 범위의 PoC 검증, 시스템 연결까지 우리 회사에 맞는 AX 전환을 함께 살펴봅니다.\", \"url\": \"https://d2ufacxk4b6xve.cloudfront.net/mr-booster/\", \"serviceType\": \"업무 진단·AI 적용 검증·시스템 연동\", \"provider\": {\"@type\": \"Organization\", \"name\": \"미스터디벨로\", \"url\": \"https://mrdevello.com\"}}"}}],["$","link","5",{"rel":"stylesheet","href":"/service-evidence.css?v=e4a134eb91-o1"}],["$","link","6",{"rel":"preload","href":"/assets/pretendard-variable.9599f12fd42f.woff2","as":"font","type":"font/woff2","crossOrigin":""}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19"],"$undefined"]}],"$L1a"]}]]}],"p":"$@1b","v":null,"s":"$7"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]]}],"p":"$@5","v":"$6","s":"$7"},"c":"$Q8"}},"a":"$@1c","u":"$@1d","b":"BYsmoDKCUD7OowJs9gCWp"}
 :HL["/page-experience.0be3a66ff9a5.css","style"]
 :HL["/service-hero-alignment.css?v=5ee8d2f3b6-o1","style"]
 :HL["/service-hero-viewport.css?v=8bb86e5b6d-c1","style"]
@@ -22,10 +22,9 @@
 :HL["/mobile-fit.css?v=3","style"]
 :HL["/svc/svc-live.css?v=7","style"]
 :HL["/service-unify.css?v=4","style"]
-a:["$","link","8",{"rel":"stylesheet","href":"/service-evidence.css?v=e4a134eb91-o1"}]
-b:["$","link","9",{"rel":"preload","href":"/assets/pretendard-variable.9599f12fd42f.woff2","as":"font","type":"font/woff2","crossOrigin":""}]
-c:["$","link","10",{"rel":"stylesheet","href":"/page-experience.0be3a66ff9a5.css"}]
-1f:T55f,(()=>{
+:HL["/type-system.css?v=4","style"]
+a:["$","link","7",{"rel":"stylesheet","href":"/page-experience.0be3a66ff9a5.css"}]
+1e:T55f,(()=>{
  const root=document.documentElement;
  root.dataset.pageReady='pending';
  let shown=false;
@@ -50,24 +49,25 @@ c:["$","link","10",{"rel":"stylesheet","href":"/page-experience.0be3a66ff9a5.css
  addEventListener('pageshow',event=>{
   if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}
  });
-})();d:["$","script","11",{"dangerouslySetInnerHTML":{"__html":"$1f"}}]
-e:["$","script","12",{"defer":true,"src":"/page-transitions.f43ea8b95008.js"}]
-f:["$","link","13",{"rel":"stylesheet","href":"/service-hero-alignment.css?v=5ee8d2f3b6-o1"}]
-10:["$","link","14",{"rel":"stylesheet","href":"/service-hero-viewport.css?v=8bb86e5b6d-c1"}]
-11:["$","link","15",{"rel":"stylesheet","href":"/service-hero-card-type.css?v=7c46010b1f"}]
-12:["$","link","16",{"rel":"stylesheet","href":"/service-hero-b.css?v=a816bad6cd"}]
-13:["$","link","17",{"rel":"stylesheet","href":"/mr-booster/hero-demo.css?v=6f2dae4a2f"}]
-14:["$","script","18",{"defer":true,"src":"/mr-booster/hero-demo.js?v=331f7c084c"}]
-15:["$","link","19",{"rel":"stylesheet","href":"/no-gray-sections.css"}]
-16:["$","link","20",{"rel":"stylesheet","href":"/mr-footer.css?v=5"}]
-17:["$","link","21",{"rel":"stylesheet","href":"/mobile-fit.css?v=3"}]
-18:["$","link","22",{"rel":"stylesheet","href":"/svc/svc-live.css?v=7"}]
-19:["$","script","23",{"defer":true,"src":"/svc/svc-live.js?v=7"}]
-1a:["$","link","24",{"rel":"stylesheet","href":"/service-unify.css?v=4"}]
-1b:["$","body",null,{"className":"ax-body service-style-b","suppressHydrationWarning":true,"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:style","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:1:props:style","children":404}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:style","children":["$","h2",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:children:props:style","children":"This page could not be found."}]}]]}]}]],[]]}]}]
+})();b:["$","script","8",{"dangerouslySetInnerHTML":{"__html":"$1e"}}]
+c:["$","script","9",{"defer":true,"src":"/page-transitions.f43ea8b95008.js"}]
+d:["$","link","10",{"rel":"stylesheet","href":"/service-hero-alignment.css?v=5ee8d2f3b6-o1"}]
+e:["$","link","11",{"rel":"stylesheet","href":"/service-hero-viewport.css?v=8bb86e5b6d-c1"}]
+f:["$","link","12",{"rel":"stylesheet","href":"/service-hero-card-type.css?v=7c46010b1f"}]
+10:["$","link","13",{"rel":"stylesheet","href":"/service-hero-b.css?v=a816bad6cd"}]
+11:["$","link","14",{"rel":"stylesheet","href":"/mr-booster/hero-demo.css?v=6f2dae4a2f"}]
+12:["$","script","15",{"defer":true,"src":"/mr-booster/hero-demo.js?v=331f7c084c"}]
+13:["$","link","16",{"rel":"stylesheet","href":"/no-gray-sections.css"}]
+14:["$","link","17",{"rel":"stylesheet","href":"/mr-footer.css?v=5"}]
+15:["$","link","18",{"rel":"stylesheet","href":"/mobile-fit.css?v=3"}]
+16:["$","link","19",{"rel":"stylesheet","href":"/svc/svc-live.css?v=7"}]
+17:["$","script","20",{"defer":true,"src":"/svc/svc-live.js?v=7"}]
+18:["$","link","21",{"rel":"stylesheet","href":"/service-unify.css?v=4"}]
+19:["$","link","22",{"rel":"stylesheet","href":"/type-system.css?v=4"}]
+1a:["$","body",null,{"className":"ax-body service-style-b","suppressHydrationWarning":true,"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:style","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:1:props:style","children":404}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:style","children":["$","h2",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:children:props:style","children":"This page could not be found."}]}]]}]}]],[]]}]}]
 7:300
-1e:true
+1d:true
 7:C
-1d:0
+1c:0
 5:"$undefined"
-1c:"$undefined"
+1b:"$undefined"
