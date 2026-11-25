@@ -26,3 +26,8 @@
  body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{--hero-icon-size:80px}
  body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid .service-hero-copy>.service-hero-title{font-size:40px}
 }
+/* 큰 모니터: 히어로 내용을 화면 세로 가운데에 */
+@media(min-width:1280px){
+  body:is(.starter-body,.pro-body,.team-body,.check-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid{align-items:center!important;align-content:center}
+  body:is(.starter-body,.pro-body,.team-body,.check-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero) .service-hero-grid>*{align-self:center!important}
+}
