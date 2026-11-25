@@ -1,7 +1,7 @@
 
 var sticky=document.getElementById('sticky');
-function onS(){var y=window.scrollY||document.documentElement.scrollTop;
- var ap=document.getElementById('apply').getBoundingClientRect().top;
+function onS(){var apEl=document.getElementById('apply');if(!sticky||!apEl)return;var y=window.scrollY||document.documentElement.scrollTop;
+ var ap=apEl.getBoundingClientRect().top;
  sticky.classList.toggle('on',y>560&&ap>window.innerHeight*0.6);}
 window.addEventListener('scroll',onS,{passive:true});onS();
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -7% 0px',threshold:.05});
