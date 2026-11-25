@@ -1,23 +1,5 @@
 [
  {
-  "tag": "style",
-  "attrs": {},
-  "inner": "html.ts-pending body{visibility:hidden}"
- },
- {
-  "tag": "script",
-  "attrs": {},
-  "inner": "document.documentElement.classList.add('ts-pending');setTimeout(function(){document.documentElement.classList.remove('ts-pending')},1500);"
- },
- {
-  "tag": "script",
-  "attrs": {
-   "src": "/type-scale.js?v=9",
-   "defer": ""
-  },
-  "inner": null
- },
- {
   "tag": "link",
   "attrs": {
    "rel": "stylesheet",
@@ -117,6 +99,31 @@
   "attrs": {
    "rel": "stylesheet",
    "href": "/inquiry-unify.css?v=4"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/type-system.css?v=4"
+  },
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/site-reveal.css?v=1"
+  },
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "src": "/site-reveal.js?v=2",
+   "defer": "",
+   "data-sel": ".q2-card,.q2-left-in > *"
   },
   "inner": null
  }
