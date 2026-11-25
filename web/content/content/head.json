@@ -1,105 +1,113 @@
 [
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "stylesheet",
-      "href": "/study.css?v=d9481bc169"
-    },
-    "inner": null
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/study.css?v=d9481bc169"
   },
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "stylesheet",
-      "href": "/content/content.css?v=6"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/content/content.css?v=6"
   },
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "stylesheet",
-      "href": "/content/content-v2.css?v=2"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/content/content-v2.css?v=2"
   },
-  {
-    "tag": "script",
-    "attrs": {
-      "defer": "",
-      "src": "/content/content.js?v=2"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/content/content.js?v=2"
   },
-  {
-    "tag": "script",
-    "attrs": {
-      "defer": "",
-      "src": "/navigation.js?v=e98175695b"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/navigation.js?v=e98175695b"
   },
-  {
-    "tag": "script",
-    "attrs": {
-      "type": "application/ld+json"
-    },
-    "inner": "{\"@context\": \"https://schema.org\", \"@type\": \"CollectionPage\", \"name\": \"CONTENT · 미스터디벨로\", \"url\": \"https://mrdevello.com/content/\", \"description\": \"미스터디벨로의 유튜브·블로그·인스타그램·뉴스를 한곳에서.\"}"
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "type": "application/ld+json"
   },
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "preload",
-      "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
-      "as": "font",
-      "type": "font/woff2",
-      "crossorigin": ""
-    },
-    "inner": null
+  "inner": "{\"@context\": \"https://schema.org\", \"@type\": \"CollectionPage\", \"name\": \"CONTENT · 미스터디벨로\", \"url\": \"https://mrdevello.com/content/\", \"description\": \"미스터디벨로의 유튜브·블로그·인스타그램·뉴스를 한곳에서.\"}"
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "preload",
+   "href": "/assets/pretendard-variable.9599f12fd42f.woff2",
+   "as": "font",
+   "type": "font/woff2",
+   "crossorigin": ""
   },
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "stylesheet",
-      "href": "/page-experience.0be3a66ff9a5.css"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/page-experience.0be3a66ff9a5.css"
   },
-  {
-    "tag": "script",
-    "attrs": {},
-    "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+  "inner": null
+ },
+ {
+  "tag": "script",
+  "attrs": {},
+  "inner": "(()=>{\n const root=document.documentElement;\n root.dataset.pageReady='pending';\n let shown=false;\n function reveal(reason){\n  if(shown)return;shown=true;clearTimeout(deadline);\n  root.dataset.fontLoad=reason;\n  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));\n }\n const deadline=setTimeout(()=>reveal('timeout'),2200);\n const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));\n const fonts=document.fonts?Promise.all([\n  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'))\n ]):Promise.resolve();\n Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));\n addEventListener('pagereveal',event=>{\n  if(!event.viewTransition)return;\n  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px \"Pretendard\"','MR.DEVELLO 미스터디벨로'));\n  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}\n  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';\n  root.dataset.pageNative='true';root.dataset.pageReady='ready';\n });\n addEventListener('pageshow',event=>{\n  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}\n });\n})();"
+ },
+ {
+  "tag": "script",
+  "attrs": {
+   "defer": "",
+   "src": "/page-transitions.f43ea8b95008.js"
   },
-  {
-    "tag": "script",
-    "attrs": {
-      "defer": "",
-      "src": "/page-transitions.f43ea8b95008.js"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/no-gray-sections.css"
   },
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "stylesheet",
-      "href": "/no-gray-sections.css"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mr-footer.css?v=5"
   },
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "stylesheet",
-      "href": "/mr-footer.css?v=5"
-    },
-    "inner": null
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/mobile-fit.css?v=3"
   },
-  {
-    "tag": "link",
-    "attrs": {
-      "rel": "stylesheet",
-      "href": "/mobile-fit.css?v=3"
-    },
-    "inner": null
-  }
+  "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/content-unify.css?v=2"
+  },
+  "inner": null
+ }
 ]

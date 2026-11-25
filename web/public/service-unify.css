@@ -26,3 +26,9 @@
 .service-style-b main p[style*="font-size:26px"][style*="font-weight:900"]{font-weight:700!important}
 /* 형광펜: 메인·ABOUT과 같은 꽉 찬 노랑 */
 .service-style-b main .mk{background:#fcd448!important;background-image:none!important;border-radius:5px;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+/* 굵기 정리: 본문·라벨의 과한 800 → 700 (숫자·제목 제외) */
+.service-style-b main [style*="font-weight:800"]:not(h1):not(h2):not(h3):not(b):not(strong):not(.service-report *){font-weight:700!important}
+.service-style-b main .eb,.service-style-b main .pill,.service-style-b main .a-lab{font-weight:700!important}
+/* 섹션 여백: 메인과 동일 120 */
+.service-style-b main .lv-band{padding-top:120px!important;padding-bottom:120px!important}
+@media (max-width:767px){.service-style-b main .lv-band{padding-top:80px!important;padding-bottom:80px!important}}

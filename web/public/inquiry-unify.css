@@ -1,0 +1,12 @@
+/* 문의하기: 메인·ABOUT 스케일 정렬 (굵기 700, 큰 번호 ≤40/800, 소제목 24/700) */
+.iq-body main h1,.iq-body main h1 *{font-weight:700!important}
+.iq-body main h1{letter-spacing:-.055em!important}
+.iq-body .q2-no{font-size:40px!important;font-weight:800!important}
+.iq-body main h2{font-weight:700!important}
+.iq-body .q2-sec{padding-bottom:120px!important}
+@media (max-width:767px){
+  .iq-body main h1{font-size:clamp(28px,8.4vw,34px)!important;line-height:1.12!important}
+  .iq-body .q2-no{font-size:28px!important}
+  .iq-body main h2{font-size:20px!important}
+  .iq-body .q2-sec{padding-bottom:80px!important}
+}
