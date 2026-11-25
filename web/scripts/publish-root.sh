@@ -4,6 +4,9 @@
 # 소스는 web/ 가 기준. 루트 파일은 빌드 산출물이므로 직접 수정하지 말 것.
 set -euo pipefail
 cd "$(dirname "$0")/.."            # web/
+# 정식 오픈 전(검색 비노출) 빌드는 개발 서버 주소로 canonical·OG 이미지 절대경로를 만든다 → 링크 공유 썸네일이 개발 서버에서도 보임.
+# 오픈 시: SITE_INDEXABLE=true NEXT_PUBLIC_SITE_URL=https://mrdevello.com ./scripts/publish-root.sh
+if [ "${SITE_INDEXABLE:-}" != "true" ]; then export NEXT_PUBLIC_SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://d2ufacxk4b6xve.cloudfront.net}"; fi
 npm run build
 ROOT="$(cd .. && pwd)"
 KEEP='^(web/|README\.md$|\.gitignore$)'

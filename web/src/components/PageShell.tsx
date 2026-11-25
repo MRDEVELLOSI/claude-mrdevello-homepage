@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import HeadNodes from './HeadNodes';
+import JsonLd from './JsonLd';
 import { getPage, readHead } from '@/lib/pages';
+import { orgJsonLd } from '@/lib/site';
 
 function parseStyle(s: string | null) {
   if (!s) return undefined;
@@ -18,6 +20,8 @@ export default function PageShell({ slug, children, extraHead }: { slug: string;
   return (
     <html lang="ko" className={p.htmlClass || undefined} style={parseStyle(p.htmlStyle)} suppressHydrationWarning>
       <head>
+        <meta name="theme-color" content="#ffffff" />
+        <JsonLd data={orgJsonLd()} />
         <HeadNodes nodes={readHead(slug)} />
         {extraHead}
       </head>
