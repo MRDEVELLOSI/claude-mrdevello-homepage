@@ -65,3 +65,5 @@
   .about-why .wy-stat{flex-direction:column;align-items:flex-start;justify-content:space-between;gap:14px}
   .about-why .wy-stat strong{font-size:36px}
 }
+/* 타이핑 글자는 제목 크기·굵기를 그대로 따름 */
+.about-why .wy-h1 span{font-size:inherit!important;font-weight:inherit!important}
