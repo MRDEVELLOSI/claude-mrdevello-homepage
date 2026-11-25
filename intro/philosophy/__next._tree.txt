@@ -1,6 +1,6 @@
 :HL["/study.css?v=d9481bc169","style"]
 :HL["/intro/philosophy/philosophy.css?v=3d55751a60","style"]
-:HL["/intro/philosophy/ax.css?v=31","style"]
+:HL["/intro/philosophy/ax.css?v=32","style"]
 :HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/page-experience.0be3a66ff9a5.css","style"]
 :HL["/no-gray-sections.css","style"]
@@ -10,4 +10,4 @@
 3:[["children",{"s":"philosophy","h":96,"c":"$Q4"}]]
 2:[["children",{"s":"intro","h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(philosophy)","h":48,"c":"$Q2"}]]
-0:{"b":"htsB6Ix33rJH5oPlRrui4","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"3Kj3t0ytLOZ98wTmpYDMX","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
