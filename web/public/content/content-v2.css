@@ -121,3 +121,73 @@
 .cx2 .cx2-cta h2{font-size:30px}
 .cx2 .cx2-cta-b{flex-direction:column;width:100%}.cx2 .cx2-cta-b a{justify-content:center;height:54px;font-size:16px}
 }
+/* 블로그 섹션 압축 — 카테고리당 4편 기준 */
+@media(min-width:721px){
+.cx2 #ch-blog .cx2-side-in{gap:18px}
+.cx2 #ch-blog .cx2-ico{width:72px;height:72px}
+.cx2 .cx2-toc{flex-direction:row;flex-wrap:wrap;gap:8px;border-top:0}
+.cx2 .cx2-toc button,.cx2 .cx2-toc button.is-on{width:auto;justify-content:flex-start;gap:6px;height:38px;padding:0 14px;border:1px solid #e3e3e6;border-radius:999px;background:#fff;font-size:14px}
+.cx2 .cx2-toc button span{font-size:12px}
+.cx2 .cx2-toc button.is-on{background:#111;border-color:#111;color:#fff}
+.cx2 .cx2-toc button.is-on::before{display:none}
+.cx2 .cx2-toc button.is-on span{margin-left:0;color:rgba(255,255,255,.6)}
+.cx2 .cx2-bl .ch-blog-row{padding:20px 0;grid-template-columns:56px minmax(0,1fr) 140px}
+.cx2 .cx2-bl .ch-blog-img{height:88px}
+}
+/* 왼쪽 제목 고정: 그리드 칸을 오른쪽 높이만큼 늘려야 sticky가 따라옴 */
+@media(min-width:1101px){.cx2 .cx2-side{align-self:stretch}.cx2 .cx2-side-in{position:sticky;top:140px}}
+/* sticky가 동작하도록: overflow hidden → clip */
+.cx2.ch-page{overflow:visible!important;overflow-x:clip!important}
+/* ===== 히어로 — 광고 건너뛰기 · 플레이어 ===== */
+.cx2 .cx2-hero{position:relative;padding:64px 0 56px;background:linear-gradient(180deg,#fff,#f5f6f8);min-height:0;height:auto;display:block;overflow:visible}
+.cx2 .cx2-player{position:relative;width:min(1200px,calc(100% - 48px));height:600px;margin:0 auto;border-radius:32px;overflow:hidden;background:#111;box-shadow:0 40px 90px rgba(17,17,17,.25);color:#fff}
+.cx2 .cx2-pl-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28}
+.cx2 .cx2-pl-dim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,17,17,.2),rgba(17,17,17,.85))}
+.cx2 .cx2-pl-ad{position:absolute;left:28px;top:24px;margin:0;display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700}
+.cx2 .cx2-pl-ad b{padding:4px 10px;border-radius:6px;background:#fcd448;color:#111;font-size:12px;font-weight:900}
+.cx2 .cx2-pl-ad s{opacity:.7;text-decoration-color:#f75c66;text-decoration-thickness:2px}
+.cx2 .cx2-pl-copy{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:24px;padding:0 40px 70px}
+.cx2 .cx2-pl-copy h1{margin:0;font-size:86px;font-weight:900;line-height:1.2;letter-spacing:-.055em;color:#fff}
+.cx2 .cx2-pl-copy h1 span{color:#111;background:#fcd448;border-radius:10px;padding:0 .12em}
+.cx2 .cx2-pl-copy p{margin:0;font-size:19px;color:rgba(255,255,255,.78)}
+.cx2 .cx2-skip{position:absolute;right:0;bottom:118px;display:flex;align-items:center;gap:12px;padding:16px 22px 16px 26px;background:rgba(0,0,0,.62);border:1px solid rgba(255,255,255,.35);border-right:0;color:#fff!important;font-size:18px;font-weight:800;transition:background .2s}
+.cx2 .cx2-skip:hover{background:rgba(0,0,0,.85)}
+.cx2 .cx2-pl-bar{position:absolute;left:40px;right:40px;bottom:36px}
+.cx2 .cx2-track{position:relative;height:6px;border-radius:6px;background:rgba(255,255,255,.25)}
+.cx2 .cx2-fill{position:absolute;left:0;top:0;bottom:0;width:8%;border-radius:6px;background:#f75c66;animation:cx2prog 9s ease-in-out infinite alternate}
+@keyframes cx2prog{to{width:64%}}
+.cx2 .cx2-mark{position:absolute;top:-36px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;color:var(--c)!important;font-size:13px;font-weight:800;z-index:2}
+.cx2 .cx2-mark i{width:3px;height:14px;border-radius:2px;background:var(--c)}
+.cx2 .cx2-mark:hover span{text-decoration:underline}
+.cx2 .cx2-ctrl{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:14px;font-weight:700}
+.cx2 .cx2-ctrl span{display:flex;gap:18px;align-items:center}
+.cx2 .cx2-ctrl em{font-style:normal;opacity:.8}
+@media(max-width:900px){.cx2 .cx2-pl-copy h1{font-size:56px}.cx2 .cx2-player{height:540px}}
+@media(max-width:720px){
+.cx2 .cx2-hero{padding:24px 0 32px}
+.cx2 .cx2-player{width:calc(100% - 24px);height:520px;border-radius:24px}
+.cx2 .cx2-pl-ad{left:18px;top:18px;font-size:13px}
+.cx2 .cx2-pl-copy{padding:0 22px 110px;gap:16px}
+.cx2 .cx2-pl-copy h1{font-size:36px;line-height:1.28}
+.cx2 .cx2-pl-copy p{font-size:15px;line-height:1.6}
+.cx2 .cx2-skip{bottom:96px;padding:12px 14px 12px 18px;font-size:15px}
+.cx2 .cx2-pl-bar{left:18px;right:18px;bottom:22px}
+.cx2 .cx2-mark{font-size:11px;top:-30px}
+.cx2 .cx2-ctrl em{display:none}
+}
+@media(prefers-reduced-motion:reduce){.cx2 .cx2-fill{animation:none;width:40%}}
+/* 히어로 아래 — 좌우로 교차해 흐르는 제목 띠 */
+.cx2 .cx2-tape{position:relative;height:190px;margin-top:24px;overflow:hidden}
+.cx2 .cx2-band{position:absolute;left:-4%;right:-4%;top:50%;height:72px;display:flex;align-items:center;overflow:hidden;font-size:20px;font-weight:700;white-space:nowrap}
+.cx2 .cx2-b1{background:#111;color:#fff;transform:translateY(-50%) rotate(-3deg);z-index:2;box-shadow:0 16px 40px rgba(17,17,17,.18)}
+.cx2 .cx2-b2{background:#fcd448;color:#111;transform:translateY(-50%) rotate(3deg);z-index:1}
+.cx2 .cx2-mv{display:flex;width:max-content;animation:cx2mq 80s linear infinite}
+.cx2 .cx2-mv.cx2-rev{animation-direction:reverse;animation-duration:90s}
+.cx2 .cx2-run{display:flex;gap:40px;padding-right:40px}
+.cx2 .cx2-run span{display:inline-flex;align-items:center;gap:14px}
+.cx2 .cx2-run i{width:10px;height:10px;border-radius:10px;display:inline-block;flex:none}
+.cx2 .cx2-b2 .cx2-run i{background:#111!important}
+@keyframes cx2mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.cx2 .cx2-band:hover .cx2-mv{animation-play-state:paused}
+@media(max-width:720px){.cx2 .cx2-tape{height:130px;margin-top:12px}.cx2 .cx2-band{height:50px;font-size:15px}.cx2 .cx2-run{gap:28px;padding-right:28px}}
+@media(prefers-reduced-motion:reduce){.cx2 .cx2-mv{animation:none}}
