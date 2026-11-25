@@ -1,0 +1,55 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/3qfy96eoyh-ek.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+:HL["/study.css?v=d9481bc169","style"]
+:HL["/portfolio/portfolio.css?v=1","style"]
+6:X
+6:C
+7:X
+9:T927,{"@context": "https://schema.org", "@type": "CollectionPage", "name": "포트폴리오 | 미스터디벨로", "url": "https://mrdevello.com/portfolio/", "inLanguage": "ko-KR", "description": "수많은 클라이언트가 인정한 미스터디벨로의 실력. 미스터디벨로가 기획·개발한 앱·웹 서비스 포트폴리오.", "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "현대 HMG", "url": "https://mrdevello.com/portfolio/hyundai"}, {"@type": "ListItem", "position": 2, "name": "링스쿨", "url": "https://mrdevello.com/portfolio/link-school"}, {"@type": "ListItem", "position": 3, "name": "파라다이스호텔 부산", "url": "https://mrdevello.com/portfolio/paradise-busan"}, {"@type": "ListItem", "position": 4, "name": "파라다이스호텔 인천", "url": "https://mrdevello.com/portfolio/paradise-incheon"}, {"@type": "ListItem", "position": 5, "name": "부릉", "url": "https://mrdevello.com/portfolio/vroong"}, {"@type": "ListItem", "position": 6, "name": "OCU", "url": "https://mrdevello.com/portfolio/ocu"}, {"@type": "ListItem", "position": 7, "name": "똑똑365", "url": "https://mrdevello.com/portfolio/ttokttok365"}, {"@type": "ListItem", "position": 8, "name": "디어먼데이", "url": "https://mrdevello.com/portfolio/dear-monday"}, {"@type": "ListItem", "position": 9, "name": "아트라상", "url": "https://mrdevello.com/portfolio/atrasan"}, {"@type": "ListItem", "position": 10, "name": "폰의 민족", "url": "https://mrdevello.com/portfolio/phone-people"}, {"@type": "ListItem", "position": 11, "name": "놀토", "url": "https://mrdevello.com/portfolio/nolto"}, {"@type": "ListItem", "position": 12, "name": "아티켓", "url": "https://mrdevello.com/portfolio/artiket"}, {"@type": "ListItem", "position": 13, "name": "닥터두피", "url": "https://mrdevello.com/portfolio/drdp"}, {"@type": "ListItem", "position": 14, "name": "반려시대", "url": "https://mrdevello.com/portfolio/pet-era"}, {"@type": "ListItem", "position": 15, "name": "킹스랜드", "url": "https://mrdevello.com/portfolio/kingsland"}, {"@type": "ListItem", "position": 16, "name": "운세나우", "url": "https://mrdevello.com/portfolio/unsae-now"}, {"@type": "ListItem", "position": 17, "name": "하트쉐어", "url": "https://mrdevello.com/portfolio/heart-share"}]}}8:[["children",{"s":"(portfolio)","h":48,"d":{"r":["$","$1","c",{"children":[null,["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[[["$","link","0",{"rel":"stylesheet","href":"/study.css?v=d9481bc169"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/portfolio.css?v=1"}],["$","script","2",{"defer":true,"src":"/portfolio/portfolio.js?v=1"}],["$","script","3",{"defer":true,"src":"/navigation.js?v=e98175695b"}],["$","script","4",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$9"}}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10"],"$undefined"]}],"$L11"]}]]}],"p":"$@12","v":null,"s":"$7"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]]}],"p":"$@5","v":"$6","s":"$7"},"c":"$Q8"}},"a":"$@13","u":"$@14","b":"yYSorRcLT7juLbakkh6Bx"}
+:HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/page-experience.0be3a66ff9a5.css","style"]
+:HL["/no-gray-sections.css","style"]
+:HL["/mr-footer.css?v=5","style"]
+:HL["/mobile-fit.css?v=3","style"]
+a:["$","link","5",{"rel":"preload","href":"/assets/pretendard-variable.9599f12fd42f.woff2","as":"font","type":"font/woff2","crossOrigin":""}]
+b:["$","link","6",{"rel":"stylesheet","href":"/page-experience.0be3a66ff9a5.css"}]
+15:T55f,(()=>{
+ const root=document.documentElement;
+ root.dataset.pageReady='pending';
+ let shown=false;
+ function reveal(reason){
+  if(shown)return;shown=true;clearTimeout(deadline);
+  root.dataset.fontLoad=reason;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.dataset.pageReady='ready';}));
+ }
+ const deadline=setTimeout(()=>reveal('timeout'),2200);
+ const dom=new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}));
+ const fonts=document.fonts?Promise.all([
+  ...[400,500,600,700].map(weight=>document.fonts.load(weight+' 16px "Pretendard"','MR.DEVELLO 미스터디벨로'))
+ ]):Promise.resolve();
+ Promise.all([dom,fonts]).then(()=>reveal('loaded'),()=>dom.then(()=>reveal('error')));
+ addEventListener('pagereveal',event=>{
+  if(!event.viewTransition)return;
+  const cached=document.fonts&&[400,500,600,700].every(weight=>document.fonts.check(weight+' 16px "Pretendard"','MR.DEVELLO 미스터디벨로'));
+  if(!cached||matchMedia('(prefers-reduced-motion:reduce)').matches){event.viewTransition.skipTransition();return;}
+  shown=true;clearTimeout(deadline);root.dataset.fontLoad='loaded';
+  root.dataset.pageNative='true';root.dataset.pageReady='ready';
+ });
+ addEventListener('pageshow',event=>{
+  if(event.persisted){shown=true;clearTimeout(deadline);root.dataset.pageRestored='true';root.dataset.pageReady='ready';}
+ });
+})();c:["$","script","7",{"dangerouslySetInnerHTML":{"__html":"$15"}}]
+d:["$","script","8",{"defer":true,"src":"/page-transitions.f43ea8b95008.js"}]
+e:["$","link","9",{"rel":"stylesheet","href":"/no-gray-sections.css"}]
+f:["$","link","10",{"rel":"stylesheet","href":"/mr-footer.css?v=5"}]
+10:["$","link","11",{"rel":"stylesheet","href":"/mobile-fit.css?v=3"}]
+11:["$","body",null,{"className":"ph-body-page portfolio-page","suppressHydrationWarning":true,"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:style","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:1:props:style","children":404}],["$","div",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:style","children":["$","h2",null,{"style":"$0:t:t:d:r:props:children:1:props:notFound:0:1:props:children:props:children:2:props:children:props:style","children":"This page could not be found."}]}]]}]}]],[]]}]}]
+7:300
+14:true
+7:C
+13:0
+5:"$undefined"
+12:"$undefined"
