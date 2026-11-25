@@ -1,6 +1,6 @@
 /* Common-guide proposals. TEAM retains coral; CHECK inherits CARE's green. */
 :root{--product-ink:#0d0d0d;--product-muted:#4e535c;--product-border:#e5e5e5}
-body.team-body{margin:0;background:#fff;color:var(--product-ink);font-family:var(--font-sans);font-size:16px;line-height:1.65;--product-accent:#ac4b35;--product-tint:#fff1ed;--product-line:#ecd8cf}
+body.team-body{margin:0;background:#fff;color:var(--product-ink);font-family:var(--font-sans);font-size:16px;line-height:1.65;--product-accent:#e0742b;--product-tint:#fdf1e6;--product-line:#f3d8c2}
 body.check-body{--product-accent:#34634c;--product-tint:#eef8f2;--product-line:#cbded1;--evidence-tint:#eef8f2;--evidence-accent:#34634c}
 .team-body *{box-sizing:border-box}.team-body :is(button,input,textarea,select){font:inherit}.team-body a{color:inherit;text-decoration:none}.team-body :is(a,summary,button):focus-visible{outline:2px solid var(--product-accent);outline-offset:5px}
 html{scroll-padding-top:96px}.product-skip{position:fixed;left:20px;top:-100px;z-index:200;background:white;padding:12px 20px;border:1px solid}.product-skip:focus{top:12px}

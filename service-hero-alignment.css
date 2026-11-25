@@ -1,7 +1,7 @@
 /* Shared SERVICE hero slots. Values are implementation choices, not reference measurements. */
 body.starter-body{--service-hero-accent:#7560c9;--service-hero-badge:#6b55ba;--service-hero-line:#ded5f1;--service-hero-tint:#f1edf9}
 body.pro-body{--service-hero-accent:#1687df;--service-hero-badge:#0b78cf;--service-hero-line:#c8e3ff;--service-hero-tint:#e4f2ff}
-body.team-body{--service-hero-accent:#ac4b35;--service-hero-badge:#ac4b35;--service-hero-line:#ecd8cf;--service-hero-tint:#fff1ed}
+body.team-body{--service-hero-accent:#e0742b;--service-hero-badge:#e0742b;--service-hero-line:#f3d8c2;--service-hero-tint:#fdf1e6}
 body.check-body{--service-hero-accent:#34634c;--service-hero-badge:#34634c;--service-hero-line:#cbded1;--service-hero-tint:#eef8f2}
 body.ax-body{--service-hero-accent:#966522;--service-hero-badge:#85551c;--service-hero-line:#ead9b3;--service-hero-tint:#fff8e8}
 body:is(.starter-body,.pro-body,.team-body,.ax-body) :is(#starter_hero,#pro_hero,#team_hero,#check_hero,#booster_hero){padding-top:72px;padding-bottom:80px}

@@ -2,7 +2,7 @@
    proposals from DEVELLO_UI_GUIDELINES.md, not reference measurements. */
 .starter-body{--evidence-tint:#f1eef7;--evidence-accent:#7560c9}
 .pro-body{--evidence-tint:#eff5ff;--evidence-accent:#3766ae}
-.team-body{--evidence-tint:#fff1ed;--evidence-accent:#ac4b35}
+.team-body{--evidence-tint:#fdf1e6;--evidence-accent:#e0742b}
 .care-body{--evidence-tint:#eef8f2;--evidence-accent:#34634c}
 .ax-body{--evidence-tint:#fff8e8;--evidence-accent:#85551c}
 /* Keep each service's original soft brand gradient from its own stylesheet. */
