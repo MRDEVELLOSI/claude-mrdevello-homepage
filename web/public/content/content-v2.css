@@ -191,3 +191,10 @@
 .cx2 .cx2-band:hover .cx2-mv{animation-play-state:paused}
 @media(max-width:720px){.cx2 .cx2-tape{height:130px;margin-top:12px}.cx2 .cx2-band{height:50px;font-size:15px}.cx2 .cx2-run{gap:28px;padding-right:28px}}
 @media(prefers-reduced-motion:reduce){.cx2 .cx2-mv{animation:none}}
+/* 제목 띠 — 더 얇게 */
+.cx2 .cx2-tape{height:140px}
+.cx2 .cx2-band{height:50px;font-size:16px;font-weight:500}
+.cx2 .cx2-run{gap:32px;padding-right:32px}
+.cx2 .cx2-run span{gap:10px}
+.cx2 .cx2-run i{width:7px;height:7px}
+@media(max-width:720px){.cx2 .cx2-tape{height:104px}.cx2 .cx2-band{height:38px;font-size:13px}.cx2 .cx2-run{gap:22px;padding-right:22px}}

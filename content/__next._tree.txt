@@ -1,6 +1,6 @@
 :HL["/study.css?v=d9481bc169","style"]
 :HL["/content/content.css?v=6","style"]
-:HL["/content/content-v2.css?v=6","style"]
+:HL["/content/content-v2.css?v=7","style"]
 :HL["/assets/pretendard-variable.9599f12fd42f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/page-experience.0be3a66ff9a5.css","style"]
 :HL["/no-gray-sections.css","style"]
@@ -10,4 +10,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"content","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"(content)","h":112,"c":"$Q2"}]]
-0:{"b":"x2gAxTejRh15qaFLIpFpc","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"QwoXn-lZgKQMvu6m-nTnl","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
