@@ -47,3 +47,29 @@
   /* 콘텐츠 바로가기 탭 */
   #__page#__page#__page .ch-jump a{padding:0 10px 0 8px!important;gap:6px!important}
 }
+
+/* 2차 보정: 고정 여백 · 슬라이드 · 흐르는 띠 */
+@media (max-width:1023px){
+  #__page .ax [style="height:230px"]{height:140px!important}
+  #__page .ax [style="height:120px"]{height:80px!important}
+  #__page .ax [style="height:80px"]{display:none!important}
+  /* MR.PRO 상단 폰: 가운데 한 대만, 나머지는 페이드 */
+  #__page .pro-hero-rail{margin:0 auto!important;width:var(--phone-width)!important}
+  #__page .pro-hero-phone:not(.is-active){opacity:0!important;pointer-events:none}
+  /* 흐르는 띠 양끝 페이드 */
+  #__page .axq>div{-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
+}
+@media (min-width:701px) and (max-width:1023px){
+  /* WHY 퀄리티 슬라이드: 오른쪽 끝 잘림 대신 페이드 */
+  #why-3 .mrd-quality__rail{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 64px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 64px),transparent)}
+}
+@media (max-width:767px){
+  #__page .ax [style="height:230px"]{height:96px!important}
+  #__page .ax [style="height:120px"]{height:56px!important}
+}
+@media (max-width:700px){
+  /* WHY 퀄리티 슬라이드: 가운데 한 대만 */
+  #why-3 .mrd-quality__phone{left:50%!important;margin-left:calc(var(--phone-w) / -2)}
+  #why-3 .mrd-quality__phone:not(.is-active){opacity:0!important;pointer-events:none}
+  #why-3 .mrd-quality__phone.is-active{transform:none!important}
+}
