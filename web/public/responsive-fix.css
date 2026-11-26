@@ -73,3 +73,21 @@
   #why-3 .mrd-quality__phone:not(.is-active){opacity:0!important;pointer-events:none}
   #why-3 .mrd-quality__phone.is-active{transform:none!important}
 }
+
+/* 3차 보정: 철학 AI 데모 카드 폭, 콘텐츠 카테고리 */
+@media (max-width:1023px){
+  #__page .ax [style*="width: 720px"],#__page .ax [style*="width:720px"]{width:100%!important;max-width:720px!important}
+  #__page .ax .bk-days{gap:4px;padding:12px 10px 6px}
+  #__page .ax .bk-days span{min-width:0}
+  #__page .ax .pc-bk .bk{height:auto!important;padding-bottom:12px}
+}
+@media (max-width:767px){
+  #__page .ax .bk-days span{height:42px;font-size:10px!important}
+  #__page .ax .bk-days span b{font-size:14px!important}
+  #__page .ch-filter.cx2-toc{flex-wrap:wrap!important;overflow:visible!important;gap:8px!important}
+  #__page .ch-filter.cx2-toc>button{flex:none}
+}
+@media (min-width:768px) and (max-width:1023px){
+  /* WHY 상단 아래쪽 3D 아이콘이 섹션 경계에서 잘리지 않게 */
+  #__page .wy-hero .wy-deco-3,#__page .wy-hero .wy-deco-4{top:auto!important;bottom:20px!important;width:110px!important;height:auto!important}
+}
