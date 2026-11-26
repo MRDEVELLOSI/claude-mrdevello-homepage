@@ -21,7 +21,7 @@
 :HL["/mobile-fit.css?v=3","style"]
 :HL["/tail-motion.css?v=1","style"]
 :HL["/type-system.css?v=4","style"]
-:HL["/responsive-fix.css?v=3","style"]
+:HL["/responsive-fix.css?v=4","style"]
 2:[["children",{"s":"__PAGE__","h":128}]]
 1:[["children",{"s":"(home)","h":48,"c":"$Q2"}]]
-0:{"b":"iYQwnplhhy3KCJUn59P1p","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"gE98ZBEkAfkxaa_kQVXN1","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
