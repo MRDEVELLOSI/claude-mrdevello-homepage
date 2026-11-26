@@ -117,5 +117,13 @@
    "href": "/type-system.css?v=4"
   },
   "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/responsive-fix.css?v=1"
+  },
+  "inner": null
  }
 ]

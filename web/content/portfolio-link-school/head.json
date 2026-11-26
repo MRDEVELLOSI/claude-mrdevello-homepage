@@ -110,5 +110,13 @@
    "data-sel": ".pd-hero-txt > *,.pd-info-row,.pd-panel,.pd-scope,.pd-fig,.pd-ds,.pd-shots > *,.pd-next,.pd-aside > *,.pd-main > *"
   },
   "inner": null
+ },
+ {
+  "tag": "link",
+  "attrs": {
+   "rel": "stylesheet",
+   "href": "/responsive-fix.css?v=1"
+  },
+  "inner": null
  }
 ]
