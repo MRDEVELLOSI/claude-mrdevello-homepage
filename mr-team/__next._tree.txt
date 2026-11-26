@@ -15,7 +15,8 @@
 :HL["/svc/svc-live.css?v=7","style"]
 :HL["/service-unify.css?v=4","style"]
 :HL["/type-system.css?v=4","style"]
+:HL["/responsive-fix.css?v=1","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"mr-team","h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(mr-team)","h":48,"c":"$Q2"}]]
-0:{"b":"BYsmoDKCUD7OowJs9gCWp","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"wloIE0WHXEjQv9X68XhrE","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
