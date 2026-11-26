@@ -8,8 +8,8 @@
 :HL["/mobile-fit.css?v=3","style"]
 :HL["/content-unify.css?v=2","style"]
 :HL["/type-system.css?v=4","style"]
-:HL["/responsive-fix.css?v=1","style"]
+:HL["/responsive-fix.css?v=2","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"content","h":64,"c":"$Q3"}]]
 1:[["children",{"s":"(content)","h":48,"c":"$Q2"}]]
-0:{"b":"wloIE0WHXEjQv9X68XhrE","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"DkpbZfbCSlwYyKP9GLr1h","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
