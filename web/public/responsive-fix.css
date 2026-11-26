@@ -1,5 +1,7 @@
 /* 반응형 보정 (태블릿 · 모바일) — 모든 페이지 head 마지막에 연결 */
 @media (max-width:1023px){
+  /* 한글 단어 중간 줄바꿈 방지 */
+  #__page{word-break:keep-all;overflow-wrap:break-word}
   /* 서비스 비교표: 카드 밖으로 잘리지 않게 폭에 맞춤 */
   #__page#__page#__page .svl table[style*="border-collapse"]{display:table!important;min-width:0!important;width:100%!important;table-layout:fixed}
   #__page#__page#__page .svl table[style*="border-collapse"] :is(th,td){word-break:keep-all;overflow-wrap:break-word}
